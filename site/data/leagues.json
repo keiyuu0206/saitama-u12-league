@@ -1,0 +1,150 @@
+{
+ "generated_at": "2026-07-07T06:00:00+09:00",
+ "source": "https://www.saitama-u12.com/league/",
+ "leagues": [
+  {
+   "id": "2356",
+   "name": "Ｓ１リーグ",
+   "category": "県",
+   "url": "https://www.saitama-u12.com/league/detail/id=2356",
+   "pdf_url": "https://www.saitama-u12.com/files/topics/2356_ext_16_0.pdf",
+   "teams": [
+    "レジスタFC",
+    "RB大宮アルディージャU-12",
+    "上尾朝日FCスポーツ少年団",
+    "エクセレントフィートFC",
+    "新座片山フットボールクラブ少年団",
+    "浦和レッドダイヤモンズジュニア",
+    "FCアビリスタ",
+    "1FC川越水上公園",
+    "江南南サッカー少年団",
+    "ヴィオレータフットボールクラブ"
+   ],
+   "status": "ok",
+   "standings": [
+    {
+     "team": "浦和レッドダイヤモンズジュニア",
+     "win": 8,
+     "draw": 0,
+     "loss": 1,
+     "played": 9,
+     "points": 24,
+     "rank": 1,
+     "points_estimated": true,
+     "rank_estimated": true
+    },
+    {
+     "team": "RB大宮アルディージャU-12",
+     "win": 7,
+     "draw": 1,
+     "loss": 1,
+     "played": 9,
+     "points": 22,
+     "rank": 2,
+     "points_estimated": true,
+     "rank_estimated": true
+    },
+    {
+     "team": "上尾朝日FCスポーツ少年団",
+     "win": 6,
+     "draw": 2,
+     "loss": 1,
+     "played": 9,
+     "points": 20,
+     "rank": 3,
+     "points_estimated": true,
+     "rank_estimated": true
+    },
+    {
+     "team": "エクセレントフィートFC",
+     "win": 6,
+     "draw": 1,
+     "loss": 2,
+     "played": 9,
+     "points": 19,
+     "rank": 4,
+     "points_estimated": true,
+     "rank_estimated": true
+    },
+    {
+     "team": "レジスタFC",
+     "win": 5,
+     "draw": 1,
+     "loss": 3,
+     "played": 9,
+     "points": 16,
+     "rank": 5,
+     "points_estimated": true,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCアビリスタ",
+     "win": 3,
+     "draw": 0,
+     "loss": 6,
+     "played": 9,
+     "points": 9,
+     "rank": 6,
+     "points_estimated": true,
+     "rank_estimated": true
+    },
+    {
+     "team": "ヴィオレータフットボールクラブ",
+     "win": 2,
+     "draw": 1,
+     "loss": 6,
+     "played": 9,
+     "points": 7,
+     "rank": 7,
+     "points_estimated": true,
+     "rank_estimated": true
+    },
+    {
+     "team": "1FC川越水上公園",
+     "win": 2,
+     "draw": 0,
+     "loss": 7,
+     "played": 9,
+     "points": 6,
+     "rank": 8,
+     "points_estimated": true,
+     "rank_estimated": true
+    },
+    {
+     "team": "江南南サッカー少年団",
+     "win": 1,
+     "draw": 1,
+     "loss": 7,
+     "played": 9,
+     "points": 4,
+     "rank": 9,
+     "points_estimated": true,
+     "rank_estimated": true
+    },
+    {
+     "team": "新座片山フットボールクラブ少年団",
+     "win": 0,
+     "draw": 3,
+     "loss": 6,
+     "played": 9,
+     "points": 3,
+     "rank": 10,
+     "points_estimated": true,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14"
+  },
+  {
+   "id": "2357",
+   "name": "Ｓ２リーグ",
+   "category": "県",
+   "url": "https://www.saitama-u12.com/league/detail/id=2357",
+   "pdf_url": null,
+   "teams": [],
+   "status": "no_pdf",
+   "standings": null,
+   "pdf_date": null
+  }
+ ]
+}
