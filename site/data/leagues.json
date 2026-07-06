@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-07T06:00:00+09:00",
+ "generated_at": "2026-07-07T08:16:13.834573+09:00",
  "source": "https://www.saitama-u12.com/league/",
  "leagues": [
   {
@@ -7,19 +7,19 @@
    "name": "Ｓ１リーグ",
    "category": "県",
    "url": "https://www.saitama-u12.com/league/detail/id=2356",
-   "pdf_url": "https://www.saitama-u12.com/files/topics/2356_ext_16_0.pdf",
    "teams": [
-    "レジスタFC",
-    "RB大宮アルディージャU-12",
-    "上尾朝日FCスポーツ少年団",
-    "エクセレントフィートFC",
+    "レジスタＦＣ",
+    "RB大宮アルディージャＵ１２",
+    "上尾朝日ＦＣスポーツ少年団",
+    "エクセレントフィートＦＣ",
     "新座片山フットボールクラブ少年団",
     "浦和レッドダイヤモンズジュニア",
-    "FCアビリスタ",
-    "1FC川越水上公園",
+    "ＦＣアビリスタ",
+    "１ＦＣ川越水上公園",
     "江南南サッカー少年団",
     "ヴィオレータフットボールクラブ"
    ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/2356_ext_16_0.pdf",
    "status": "ok",
    "standings": [
     {
@@ -30,7 +30,6 @@
      "played": 9,
      "points": 24,
      "rank": 1,
-     "points_estimated": true,
      "rank_estimated": true
     },
     {
@@ -41,51 +40,46 @@
      "played": 9,
      "points": 22,
      "rank": 2,
-     "points_estimated": true,
      "rank_estimated": true
     },
     {
-     "team": "上尾朝日FCスポーツ少年団",
+     "team": "上尾朝日ＦＣスポーツ少年団",
      "win": 6,
      "draw": 2,
      "loss": 1,
      "played": 9,
      "points": 20,
      "rank": 3,
-     "points_estimated": true,
      "rank_estimated": true
     },
     {
-     "team": "エクセレントフィートFC",
+     "team": "エクセレントフィートＦＣ",
      "win": 6,
      "draw": 1,
      "loss": 2,
      "played": 9,
      "points": 19,
      "rank": 4,
-     "points_estimated": true,
      "rank_estimated": true
     },
     {
-     "team": "レジスタFC",
+     "team": "レジスタＦＣ",
      "win": 5,
      "draw": 1,
      "loss": 3,
      "played": 9,
      "points": 16,
      "rank": 5,
-     "points_estimated": true,
      "rank_estimated": true
     },
     {
-     "team": "FCアビリスタ",
+     "team": "ＦＣアビリスタ",
      "win": 3,
      "draw": 0,
      "loss": 6,
      "played": 9,
      "points": 9,
      "rank": 6,
-     "points_estimated": true,
      "rank_estimated": true
     },
     {
@@ -96,18 +90,16 @@
      "played": 9,
      "points": 7,
      "rank": 7,
-     "points_estimated": true,
      "rank_estimated": true
     },
     {
-     "team": "1FC川越水上公園",
+     "team": "１ＦＣ川越水上公園",
      "win": 2,
      "draw": 0,
      "loss": 7,
      "played": 9,
      "points": 6,
      "rank": 8,
-     "points_estimated": true,
      "rank_estimated": true
     },
     {
@@ -118,7 +110,6 @@
      "played": 9,
      "points": 4,
      "rank": 9,
-     "points_estimated": true,
      "rank_estimated": true
     },
     {
@@ -129,22 +120,5392 @@
      "played": 9,
      "points": 3,
      "rank": 10,
-     "points_estimated": true,
      "rank_estimated": true
     }
    ],
-   "pdf_date": "2026-06-14"
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
   },
   {
    "id": "2357",
    "name": "Ｓ２リーグ",
    "category": "県",
    "url": "https://www.saitama-u12.com/league/detail/id=2357",
-   "pdf_url": null,
+   "teams": [
+    "さいたまシティーノースフットボールクラブ",
+    "東松山ぺレーニアフットボールクラブジュニア",
+    "ペラーダジュニアーズ",
+    "Ｆ．Ｃ．ＶＥＬＳＡ",
+    "レアル狭山ＦＣ",
+    "レジスタFC八潮",
+    "ＫＩＤＳＰＯＷＥＲ．ＳＣ",
+    "カムイジュニア千代田",
+    "ＦＣ ａｒｃｏ iris m",
+    "ＪＳＣ ＧＲＡＮＴ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/2357_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "ＦＣ ａｒｃｏ iris m",
+     "win": 7,
+     "draw": 1,
+     "loss": 1,
+     "played": 9,
+     "points": 22,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "Ｆ．Ｃ．ＶＥＬＳＡ",
+     "win": 5,
+     "draw": 2,
+     "loss": 2,
+     "played": 9,
+     "points": 17,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "レアル狭山ＦＣ",
+     "win": 5,
+     "draw": 2,
+     "loss": 1,
+     "played": 8,
+     "points": 17,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "さいたまシティーノースフットボールクラブ",
+     "win": 4,
+     "draw": 2,
+     "loss": 3,
+     "played": 9,
+     "points": 14,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＪＳＣ ＧＲＡＮＴ",
+     "win": 4,
+     "draw": 2,
+     "loss": 2,
+     "played": 8,
+     "points": 14,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＫＩＤＳＰＯＷＥＲ．ＳＣ",
+     "win": 3,
+     "draw": 2,
+     "loss": 3,
+     "played": 8,
+     "points": 11,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "レジスタFC八潮",
+     "win": 2,
+     "draw": 2,
+     "loss": 5,
+     "played": 9,
+     "points": 8,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "ペラーダジュニアーズ",
+     "win": 2,
+     "draw": 1,
+     "loss": 5,
+     "played": 8,
+     "points": 7,
+     "rank": 8,
+     "rank_estimated": true
+    },
+    {
+     "team": "カムイジュニア千代田",
+     "win": 1,
+     "draw": 2,
+     "loss": 5,
+     "played": 8,
+     "points": 5,
+     "rank": 9,
+     "rank_estimated": true
+    },
+    {
+     "team": "東松山ぺレーニアフットボールクラブジュニア",
+     "win": 1,
+     "draw": 0,
+     "loss": 7,
+     "played": 8,
+     "points": 3,
+     "rank": 10,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1228",
+   "name": "ＳＥリーグ",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1228",
+   "teams": [
+    "ＳＵＧＩＴＯ ＵＮＩＴＥＤ ＦＯＯＴＢＡＬＬ ＣＬＵＢ",
+    "越谷ＰＣキッカーズスポーツ少年団",
+    "三郷Ｊｒ．ＹｏｕｔｈＦＣＵ－１２Ｃ．Ｆ．ＰＡＳＩＯＮ",
+    "あけぼのＦＣ",
+    "三郷フットボールクラブＪｒ．",
+    "ＦＣ ＬＩＥＮ",
+    "プライドＦＣ",
+    "ＦＣ Ｇｏｉｓ ＹＡＮＡＫＡ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1228_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "プライドＦＣ",
+     "win": 5,
+     "draw": 2,
+     "loss": 0,
+     "played": 7,
+     "points": 17,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ ＬＩＥＮ",
+     "win": 4,
+     "draw": 3,
+     "loss": 0,
+     "played": 7,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ Ｇｏｉｓ ＹＡＮＡＫＡ",
+     "win": 3,
+     "draw": 3,
+     "loss": 1,
+     "played": 7,
+     "points": 12,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "三郷フットボールクラブＪｒ．",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＯＯＴＢＡＬＬＳＵＧＩＴＯＵＮＩＴＥＤＣＬＵＢ",
+     "win": 2,
+     "draw": 2,
+     "loss": 3,
+     "played": 7,
+     "points": 8,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "越谷ＰＣキッカーズスポーツ少年団",
+     "win": 1,
+     "draw": 2,
+     "loss": 4,
+     "played": 7,
+     "points": 5,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "三郷Ｊｒ．ＹｏｕｔｈＦＣＵ－１２Ｃ．Ｆ．ＰＡＳＩＯＮ",
+     "win": 1,
+     "draw": 1,
+     "loss": 5,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "あけぼのＦＣ",
+     "win": 0,
+     "draw": 4,
+     "loss": 3,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "89",
+   "name": "中地区　Ａブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=89",
+   "teams": [
+    "大増サンライズフットボールクラブＷＨＩＴＥ",
+    "ジョイフルフットボールク ラブ",
+    "豊春サッカークラブ",
+    "春日部幸松ジュニアフットボールクラ ブ",
+    "エースサッカークラブ",
+    "Ｆ.Ｃ宮代東",
+    "豊野Ｆフットボールクラブスポーツ少年団",
+    "ＦＣバンビーノ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/89_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "ＦＣバンビーノ",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "豊春サッカークラブ",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "春日部幸松ジュニアフットボールクラ ブ",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "大増サンライズフットボールクラブＷＨＩＴＥ",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "エースサッカークラブ",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "ジョイフルフットボールク ラブ",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "豊野Ｆフットボールクラブスポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "Ｆ.Ｃ宮代東",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "90",
+   "name": "中地区　Ｂブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=90",
+   "teams": [
+    "上沖サッカークラブ アルファ",
+    "大増サンライズフットボールクラブ",
+    "栄町キッカーズ",
+    "百間サッカースポーツ少年団",
+    "牛島フットボールクラブ",
+    "埼玉オーステンＳＣジュニ ア",
+    "ｓｕｒｐｒｉｚ ｊｒ",
+    "武里サッカークラブ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/90_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "埼玉オーステンＳＣジュニ ア",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ｓｕｒｐｒｉｚ ｊｒ",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "武里サッカークラブ",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "大増サンライズフットボールクラブ",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "栄町キッカーズ",
+     "win": 2,
+     "draw": 2,
+     "loss": 3,
+     "played": 7,
+     "points": 8,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "牛島フットボールクラブ",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "上沖サッカークラブ アルファ",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "百間サッカースポーツ少年団",
+     "win": 0,
+     "draw": 2,
+     "loss": 5,
+     "played": 7,
+     "points": 2,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1224",
+   "name": "中地区　Ｃブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1224",
+   "teams": [
+    "上沖サッカークラブ",
+    "ＬＩＶＲＯ白岡ＳｏｃｃｅｒＣｌｕｂ",
+    "ＦＣバンビーノｆａｌｃｏ",
+    "蓮田キッカーズ",
+    "篠津小総合クラブ  ＦＣアローズ",
+    "武里サッカークラブ ホワイト",
+    "ＦＣ ＬＩＥＮ ｅｓｐｏｉｒ",
+    "Ａｌａ　Ｆｏｏｔｂａｌｌ　Ａｃａｄｅｍｙ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1224_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "Ａｌａ　Ｆｏｏｔｂａｌｌ　Ａｃａｄｅｍｙ",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "武里サッカークラブ ホワイト",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ ＬＩＥＮ ｅｓｐｏｉｒ",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "上沖サッカークラブ",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "蓮田キッカーズ",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣバンビーノｆａｌｃｏ",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＬＩＶＲＯ白岡ＳｏｃｃｅｒＣｌｕｂ",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "篠津小総合クラブ  ＦＣアローズ",
+     "win": 0,
+     "draw": 1,
+     "loss": 6,
+     "played": 7,
+     "points": 1,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1225",
+   "name": "北地区　Ａブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1225",
+   "teams": [
+    "加須ユナイテッドＦＣ",
+    "ForWarD FC",
+    "ファルカオ FC  久喜",
+    "上高野FC　ファミレド",
+    "Azulente KAZO U-12",
+    "行田ＳＣ",
+    "ＳＵＧＩＴＯ UNITEDO FOOTBALL CLUB Uー12",
+    "栗橋ジュニアサッカークラブ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1225_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "Azulente KAZO U-12",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "FOOTBALLＳＵＧＩＴＯCLUBUNITEDOUー12",
+     "win": 5,
+     "draw": 2,
+     "loss": 0,
+     "played": 7,
+     "points": 17,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ファルカオ FC  久喜",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "栗橋ジュニアサッカークラブ",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "上高野FC　ファミレド",
+     "win": 3,
+     "draw": 2,
+     "loss": 2,
+     "played": 7,
+     "points": 11,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "行田ＳＣ",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "加須ユナイテッドＦＣ",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "ForWarD FC",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1226",
+   "name": "北地区　Ｂブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1226",
+   "teams": [
+    "砂原サッカースポーツ少年団",
+    "REDONDO FC",
+    "幸手ユナイテッドFC",
+    "久喜キッカーズ",
+    "Ｓａｉｔａｍａ ｅａｓｔ SV",
+    "行田サウスフェニックスサッカースポーツ少年団",
+    "Azulente KAZO U-12 Orange",
+    "東鷲宮FC"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1226_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "東鷲宮FC",
+     "win": 5,
+     "draw": 2,
+     "loss": 0,
+     "played": 7,
+     "points": 17,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "サッカースポーツ少年団行田サウスフェニックス",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "REDONDO FC",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "Ｓａｉｔａｍａ ｅａｓｔ SV",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "Azulente KAZO U-12 Orange",
+     "win": 2,
+     "draw": 3,
+     "loss": 2,
+     "played": 7,
+     "points": 9,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "久喜キッカーズ",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "幸手ユナイテッドFC",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "砂原サッカースポーツ少年団",
+     "win": 0,
+     "draw": 1,
+     "loss": 6,
+     "played": 7,
+     "points": 1,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-17",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "2431",
+   "name": "北地区　Ｃブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=2431",
+   "teams": [
+    "上高野ＦＣ",
+    "IFC/LIVENT",
+    "久喜キッカーズ ホワイト",
+    "東鷲宮FC イーグルス",
+    "中央キャッスルキッズフットボールクラブ",
+    "C．F LATTE"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/2431_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "上高野ＦＣ",
+     "win": 6,
+     "draw": 0,
+     "loss": 0,
+     "played": 6,
+     "points": 18,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "IFC/LIVENT",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "C．F LATTE",
+     "win": 4,
+     "draw": 0,
+     "loss": 2,
+     "played": 6,
+     "points": 12,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "久喜キッカーズ ホワイト",
+     "win": 3,
+     "draw": 0,
+     "loss": 3,
+     "played": 6,
+     "points": 9,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "中央キャッスルキッズフットボールクラブ",
+     "win": 2,
+     "draw": 0,
+     "loss": 4,
+     "played": 6,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "東鷲宮FC イーグルス",
+     "win": 1,
+     "draw": 1,
+     "loss": 4,
+     "played": 6,
+     "points": 4,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "杉戸倉松サッカースポーツ少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 6,
+     "played": 6,
+     "points": 0,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-10",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1229",
+   "name": "南地区　Ａブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1229",
+   "teams": [
+    "ＹＯＳＨｉＫＡＷＡ　ＣｉＴＹＦＣガナドール",
+    "エルフシュリットＡＳ",
+    "吉川武蔵野サッカースポーツ少年団",
+    "彦成フットボールクラブ",
+    "桜井サッカースポーツ少年団",
+    "ロードガーデンFC",
+    "AFC　Ｓｏｕｋａ　ＡＳＵＭＡ",
+    "越谷桜南サッカースポーツ少年団",
+    "FCブラックジャガースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1229_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "吉川武蔵野サッカースポーツ少年団",
+     "win": 7,
+     "draw": 1,
+     "loss": 0,
+     "played": 8,
+     "points": 22,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "彦成フットボールクラブ",
+     "win": 6,
+     "draw": 2,
+     "loss": 0,
+     "played": 8,
+     "points": 20,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＹＯＳＨｉＫＡＷＡ　ＣｉＴＹＦＣガナドール",
+     "win": 6,
+     "draw": 1,
+     "loss": 1,
+     "played": 8,
+     "points": 19,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "エルフシュリットＡＳ",
+     "win": 5,
+     "draw": 0,
+     "loss": 3,
+     "played": 8,
+     "points": 15,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "桜井サッカースポーツ少年団",
+     "win": 4,
+     "draw": 0,
+     "loss": 4,
+     "played": 8,
+     "points": 12,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "越谷桜南サッカースポーツ少年団",
+     "win": 3,
+     "draw": 0,
+     "loss": 5,
+     "played": 8,
+     "points": 9,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "ロードガーデンFC",
+     "win": 1,
+     "draw": 1,
+     "loss": 6,
+     "played": 8,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCブラックジャガースポーツ少年団",
+     "win": 0,
+     "draw": 2,
+     "loss": 6,
+     "played": 8,
+     "points": 2,
+     "rank": 8,
+     "rank_estimated": true
+    },
+    {
+     "team": "AFC　Ｓｏｕｋａ　ＡＳＵＭＡ",
+     "win": 0,
+     "draw": 1,
+     "loss": 7,
+     "played": 8,
+     "points": 1,
+     "rank": 9,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-07-05",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1230",
+   "name": "南地区　Ｂブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1230",
+   "teams": [
+    "FOOT BALL CLUB 蒲生東スポーツ少年団",
+    "戸ヶ崎イレブンスポーツ少年団",
+    "高砂イレブンフットボールクラブ",
+    "レスチ埼玉ジュニアユースＵ－１２",
+    "ＡＬＭＡＳunitedＦＣ",
+    "三郷Jr.YouthＦＣＵ－１２Ｃ．Ｆ．ＰＡＳＩＯＮ 　レッド",
+    "フットボールクラブシセーザ",
+    "大袋フットボールクラブ",
+    "稲荷FC"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1230_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "戸ヶ崎イレブンスポーツ少年団",
+     "win": 7,
+     "draw": 0,
+     "loss": 1,
+     "played": 8,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "高砂イレブンフットボールクラブ",
+     "win": 6,
+     "draw": 2,
+     "loss": 0,
+     "played": 8,
+     "points": 20,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "FOOT BALL CLUB 蒲生東スポーツ少年団",
+     "win": 4,
+     "draw": 2,
+     "loss": 2,
+     "played": 8,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "三郷JrYouthU12C.F.PASIONレッド",
+     "win": 4,
+     "draw": 2,
+     "loss": 2,
+     "played": 8,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "レスチ埼玉ジュニアユースＵ－１２",
+     "win": 4,
+     "draw": 1,
+     "loss": 3,
+     "played": 8,
+     "points": 13,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "稲荷FC",
+     "win": 4,
+     "draw": 1,
+     "loss": 3,
+     "played": 8,
+     "points": 13,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "フットボールクラブシセーザ",
+     "win": 1,
+     "draw": 1,
+     "loss": 6,
+     "played": 8,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＡＬＭＡＳunitedＦＣ",
+     "win": 1,
+     "draw": 0,
+     "loss": 7,
+     "played": 8,
+     "points": 3,
+     "rank": 8,
+     "rank_estimated": true
+    },
+    {
+     "team": "大袋フットボールクラブ",
+     "win": 0,
+     "draw": 1,
+     "loss": 7,
+     "played": 8,
+     "points": 1,
+     "rank": 9,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-21",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1231",
+   "name": "南地区　Ｃブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1231",
+   "teams": [
+    "草加東サッカースポーツ少年団",
+    "草加フットボールクラブ・アルファ",
+    "ＦＣ　ＲＥＧＡＭＥ",
+    "FCジェンシャン草加",
+    "リバティ埼玉SC",
+    "草加遊馬キッカーズ",
+    "西町フットボールクラブ",
+    "ＦＣ　Ｌａｋｅ　Ｔｏｗｎ",
+    "瀬崎サッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1231_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "草加東サッカースポーツ少年団",
+     "win": 7,
+     "draw": 0,
+     "loss": 1,
+     "played": 8,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ　ＲＥＧＡＭＥ",
+     "win": 6,
+     "draw": 0,
+     "loss": 0,
+     "played": 6,
+     "points": 18,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "草加フットボールクラブ・アルファ",
+     "win": 5,
+     "draw": 1,
+     "loss": 2,
+     "played": 8,
+     "points": 16,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "リバティ埼玉SC",
+     "win": 5,
+     "draw": 0,
+     "loss": 3,
+     "played": 8,
+     "points": 15,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "草加遊馬キッカーズ",
+     "win": 2,
+     "draw": 1,
+     "loss": 5,
+     "played": 8,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "西町フットボールクラブ",
+     "win": 2,
+     "draw": 0,
+     "loss": 4,
+     "played": 6,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCジェンシャン草加",
+     "win": 1,
+     "draw": 2,
+     "loss": 3,
+     "played": 6,
+     "points": 5,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "瀬崎サッカースポーツ少年団",
+     "win": 1,
+     "draw": 1,
+     "loss": 6,
+     "played": 8,
+     "points": 4,
+     "rank": 8,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ　Ｌａｋｅ　Ｔｏｗｎ",
+     "win": 0,
+     "draw": 1,
+     "loss": 5,
+     "played": 6,
+     "points": 1,
+     "rank": 9,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1232",
+   "name": "南地区　Ｄブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1232",
+   "teams": [
+    "FC八潮メッツジュニア",
+    "ＣＦソルダード",
+    "越谷フットボールクラブ",
+    "越谷サンシンサッカースポーツ少年団",
+    "FC三輪野江ヴィクトリーズスポーツ少年団",
+    "草加住吉サッカークラブ",
+    "ＦＣアスリート三郷Ｕ－１２",
+    "南郷FCスポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1232_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "越谷サンシンサッカースポーツ少年団",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＣＦソルダード",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "FC八潮メッツジュニア",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "草加住吉サッカークラブ",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "南郷FCスポーツ少年団",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "越谷フットボールクラブ",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣアスリート三郷Ｕ－１２",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "FC三輪野江ヴィクトリーズスポーツ少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "2432",
+   "name": "南地区　Ｅブロック",
+   "category": "東部",
+   "url": "https://www.saitama-u12.com/league/detail/id=2432",
+   "teams": [
+    "FCひまわり",
+    "松伏FCスポーツ少年団",
+    "大相模サッカースポーツ少年団",
+    "松原フットボールクラブ",
+    "草加フットボールクラブプライマリー",
+    "越谷ウィンSC",
+    "吉川ホワイトシャークサッカースポーツ少年団",
+    "宮本サッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/2432_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "松伏FCスポーツ少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCひまわり",
+     "win": 5,
+     "draw": 0,
+     "loss": 0,
+     "played": 5,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "草加ジュニアフットボールクラブプライマリー",
+     "win": 5,
+     "draw": 0,
+     "loss": 1,
+     "played": 6,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "越谷ウィンSC",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "大相模サッカースポーツ少年団",
+     "win": 2,
+     "draw": 1,
+     "loss": 3,
+     "played": 6,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "松原フットボールクラブ",
+     "win": 1,
+     "draw": 2,
+     "loss": 4,
+     "played": 7,
+     "points": 5,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "宮本サッカースポーツ少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "吉川ホワイトシャークサッカースポーツ少年団",
+     "win": 0,
+     "draw": 2,
+     "loss": 5,
+     "played": 7,
+     "points": 2,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-07-06",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1246",
+   "name": "ＳＷリーグ",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1246",
+   "teams": [
+    "チャレンジサッカークラブ",
+    "ダイナモ川越ＦＣ",
+    "プレジールスポーツクラブジュニア",
+    "勝瀬ふじみ野サッカークラブ",
+    "川越福原ＳＣ　Ｕ－１２",
+    "ＥＣ　ＦＵＪＩＭＩＮＯ",
+    "１ＦＣ川越水上公園　Ｗｈｉｔｅ",
+    "ＦＣ　ＲＥＧＡＬＯ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1246_ext_16_0.pdf",
+   "status": "low_confidence",
+   "standings": [
+    {
+     "team": "プレジールスポーツクラブジュニア",
+     "win": 5,
+     "draw": 2,
+     "loss": 0,
+     "played": 7,
+     "points": 8,
+     "rank": 1
+    },
+    {
+     "team": "川越福原ＳＣ　Ｕ－１２",
+     "win": 3,
+     "draw": 2,
+     "loss": 2,
+     "played": 7,
+     "points": 4,
+     "rank": 2
+    },
+    {
+     "team": "ＦＣ　ＲＥＧＡＬＯ",
+     "win": 1,
+     "draw": 2,
+     "loss": 4,
+     "played": 7,
+     "points": 4,
+     "rank": 3
+    },
+    {
+     "team": "ＥＣ　ＦＵＪＩＭＩＮＯ",
+     "win": 2,
+     "draw": 2,
+     "loss": 3,
+     "played": 7,
+     "points": 5,
+     "rank": 4
+    },
+    {
+     "team": "ダイナモ川越ＦＣ",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 4,
+     "rank": 5
+    },
+    {
+     "team": "１ＦＣ川越水上公園　Ｗｈｉｔｅ",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 3,
+     "rank": 6
+    },
+    {
+     "team": "チャレンジSC",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7
+    },
+    {
+     "team": "勝瀬ふじみ野ＳＣ",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 8
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "106",
+   "name": "Ａブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=106",
+   "teams": [
+    "ＤＩＰＬＯＭＡＴＳ",
+    "ＦＣなめがわサッカースポーツ少年団",
+    "霞ヶ関少年サッカークラブ",
+    "狭山アゼィリアＦＣ",
+    "ＦＣリアル",
+    "鶴ヶ島ブルーウイングスサッカー少年団",
+    "東松山北サッカースポーツ少年団",
+    "北坂戸サッカークラブ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/106_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "ＦＣリアル",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＤＩＰＬＯＭＡＴＳ",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣなめがわサッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "狭山アゼィリアＦＣ",
+     "win": 2,
+     "draw": 3,
+     "loss": 2,
+     "played": 7,
+     "points": 9,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "東松山北サッカースポーツ少年団",
+     "win": 2,
+     "draw": 2,
+     "loss": 3,
+     "played": 7,
+     "points": 8,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "鶴ヶ島ブルーウイングスサッカー少年団",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "北坂戸サッカークラブ",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "霞ヶ関少年サッカークラブ",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1236",
+   "name": "Ｂブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1236",
+   "teams": [
+    "北秋津すばるＦＣスポーツ少年団",
+    "長鶴サッカー少年団",
+    "藤沢ＦＣ",
+    "埼玉南ＦＣ",
+    "ＦＣ古谷サッカー少年団",
+    "柳瀬レッドローズジュニア",
+    "若松・安松合同",
+    "高階イレブンス"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1236_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "埼玉南ＦＣ",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "北秋津すばるＦＣスポーツ少年団",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "柳瀬レッドローズジュニア",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "長鶴サッカー少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ古谷サッカー少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "藤沢ＦＣ",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "若松・安松合同",
+     "win": 1,
+     "draw": 1,
+     "loss": 5,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "高階イレブンス",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1237",
+   "name": "Ｃブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1237",
+   "teams": [
+    "大井少年サッカークラブ",
+    "美原サッカークラブ",
+    "イーグルファイターサッカー少年団",
+    "ＮＵ広谷サッカークラブ",
+    "狭山台キッカーズ",
+    "山口サントスサッカークラブ",
+    "坂戸ＦＣ",
+    "東松山ペレーニアFC（B）"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1237_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "東松山ぺレーニアフットボールクラブジュニアverde",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "美原サッカークラブ",
+     "win": 3,
+     "draw": 3,
+     "loss": 1,
+     "played": 7,
+     "points": 12,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "山口サントスサッカークラブ",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "坂戸ＦＣ",
+     "win": 3,
+     "draw": 3,
+     "loss": 1,
+     "played": 7,
+     "points": 12,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "大井少年サッカークラブ",
+     "win": 3,
+     "draw": 2,
+     "loss": 2,
+     "played": 7,
+     "points": 11,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＮＵ広谷サッカークラブ",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "狭山台キッカーズ",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "イーグルファイターサッカー少年団",
+     "win": 0,
+     "draw": 2,
+     "loss": 5,
+     "played": 7,
+     "points": 2,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-28",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1238",
+   "name": "Ｄブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1238",
+   "teams": [
+    "ＪＦＣときがわ",
+    "チャレンジサッカークラブ（B）",
+    "小手指サッカースポーツ少年団",
+    "川鶴ＦＣ",
+    "大井少年サッカークラブ（B）",
+    "ＦＣ上福岡サンダース",
+    "鶴ヶ島サッカークラブＵ１２",
+    "ＦＣ－ＣＯＯＬ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1238_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "川鶴ＦＣ",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ－ＣＯＯＬ",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ上福岡サンダース",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "鶴ヶ島サッカークラブＵ１２",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "チャレンジサッカークラブ（B）",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "小手指サッカースポーツ少年団",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "大井少年サッカークラブ（B）",
+     "win": 1,
+     "draw": 1,
+     "loss": 5,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＪＦＣときがわ",
+     "win": 0,
+     "draw": 1,
+     "loss": 6,
+     "played": 7,
+     "points": 1,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1239",
+   "name": "Ｅブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1239",
+   "teams": [
+    "川越ひまわりサッカークラブ",
+    "金子ＦＣジュニア",
+    "プレジールスポーツクラブジュニア　Ｗｈｉｔｅ",
+    "ＪＦＣ三芳",
+    "旭サッカースポーツ少年団",
+    "所沢ファルゴランテｊｒ",
+    "川越ファーストサッカー少年団",
+    "美杉台トゥギャザー（B）"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1239_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "川越ひまわりサッカークラブ",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＪＦＣ三芳",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "金子ＦＣジュニア",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "所沢ファルゴランテｊｒ",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "プレジールスポーツクラブジュニア　Ｗｈｉｔｅ",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "旭サッカースポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "美杉台トゥギャザー（B）",
+     "win": 1,
+     "draw": 1,
+     "loss": 5,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "川越ファーストサッカークラブ少年団",
+     "win": 0,
+     "draw": 1,
+     "loss": 6,
+     "played": 7,
+     "points": 1,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1240",
+   "name": "Ｆブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1240",
+   "teams": [
+    "富岡サッカークラブスポーツ少年団",
+    "東松山南サッカースポーツ少年団",
+    "ふじみ野チャンプスポーツ少年団",
+    "鶴ヶ島サザンキッカーズ",
+    "ＦＣ．Ｆｕｓａｂｉｏ",
+    "浅羽野サッカースポーツ少年団",
+    "狭山台イレブンサッカークラブ",
+    "ＡＭＡ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1240_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "狭山台イレブンサッカークラブ",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ふじみ野チャンプスポーツ少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＡＭＡ",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "東松山南サッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCFusabio",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "浅羽野サッカースポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "富岡サッカークラブスポ＾つ少年団",
+     "win": 0,
+     "draw": 2,
+     "loss": 5,
+     "played": 7,
+     "points": 2,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "鶴ヶ島サザンキッカーズ",
+     "win": 0,
+     "draw": 1,
+     "loss": 6,
+     "played": 7,
+     "points": 1,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1241",
+   "name": "Ｇブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1241",
+   "teams": [
+    "扇フットボールクラブスポーツ少年団",
+    "川越ライオンズサッカー少年団",
+    "カムイジュニア千代田（B）",
+    "武蔵野ＦＣ",
+    "宮前サッカークラブ",
+    "ＦＣリアル　グレー",
+    "ＤＩＰＬＯＭＡＴＳ　Ｂｌｕｅ",
+    "ＮＫＦＣ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1241_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "扇フットボールクラブスポーツ少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "川越ライオンズサッカー少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣリアル　グレー",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＤＩＰＬＯＭＡＴＳ　Ｂｌｕｅ",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "宮前サッカークラブ",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＮＫＦＣ",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "カムイジュニア千代田（B）",
+     "win": 1,
+     "draw": 1,
+     "loss": 5,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "武蔵野ＦＣ",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-28",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1242",
+   "name": "Ｈブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1242",
+   "teams": [
+    "レアル狭山ＦＣ　レッド",
+    "金山ＦＣ",
+    "ネクサスＳＶ",
+    "川越福原ＳＣ　Ｕ－１２　ネイビー",
+    "藤沢東サッカースポーツ少年団",
+    "勝呂ＦＣ",
+    "飯能ジュニアサッカースポーツ少年団",
+    "西富サッカークラブ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1242_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "金山ＦＣ",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "レアル狭山ＦＣ　レッド",
+     "win": 5,
+     "draw": 1,
+     "loss": 0,
+     "played": 6,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ネクサスＳＶ",
+     "win": 3,
+     "draw": 2,
+     "loss": 2,
+     "played": 7,
+     "points": 11,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "飯能ジュニアサッカースポーツ少年団",
+     "win": 2,
+     "draw": 3,
+     "loss": 2,
+     "played": 7,
+     "points": 9,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "藤沢東サッカースポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "勝呂ＦＣ",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "川越福原ＳＣ　Ｕ－１２　ネイビー",
+     "win": 1,
+     "draw": 2,
+     "loss": 2,
+     "played": 5,
+     "points": 5,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "西富サッカークラブ",
+     "win": 0,
+     "draw": 1,
+     "loss": 5,
+     "played": 6,
+     "points": 1,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-07",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1243",
+   "name": "Ｉブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1243",
+   "teams": [
+    "若狭サッカースポーツ少年団",
+    "みずほ台ジュニアサッカークラブ",
+    "入間少年少女サッカークラブ",
+    "ＦＣアルベスタ小川スポ―ツ少年団",
+    "加治フォルテス",
+    "川越笠幡ＦＣ少年団",
+    "川越バッハローサッカー少年団",
+    "川越岡田サッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1243_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "FCアルベスタ小川スポーツ少年団",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "川越笠幡ＦＣ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "川越岡田サッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "加治フォルテス",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "川越バッファローサッカー少年団",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "みずほ台ジュニアサッカークラブ",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "若狭サッカースポーツ少年団",
+     "win": 0,
+     "draw": 1,
+     "loss": 6,
+     "played": 7,
+     "points": 1,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "入間少年少女サッカークラブ",
+     "win": 0,
+     "draw": 1,
+     "loss": 6,
+     "played": 7,
+     "points": 1,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1244",
+   "name": "Ｊブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1244",
+   "teams": [
+    "川越ヤンガースサッカー少年団",
+    "上新井サッカー少年団",
+    "ＩＲＵＭＡ　ＣＩＴＹ　Ｆｏｏｔｂａｌｌ　Ｃｌｕｂ",
+    "ＪＦＳＡ　Ｕ１２",
+    "東松山東フットボールクラブ",
+    "フットボールクラブ　コリオーラ",
+    "にっさいＦＣ",
+    "ＦＣ鶴ヶ島",
+    "Ｆｕｔｅｂｏｌ　Ｃｌｕｂｅ　ｄｏ　ＰＡＲＣＥＩＲＯ　Ｊr"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1244_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "川越ヤンガースサッカー少年団",
+     "win": 7,
+     "draw": 1,
+     "loss": 0,
+     "played": 8,
+     "points": 22,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "上新井サッカー少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 2,
+     "played": 8,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "フットボールクラブ　コリオーラ",
+     "win": 4,
+     "draw": 3,
+     "loss": 1,
+     "played": 8,
+     "points": 15,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＩＲＵＭＡ　ＣＩＴＹ　Ｆｏｏｔｂａｌｌ　Ｃｌｕｂ",
+     "win": 4,
+     "draw": 1,
+     "loss": 3,
+     "played": 8,
+     "points": 13,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "Ｆｕｔｅｂｏｌ　Ｃｌｕｂｅ　ｄｏ　ＰＡＲＣＥＩＲＯ　Ｊr",
+     "win": 4,
+     "draw": 0,
+     "loss": 4,
+     "played": 8,
+     "points": 12,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "東松山東フットボールクラブ",
+     "win": 3,
+     "draw": 2,
+     "loss": 3,
+     "played": 8,
+     "points": 11,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＪＦＳＡ　Ｕ１２",
+     "win": 2,
+     "draw": 1,
+     "loss": 5,
+     "played": 8,
+     "points": 7,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "にっさいＦＣ",
+     "win": 2,
+     "draw": 1,
+     "loss": 5,
+     "played": 8,
+     "points": 7,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ鶴ヶ島",
+     "win": 0,
+     "draw": 0,
+     "loss": 8,
+     "played": 8,
+     "points": 0,
+     "rank": 9,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1245",
+   "name": "Ｋブロック",
+   "category": "西部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1245",
+   "teams": [
+    "美杉台トゥギャザー",
+    "富士見ＦＣ",
+    "狭山台グリーンサッカークラブ",
+    "鶴ヶ島栄ＦＣ少年団",
+    "三ヶ島フットボールクラブ",
+    "ＦＣ　ＭＥＩＧＡＫＵ",
+    "所沢サッカークラブジュニア",
+    "藤久保イエローイーグルス",
+    "川島サッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1245_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "美杉台トゥギャザー",
+     "win": 7,
+     "draw": 1,
+     "loss": 0,
+     "played": 8,
+     "points": 22,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "所沢サッカークラブジュニア",
+     "win": 7,
+     "draw": 0,
+     "loss": 1,
+     "played": 8,
+     "points": 21,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ　ＭＥＩＧＡＫＵ",
+     "win": 4,
+     "draw": 1,
+     "loss": 3,
+     "played": 8,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "狭山台グリーンサッカークラブ",
+     "win": 3,
+     "draw": 3,
+     "loss": 2,
+     "played": 8,
+     "points": 12,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "藤久保イエローイーグルス",
+     "win": 3,
+     "draw": 2,
+     "loss": 3,
+     "played": 8,
+     "points": 11,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "三ケ島フットボールクラブ",
+     "win": 3,
+     "draw": 1,
+     "loss": 4,
+     "played": 8,
+     "points": 10,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "鶴ヶ島栄ＦＣ少年団",
+     "win": 2,
+     "draw": 1,
+     "loss": 5,
+     "played": 8,
+     "points": 7,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "富士見ＦＣ",
+     "win": 1,
+     "draw": 1,
+     "loss": 6,
+     "played": 8,
+     "points": 4,
+     "rank": 8,
+     "rank_estimated": true
+    },
+    {
+     "team": "川島サッカースポーツ少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 7,
+     "played": 8,
+     "points": 3,
+     "rank": 9,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1264",
+   "name": "ＳＳリーグ　Ａブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1264",
+   "teams": [
+    "Ｉｆ Ｌｅｖａｎｔｅ Ｆｕｔｅｂｏｌ Ｃｌｕｂｅ",
+    "はくつるフットボールクラブ",
+    "ＦＣ KILONGA",
+    "上尾東サッカースポーツ少年団",
+    "RCDエスパニョールジャパンアカデミー",
+    "戸田二サッカースポーツ少年団",
+    "プログレッソサッカークラブ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1264_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "プログレッソサッカークラブ",
+     "win": 4,
+     "draw": 2,
+     "loss": 0,
+     "played": 6,
+     "points": 14,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "戸田二サッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "はくつるフットボールクラブ",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ KILONGA",
+     "win": 2,
+     "draw": 1,
+     "loss": 3,
+     "played": 6,
+     "points": 7,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "RCDエスパニョールジャパンアカデミー",
+     "win": 2,
+     "draw": 0,
+     "loss": 4,
+     "played": 6,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "Ｉｆ Ｌｅｖａｎｔｅ Ｆｕｔｅｂｏｌ Ｃｌｕｂｅ",
+     "win": 1,
+     "draw": 1,
+     "loss": 4,
+     "played": 6,
+     "points": 4,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "上尾東サッカースポーツ少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 5,
+     "played": 6,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1388",
+   "name": "ＳＳリーグ　Ｂブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1388",
+   "teams": [
+    "Aitoku ReeM Football Club",
+    "浦和上木崎サッカースポーツ少年団",
+    "ＦＫ JADRAN",
+    "川口本町 SA",
+    "上尾NEOフットボールクラブ",
+    "大宮西カリオカフットボールクラブ",
+    "上尾富士見サッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1388_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "大宮西カリオカフットボールクラブ",
+     "win": 6,
+     "draw": 0,
+     "loss": 0,
+     "played": 6,
+     "points": 18,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "川口本町 SA",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "上尾NEOフットボールクラブ",
+     "win": 3,
+     "draw": 2,
+     "loss": 1,
+     "played": 6,
+     "points": 11,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＫ JADRAN",
+     "win": 2,
+     "draw": 1,
+     "loss": 3,
+     "played": 6,
+     "points": 7,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "上尾富士見サッカースポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 4,
+     "played": 6,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "AitokuRěēMFootballClub",
+     "win": 1,
+     "draw": 0,
+     "loss": 5,
+     "played": 6,
+     "points": 3,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和上木崎サッカースポーツ少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 5,
+     "played": 6,
+     "points": 3,
+     "rank": 6,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1389",
+   "name": "ＳＳリーグ　Ｃブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1389",
+   "teams": [
+    "にいざえーすFC",
+    "三原フットボールクラブ",
+    "戸塚フットボールクラブジュニア",
+    "浦和仲町サッカー少年団",
+    "川口アイシンクサッカー",
+    "レッツドラゴンサッカースポーツ少年団",
+    "新座陣屋キッカーズ・サッカー・スポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1389_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "三原フットボールクラブ",
+     "win": 4,
+     "draw": 2,
+     "loss": 0,
+     "played": 6,
+     "points": 14,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "レッツドラゴンサッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "戸塚フットボールクラブジュニア",
+     "win": 4,
+     "draw": 0,
+     "loss": 2,
+     "played": 6,
+     "points": 12,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "にいざえーすFC",
+     "win": 3,
+     "draw": 0,
+     "loss": 3,
+     "played": 6,
+     "points": 9,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "川口アイシンクサッカー",
+     "win": 2,
+     "draw": 1,
+     "loss": 3,
+     "played": 6,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "新座陣屋キッカーズ・サッカー・スポーツ少年団",
+     "win": 1,
+     "draw": 2,
+     "loss": 3,
+     "played": 6,
+     "points": 5,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和仲町サッカー少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 6,
+     "played": 6,
+     "points": 0,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "91",
+   "name": "北足立北部　Ａブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=91",
+   "teams": [
+    "伊奈サッカースポーツ少年団",
+    "桶川レッドサッカースポーツ少年団",
+    "ユニオンJFC　スポーツ少年団",
+    "鴻巣MJキッカーズFC",
+    "If Levante Futebol Clube Mes",
+    "上尾朝日FCスポーツ少年団U-12",
+    "桶川サッカースポーツ少年団",
+    "上尾大谷サッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/91_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "上尾朝日サッカースポーツ少年団Ｕ－12",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "上尾大谷サッカースポーツ少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "桶川レッドサッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "伊奈サッカースポーツ少年団",
+     "win": 2,
+     "draw": 2,
+     "loss": 3,
+     "played": 7,
+     "points": 8,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "ユニオンJFC　スポーツ少年団",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "鴻巣MJキッカーズFC",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "If Levante Futebol Clube Mes",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "桶川サッカースポーツ少年団",
+     "win": 0,
+     "draw": 2,
+     "loss": 5,
+     "played": 7,
+     "points": 2,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1255",
+   "name": "北足立北部　Ｂブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1255",
    "teams": [],
-   "status": "no_pdf",
-   "standings": null,
-   "pdf_date": null
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1255_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "川里サッカークラブ",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "なかよしくらぶ上尾",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "上尾尾山台サッカースポーツ少年団",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "上尾大石サッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "大芦少年サッカークラブ",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "鴻巣フットボールクラブプライマリー",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "上尾上平サッカースポーツ少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "鴻巣ジュニアサッカークラブスポーツ少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 6,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-17",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1256",
+   "name": "北足立北部　Ｃブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1256",
+   "teams": [
+    "鴻巣田間宮サッカースポーツ少年団",
+    "鴻巣ドルフィンズフットボールクラブ",
+    "ANGEL Football Club",
+    "伊奈小針サッカースポーツ少年団",
+    "tonan sc 北本石戸",
+    "ローズフットボールクラブ",
+    "北本少年サッカークラブスポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1256_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "鴻巣田間宮サッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "tonan sc 北本石戸",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ローズフットボールクラブ",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ANGEL Football Club",
+     "win": 3,
+     "draw": 3,
+     "loss": 0,
+     "played": 6,
+     "points": 12,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "鴻巣ドルフィンズフットボールクラブ",
+     "win": 2,
+     "draw": 0,
+     "loss": 4,
+     "played": 6,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "北本少年サッカークラブスポーツ少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 5,
+     "played": 6,
+     "points": 3,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "伊奈小針サッカースポーツ少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 6,
+     "played": 6,
+     "points": 0,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1257",
+   "name": "さいたま市　Ａブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1257",
+   "teams": [
+    "ロク・フットボールクラブ",
+    "浦和常盤サッカースポーツ少年団",
+    "大宮大和田ジュニアーズサッカースポーツ少年団",
+    "Cap東大宮FC",
+    "大宮指扇サッカースポーツ少年団",
+    "大宮KSユナイテッド02サッカースポーツ少年団",
+    "浦和大谷場サッカー少年団",
+    "なかよしくらぶ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1257_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "浦和大谷場サッカー少年団",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "サッカースポーツ少年団大宮KSユナイテッド０２",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和常盤サッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 1,
+     "played": 5,
+     "points": 10,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和大和田ジュニアーズサッカースポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 4,
+     "played": 6,
+     "points": 6,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "Cap東大宮FC",
+     "win": 2,
+     "draw": 0,
+     "loss": 2,
+     "played": 4,
+     "points": 6,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "なかよしくらぶ",
+     "win": 2,
+     "draw": 0,
+     "loss": 2,
+     "played": 4,
+     "points": 6,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "大宮指扇サッカースポーツ少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 5,
+     "played": 6,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "ロク・フットボールクラブ",
+     "win": 0,
+     "draw": 0,
+     "loss": 6,
+     "played": 6,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1258",
+   "name": "さいたま市　Ｂブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1258",
+   "teams": [
+    "見沼フットボールクラブ",
+    "浦和尾間木サッカースポーツ少年団",
+    "中島・栄和合同",
+    "南浦和サッカー少年団",
+    "GRANDE FOOTBALL CLUB U-12",
+    "大宮南ウイングスフットボールクラブスポーツ少年団",
+    "大宮北SC",
+    "FCラソクラーロ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1258_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "浦和尾間木サッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCラソクラーロ",
+     "win": 4,
+     "draw": 1,
+     "loss": 0,
+     "played": 5,
+     "points": 13,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "南浦和サッカー少年団",
+     "win": 4,
+     "draw": 0,
+     "loss": 2,
+     "played": 6,
+     "points": 12,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "大宮南ウイングスフットボールクラブスポーツ少年団",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "大宮北SC",
+     "win": 2,
+     "draw": 1,
+     "loss": 1,
+     "played": 4,
+     "points": 7,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "GRANDE FOOTBALL CLUB U-12",
+     "win": 2,
+     "draw": 0,
+     "loss": 1,
+     "played": 3,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "見沼フットボールクラブ",
+     "win": 1,
+     "draw": 0,
+     "loss": 4,
+     "played": 5,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "中島・栄和合同",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-30",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1259",
+   "name": "さいたま市　Ｃブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1259",
+   "teams": [
+    "浦和大門サッカー少年団",
+    "浦和木崎サッカースポーツ少年団",
+    "浦和岸町サッカースポーツ少年団",
+    "大宮西サッカースポーツ少年団",
+    "アミスタSC",
+    "浦和美園サッカークラブジュニア",
+    "NEOS Football Club",
+    "大宮FC七里スポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1259_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "浦和岸町サッカースポーツ少年団",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "NEOSFootballlub",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和美園サッカークラブジュニア",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "アミスタSC",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和木崎サッカースポーツ少年団",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "大宮西サッカースポーツ少年団",
+     "win": 1,
+     "draw": 2,
+     "loss": 4,
+     "played": 7,
+     "points": 5,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦大門サッカー少年団",
+     "win": 0,
+     "draw": 2,
+     "loss": 5,
+     "played": 7,
+     "points": 2,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "大宮FC七里スポーツ少年団",
+     "win": 0,
+     "draw": 2,
+     "loss": 5,
+     "played": 7,
+     "points": 2,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-28",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1260",
+   "name": "さいたま市　Ｄブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1260",
+   "teams": [
+    "Aitoku RěēM Football Club Purple",
+    "大宮春岡FCスポーツ少年団",
+    "中尾・駒場合同",
+    "大宮日進サッカースポーツ少年団",
+    "FC CERESOLE",
+    "浦和三室サッカースポーツ少年団Dreams",
+    "田島・新開合同",
+    "浦和大谷口サッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1260_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "浦和大谷口サッカースポーツ少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "大宮日進スポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 0,
+     "played": 5,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "田島・新開合同",
+     "win": 3,
+     "draw": 0,
+     "loss": 1,
+     "played": 4,
+     "points": 9,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "中尾・駒場合同",
+     "win": 2,
+     "draw": 1,
+     "loss": 1,
+     "played": 4,
+     "points": 7,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "大宮春岡FCスポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 3,
+     "played": 5,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "FC CERESOLE",
+     "win": 2,
+     "draw": 0,
+     "loss": 4,
+     "played": 6,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "AitokuRěēMFootballClubSilver",
+     "win": 1,
+     "draw": 1,
+     "loss": 3,
+     "played": 5,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和三室サッカースポーツ少年団Dreams",
+     "win": 0,
+     "draw": 0,
+     "loss": 6,
+     "played": 6,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-07",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1261",
+   "name": "さいたま市　Ｅブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1261",
+   "teams": [
+    "大宮宮原サッカースポーツ少年団",
+    "浦和大久保サッカー少年団",
+    "浦和仲本サッカースポーツ少年団",
+    "浦和本太サッカー少年団",
+    "NEOS Football Club White",
+    "西浦和サッカースポーツ少年団",
+    "慈恩寺キッカーズFCスポーツ少年団",
+    "浦和大牧サッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1261_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "西浦和サッカースポーツ少年団",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和仲本サッカースポーツ少年団",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和大牧サッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 2,
+     "played": 6,
+     "points": 10,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "大宮宮原サッカースポーツ少年団",
+     "win": 3,
+     "draw": 0,
+     "loss": 2,
+     "played": 5,
+     "points": 9,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "NEOS Football Club White",
+     "win": 2,
+     "draw": 0,
+     "loss": 3,
+     "played": 5,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和本太サッカー少年団",
+     "win": 1,
+     "draw": 1,
+     "loss": 3,
+     "played": 5,
+     "points": 4,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和大久保サッカー少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 5,
+     "played": 5,
+     "points": 0,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "慈恩寺キッカーズFCスポーツ少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 4,
+     "played": 4,
+     "points": 0,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-15",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1262",
+   "name": "さいたま市　Ｆブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1262",
+   "teams": [
+    "浦和辻サッカー少年団",
+    "浦和土合サッカースポーツ少年団",
+    "沼影サッカースポーツ少年団",
+    "烏天狗JrFC",
+    "FA.SAITAMA FC　Ｕ－１２",
+    "浦和インターナショナルFCジュニア",
+    "大宮早起きサッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1262_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "大宮早起きサッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 0,
+     "played": 5,
+     "points": 13,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "沼影サッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 1,
+     "played": 5,
+     "points": 10,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和インターナショナルFCジュニア",
+     "win": 2,
+     "draw": 3,
+     "loss": 0,
+     "played": 5,
+     "points": 9,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "FA.SAITAMAFOOTBALLCLUB",
+     "win": 2,
+     "draw": 1,
+     "loss": 1,
+     "played": 4,
+     "points": 7,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和辻サッカー少年団",
+     "win": 1,
+     "draw": 2,
+     "loss": 3,
+     "played": 6,
+     "points": 5,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "烏天狗JrFC",
+     "win": 1,
+     "draw": 0,
+     "loss": 5,
+     "played": 6,
+     "points": 3,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和土合サッカースポーツ少年団",
+     "win": 0,
+     "draw": 2,
+     "loss": 3,
+     "played": 5,
+     "points": 2,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-07",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1263",
+   "name": "さいたま市　Ｇブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1263",
+   "teams": [
+    "浦和別所サッカースポーツ少年団",
+    "北浦和サッカースポーツ少年団",
+    "針ヶ谷サッカー少年団",
+    "浦和高砂スポーツ少年団サッカー部",
+    "浦和道祖土スポーツサッカー少年団",
+    "TRICOLORE F.C",
+    "さいたまURAWA T.T.サッカークラブ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1263_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "浦和別所サッカースポーツ少年団",
+     "win": 5,
+     "draw": 0,
+     "loss": 1,
+     "played": 6,
+     "points": 15,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和道祖土スポーツサッカー少年団",
+     "win": 5,
+     "draw": 0,
+     "loss": 1,
+     "played": 6,
+     "points": 15,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "北浦和サッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 2,
+     "played": 6,
+     "points": 10,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "TRICOLOREFC",
+     "win": 3,
+     "draw": 1,
+     "loss": 2,
+     "played": 6,
+     "points": 10,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "さいたまURAWA T.T.サッカークラブ",
+     "win": 2,
+     "draw": 2,
+     "loss": 2,
+     "played": 6,
+     "points": 8,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "針ヶ谷サッカー少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 5,
+     "played": 6,
+     "points": 3,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和高砂スポーツ少年団サッカー部",
+     "win": 0,
+     "draw": 0,
+     "loss": 6,
+     "played": 6,
+     "points": 0,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "2433",
+   "name": "さいたま市　Ｈブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=2433",
+   "teams": [
+    "与野西北サッカースポーツ少年団",
+    "浦和仲町サッカー少年団B",
+    "浦和三室サッカースポーツ少年団",
+    "浦和文蔵サッカースポーツ少年団",
+    "大宮大成サッカースポーツ少年団",
+    "ガナドールフットボールクラブ",
+    "浦和大東サッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/2433_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "浦和文蔵サッカースポーツ少年団",
+     "win": 5,
+     "draw": 0,
+     "loss": 1,
+     "played": 6,
+     "points": 15,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和三室サッカースポーツ少年団",
+     "win": 4,
+     "draw": 0,
+     "loss": 0,
+     "played": 4,
+     "points": 12,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "大宮大成サッカースポーツ少年団",
+     "win": 2,
+     "draw": 1,
+     "loss": 2,
+     "played": 5,
+     "points": 7,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "与野西北サッカースポーツ少年団",
+     "win": 1,
+     "draw": 1,
+     "loss": 2,
+     "played": 4,
+     "points": 4,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "ガナドールFC",
+     "win": 1,
+     "draw": 0,
+     "loss": 3,
+     "played": 4,
+     "points": 3,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和仲町サッカー少年団B",
+     "win": 0,
+     "draw": 0,
+     "loss": 3,
+     "played": 3,
+     "points": 0,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "浦和大東サッカースポーツ少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 2,
+     "played": 2,
+     "points": 0,
+     "rank": 6,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-30",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1265",
+   "name": "北足立南部　Ａブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1265",
+   "teams": [
+    "新座スカイファイターズ",
+    "FCクラッキ",
+    "飯塚少年サッカークラブ",
+    "FLAP FC",
+    "蕨塚越サッカースポーツ少年団",
+    "FCレガーラ",
+    "S PRROJECT F.C.",
+    "FCリトルイレブン"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1265_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "新座スカイファイターズ",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCクラッキ",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "FLAP FC",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "SPROJECTF.C.",
+     "win": 3,
+     "draw": 2,
+     "loss": 2,
+     "played": 7,
+     "points": 11,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "飯塚少年サッカークラブ",
+     "win": 1,
+     "draw": 4,
+     "loss": 2,
+     "played": 7,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCリトルイレブン",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCレガーラ",
+     "win": 1,
+     "draw": 2,
+     "loss": 4,
+     "played": 7,
+     "points": 5,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "蕨塚越サッカースポーツ少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1266",
+   "name": "北足立南部　Ｂブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1266",
+   "teams": [
+    "新座片山フットボールクラブ少年団　フォルテシモ",
+    "青木北ウイングスサッカー少年団",
+    "上青木少年サッカークラブ",
+    "川口サッカー少年団",
+    "新座西堀キッカーズ",
+    "東スポーツセンター少年サッカークラブ",
+    "栄サッカースポーツ少年団",
+    "朝霞いずみサッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1266_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "上青木少年サッカークラブ",
+     "win": 4,
+     "draw": 3,
+     "loss": 0,
+     "played": 7,
+     "points": 15,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "新座西堀キッカーズ",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "新座片山フットボールクラブ少年団　フォルテシモ",
+     "win": 3,
+     "draw": 4,
+     "loss": 0,
+     "played": 7,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "栄サッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "朝霞いずみサッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "川口サッカー少年団",
+     "win": 1,
+     "draw": 4,
+     "loss": 2,
+     "played": 7,
+     "points": 7,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "東スポーツセンター少年サッカークラブ",
+     "win": 1,
+     "draw": 3,
+     "loss": 3,
+     "played": 7,
+     "points": 6,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "青木北ウイングスサッカー少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1267",
+   "name": "北足立南部　Ｃブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1267",
+   "teams": [
+    "ＦＣ和光イレブンスポーツ少年団",
+    "FC東85",
+    "柳崎サッカークラブジュニア",
+    "A.C ammaliatore",
+    "鳩南サッカースポーツ少年団",
+    "戸田ＦＣ",
+    "蕨北町サッカー",
+    "KAWAGUCHI　FC慈林"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1267_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "蕨北町サッカー",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ和光イレブンスポーツ少年団",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "戸田ＦＣ",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "FC東85",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "KAWAGUCHI　FC慈林",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "鳩南サッカースポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "柳崎サッカークラブジュニア",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "A.C ammaliatore",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1268",
+   "name": "北足立南部　Ｄブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1268",
+   "teams": [
+    "FC新倉エイトワンスポーツ少年団",
+    "アズマフットボールクラブ",
+    "セレザＦＣ",
+    "美女木FC",
+    "コラルティードFC",
+    "柏葉サッカースポーツ少年団",
+    "STREGARE",
+    "FCアビリスタ　U12"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1268_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "STREGARE",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCアビリスタＵ－１２",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "FC新倉エイトワンスポーツ少年団",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "アズマフットボールクラブ",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "コラルティードFC",
+     "win": 2,
+     "draw": 2,
+     "loss": 3,
+     "played": 7,
+     "points": 8,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "柏葉サッカースポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "セレザＦＣ",
+     "win": 1,
+     "draw": 1,
+     "loss": 5,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "美女木FC",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1269",
+   "name": "北足立南部　Ｅブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1269",
+   "teams": [
+    "F.C.NIIZO",
+    "FOOTBALLCLUB Reydis",
+    "朝志ヶ丘サッカースポーツ少年団",
+    "戸田一サッカースポーツ少年団",
+    "美谷本ＦＣ",
+    "コンフィアンサSC",
+    "鳩ヶ谷キッカーズ",
+    "戸田シティフットボールクラブ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1269_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "コンフィアンサSC",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "美谷本ＦＣ",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "戸田一サッカースポーツ少年団",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "FOOTBALLCLUB Reydis",
+     "win": 3,
+     "draw": 2,
+     "loss": 2,
+     "played": 7,
+     "points": 11,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "F.C.NIIZO",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "朝志ヶ丘サッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "戸田シティフットボールクラブ",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "鳩ヶ谷キッカーズ",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1270",
+   "name": "北足立南部　Ｆブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1270",
+   "teams": [
+    "ＫＯＢＡＴＯサッカースポーツ少年団",
+    "M・S・Ｃサッカークラブ",
+    "わらび錦サッカースポーツ少年団",
+    "新座たけしのキッカーズ",
+    "FUT MESSE川口FC",
+    "FC和光キッカーズ",
+    "安行フットボールクラブ",
+    "川口ミナミFC"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1270_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "M・S・Ｃサッカークラブ",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＫＯＢＡＴＯサッカースポーツ少年団",
+     "win": 4,
+     "draw": 2,
+     "loss": 1,
+     "played": 7,
+     "points": 14,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "安行フットボールクラブ",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "川口ミナミFC",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "わらび錦サッカースポーツ少年団",
+     "win": 2,
+     "draw": 2,
+     "loss": 3,
+     "played": 7,
+     "points": 8,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "新座たけしのキッカーズ",
+     "win": 2,
+     "draw": 2,
+     "loss": 3,
+     "played": 7,
+     "points": 8,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "FUT MESSE川口FC",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "FC和光キッカーズ",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1271",
+   "name": "北足立南部　Ｇブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1271",
+   "teams": [
+    "三原フットボールクラブ　FYT",
+    "新座西堀キッカーズ　グレー",
+    "青木中央少年サッカークラブ",
+    "神根フットボールクラブ",
+    "芝スポーツセンター芝南サッカークラブ",
+    "プログレッソサッカークラブ　グレー",
+    "レストFC",
+    "東川口・Helios FC"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1271_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "レストFC",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "プログレッソサッカークラブ　グレー",
+     "win": 6,
+     "draw": 0,
+     "loss": 1,
+     "played": 7,
+     "points": 18,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "芝スポーツセンター芝南サッカークラブ",
+     "win": 4,
+     "draw": 1,
+     "loss": 2,
+     "played": 7,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "新座西堀キッカーズ　グレー",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "三原フットボールクラブ　FYT",
+     "win": 3,
+     "draw": 1,
+     "loss": 3,
+     "played": 7,
+     "points": 10,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "青木中央少年サッカークラブ",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "東川口・Helios FC",
+     "win": 1,
+     "draw": 0,
+     "loss": 6,
+     "played": 7,
+     "points": 3,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "神根フットボールクラブ",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-28",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1272",
+   "name": "北足立南部　Ｈブロック",
+   "category": "南部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1272",
+   "teams": [
+    "ＦＣ宗岡",
+    "蕨中央サッカースポーツ少年団",
+    "蕨北町サッカー 　トルメンタ",
+    "フォルチFCジュニア",
+    "新座ストロングサッカークラブ",
+    "喜沢サッカースポーツ少年団",
+    "川口朝日リボルバーサッカー少年団",
+    "ペルナールSC",
+    "戸田南FCスポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1272_ext_16_0.pdf",
+   "status": "low_confidence",
+   "standings": [
+    {
+     "team": "ＦＣ宗岡",
+     "win": 2,
+     "draw": 1,
+     "loss": 2,
+     "played": 5,
+     "points": 6,
+     "rank": 1
+    },
+    {
+     "team": "喜沢サッカースポーツ少年団",
+     "win": 3,
+     "draw": 0,
+     "loss": 3,
+     "played": 6,
+     "points": 6,
+     "rank": 2
+    },
+    {
+     "team": "戸田南FCスポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 2,
+     "played": 6,
+     "points": 3,
+     "rank": 3
+    },
+    {
+     "team": "フォルチFCジュニア",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 3,
+     "rank": 4
+    },
+    {
+     "team": "新座ストロングサッカークラブ",
+     "win": 1,
+     "draw": 2,
+     "loss": 2,
+     "played": 5,
+     "points": 3,
+     "rank": 5
+    },
+    {
+     "team": "ぺルナールＳＣ",
+     "win": 2,
+     "draw": 1,
+     "loss": 3,
+     "played": 6,
+     "points": 3,
+     "rank": 6
+    },
+    {
+     "team": "川口朝日リボルバーサッカー少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 3,
+     "played": 3,
+     "points": 3,
+     "rank": 7
+    },
+    {
+     "team": "蕨北町サッカー 　トルメンタ",
+     "win": 4,
+     "draw": 0,
+     "loss": 1,
+     "played": 5,
+     "points": 12,
+     "rank": 8
+    },
+    {
+     "team": "蕨中央サッカースポーツ少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 2,
+     "played": 2,
+     "points": 0,
+     "rank": 9
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1251",
+   "name": "ＳＮリーグ",
+   "category": "北部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1251",
+   "teams": [
+    "ＥＳＰＩＲＩＴＯ深谷ジュニア",
+    "ＦＣチベッタ",
+    "ＦＣチベッタ深谷",
+    "フリーダムＦＣ",
+    "江南南サッカー少年団ブルーベリー",
+    "寄居フットボールクラブ",
+    "ＦＣチベッタ深谷　ホワイト",
+    "すみれＦＣ　Ｎｏｒｔｅ　Ｊｒ",
+    "熊谷ＦＣ・大里"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1251_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "ＦＣチベッタ",
+     "win": 6,
+     "draw": 1,
+     "loss": 1,
+     "played": 8,
+     "points": 19,
+     "rank": 1
+    },
+    {
+     "team": "江南南サッカー少年団ブルーベリー",
+     "win": 6,
+     "draw": 1,
+     "loss": 1,
+     "played": 8,
+     "points": 19,
+     "rank": 1
+    },
+    {
+     "team": "ＥＳＰＩＲＩＴＯ深谷ジュニア",
+     "win": 3,
+     "draw": 3,
+     "loss": 2,
+     "played": 8,
+     "points": 12,
+     "rank": 3
+    },
+    {
+     "team": "ＦＣチベッタ",
+     "win": 7,
+     "draw": 0,
+     "loss": 1,
+     "played": 8,
+     "points": 21,
+     "rank": 4
+    },
+    {
+     "team": "寄居フットボールクラブ",
+     "win": 4,
+     "draw": 0,
+     "loss": 4,
+     "played": 8,
+     "points": 12,
+     "rank": 4
+    },
+    {
+     "team": "すみれＦＣ　Ｎｏｒｔｅ　Ｊｒ",
+     "win": 1,
+     "draw": 1,
+     "loss": 6,
+     "played": 8,
+     "points": 4,
+     "rank": 6
+    },
+    {
+     "team": "フリーダムＦＣ",
+     "win": 3,
+     "draw": 1,
+     "loss": 4,
+     "played": 8,
+     "points": 10,
+     "rank": 7
+    },
+    {
+     "team": "熊谷ＦＣ・大里",
+     "win": 1,
+     "draw": 1,
+     "loss": 6,
+     "played": 8,
+     "points": 4,
+     "rank": 7
+    },
+    {
+     "team": "ＦＣチベッタ",
+     "win": 0,
+     "draw": 2,
+     "loss": 6,
+     "played": 8,
+     "points": 2,
+     "rank": 7
+    }
+   ],
+   "pdf_date": "2026-06-28",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1252",
+   "name": "Ａブロック",
+   "category": "北部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1252",
+   "teams": [
+    "児玉ディパーチャＦＣ",
+    "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
+    "熊谷南フットボールクラブ",
+    "久那・影森・秩父南合同",
+    "大幡サッカースポーツ少年団",
+    "熊谷フォルゴーレサッカークラブ",
+    "ＧＥＴかみたのスポ―ツ少年団",
+    "ＯＮＥ．Ｓ．Ｇ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1252_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "大幡サッカースポーツ少年団",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＧＥＴかみたのスポーツ少年団",
+     "win": 6,
+     "draw": 1,
+     "loss": 0,
+     "played": 7,
+     "points": 19,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "熊谷南フットボールクラブ",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "久那・影森・秩父南合同",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＯＮＥ．Ｓ．Ｇ",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "熊谷フォルゴーレサッカークラブ",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
+     "win": 1,
+     "draw": 1,
+     "loss": 5,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "児玉ディパーチャＦＣ",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1253",
+   "name": "Ｂブロック",
+   "category": "北部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1253",
+   "teams": [
+    "セレブロＦＣジュニア",
+    "秩父つばさＦＣ",
+    "ＦＣ秩父東少年団",
+    "美里ＦＣスポーツ少年団",
+    "大幡サッカースポーツ少年団　ブルー",
+    "ＦＣチベッタ・Ｒｉｓｖｅｇｌｉｏ",
+    "本庄サッカー少年団ホッパーズ",
+    "熊谷西スポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1253_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "セレブロＦＣジュニア",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "大幡サッカースポーツ少年団　ブルー",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "熊谷西スポーツ少年団",
+     "win": 5,
+     "draw": 0,
+     "loss": 2,
+     "played": 7,
+     "points": 15,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "美里ＦＣスポーツ少年団",
+     "win": 4,
+     "draw": 0,
+     "loss": 3,
+     "played": 7,
+     "points": 12,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣチベッタ・Ｒｉｓｖｅｇｌｉｏ",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＦＣ秩父東少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 5,
+     "played": 7,
+     "points": 6,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "本庄サッカー少年団ホッパーズ",
+     "win": 1,
+     "draw": 1,
+     "loss": 5,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "秩父つばさＦＣ",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "1254",
+   "name": "Ｃブロック",
+   "category": "北部",
+   "url": "https://www.saitama-u12.com/league/detail/id=1254",
+   "teams": [
+    "横瀬サッカースポーツ少年団",
+    "熊谷東サッカースポーツ少年団",
+    "深谷西サッカースポーツ少年団",
+    "男衾サッカークラブ",
+    "ＦＣ　ＳＡＫＵＲＡ　ＡＰＲＥＳＩＯ",
+    "豊里スポーツ少年団",
+    "Ｆ．Ｃ．Ｇｅｒｍｅｒ",
+    "神川パルフェサッカースポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/1254_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "男衾サッカークラブ",
+     "win": 7,
+     "draw": 0,
+     "loss": 0,
+     "played": 7,
+     "points": 21,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "熊谷東サッカースポーツ少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "深谷西サッカースポーツ少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 1,
+     "played": 7,
+     "points": 16,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "神川パルフェサッカースポーツ少年団",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "横瀬サッカースポーツ少年団",
+     "win": 3,
+     "draw": 0,
+     "loss": 4,
+     "played": 7,
+     "points": 9,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "Ｆ．Ｃ．Ｇｅｒｍｅｒ",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCSAKURAAPRECIO",
+     "win": 1,
+     "draw": 1,
+     "loss": 5,
+     "played": 7,
+     "points": 4,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "豊里スポーツ少年団",
+     "win": 0,
+     "draw": 0,
+     "loss": 7,
+     "played": 7,
+     "points": 0,
+     "rank": 8,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "2434",
+   "name": "Ｄブロック",
+   "category": "北部",
+   "url": "https://www.saitama-u12.com/league/detail/id=2434",
+   "teams": [
+    "本庄旭・北泉・本庄南　合同",
+    "高篠サッカースポーツ少年団",
+    "熊谷さくらスポーツ少年団",
+    "ＨＦＣスポーツ少年団",
+    "ＦＣグラウクス",
+    "上里ＦＣ・本庄中央　合同",
+    "籠原スポーツ少年団"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/2434_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "ＦＣグラウクス",
+     "win": 5,
+     "draw": 1,
+     "loss": 0,
+     "played": 6,
+     "points": 16,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "本庄旭・北泉・本庄南　合同",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "高篠サッカースポーツ少年団",
+     "win": 4,
+     "draw": 1,
+     "loss": 1,
+     "played": 6,
+     "points": 13,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "ＨＦＣスポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 2,
+     "played": 6,
+     "points": 10,
+     "rank": 4,
+     "rank_estimated": true
+    },
+    {
+     "team": "籠原スポーツ少年団",
+     "win": 2,
+     "draw": 0,
+     "loss": 4,
+     "played": 6,
+     "points": 6,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "熊谷さくらスポーツ少年団",
+     "win": 1,
+     "draw": 0,
+     "loss": 5,
+     "played": 6,
+     "points": 3,
+     "rank": 6,
+     "rank_estimated": true
+    },
+    {
+     "team": "上里ＦＣ・本庄中央　合同",
+     "win": 0,
+     "draw": 0,
+     "loss": 6,
+     "played": 6,
+     "points": 0,
+     "rank": 7,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-05-24",
+   "last_changed": "2026-07-07"
+  },
+  {
+   "id": "2189",
+   "name": "少女ブロック",
+   "category": "少女",
+   "url": "https://www.saitama-u12.com/league/detail/id=2189",
+   "teams": [
+    "狭山女子FC",
+    "川越女子ジュニアSC",
+    "FCリアル　ESSOR",
+    "陣屋アイリス",
+    "宮原サッカーガールズ",
+    "戸塚FCガールズU12",
+    "FCスペラールtoda",
+    "熊谷リリーズ☆少女サッカークラブ",
+    "寄居女子サッカークラブ"
+   ],
+   "pdf_url": "https://www.saitama-u12.com/files/topics/2189_ext_16_0.pdf",
+   "status": "ok",
+   "standings": [
+    {
+     "team": "狭山女子FC",
+     "win": 8,
+     "draw": 0,
+     "loss": 0,
+     "played": 8,
+     "points": 24,
+     "rank": 1,
+     "rank_estimated": true
+    },
+    {
+     "team": "宮原サッカーガールズ",
+     "win": 6,
+     "draw": 0,
+     "loss": 2,
+     "played": 8,
+     "points": 18,
+     "rank": 2,
+     "rank_estimated": true
+    },
+    {
+     "team": "陣屋アイリス",
+     "win": 4,
+     "draw": 1,
+     "loss": 3,
+     "played": 8,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "熊谷リリーズ☆少女サッカークラブ",
+     "win": 4,
+     "draw": 1,
+     "loss": 3,
+     "played": 8,
+     "points": 13,
+     "rank": 3,
+     "rank_estimated": true
+    },
+    {
+     "team": "川越女子ジュニアサッカークラブ",
+     "win": 3,
+     "draw": 3,
+     "loss": 2,
+     "played": 8,
+     "points": 12,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "戸塚FCガールズU12",
+     "win": 4,
+     "draw": 0,
+     "loss": 4,
+     "played": 8,
+     "points": 12,
+     "rank": 5,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCリアル　ESSOR",
+     "win": 1,
+     "draw": 2,
+     "loss": 5,
+     "played": 8,
+     "points": 5,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "寄居女子サッカークラブ",
+     "win": 1,
+     "draw": 2,
+     "loss": 5,
+     "played": 8,
+     "points": 5,
+     "rank": 7,
+     "rank_estimated": true
+    },
+    {
+     "team": "FCスペラールtoda",
+     "win": 0,
+     "draw": 1,
+     "loss": 7,
+     "played": 8,
+     "points": 1,
+     "rank": 9,
+     "rank_estimated": true
+    }
+   ],
+   "pdf_date": "2026-06-14",
+   "last_changed": "2026-07-07"
   }
  ]
 }

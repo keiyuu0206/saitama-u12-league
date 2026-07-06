@@ -1,1 +1,386 @@
-[]
+[
+ {
+  "date": "2026-07-07",
+  "time": "08:16",
+  "changes": [
+   {
+    "id": "2356",
+    "name": "Ｓ１リーグ",
+    "category": "県",
+    "type": "updated",
+    "detail": []
+   },
+   {
+    "id": "2357",
+    "name": "Ｓ２リーグ",
+    "category": "県",
+    "type": "updated",
+    "detail": []
+   },
+   {
+    "id": "1228",
+    "name": "ＳＥリーグ",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "89",
+    "name": "中地区　Ａブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "90",
+    "name": "中地区　Ｂブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1224",
+    "name": "中地区　Ｃブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1225",
+    "name": "北地区　Ａブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1226",
+    "name": "北地区　Ｂブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "2431",
+    "name": "北地区　Ｃブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1229",
+    "name": "南地区　Ａブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1230",
+    "name": "南地区　Ｂブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1231",
+    "name": "南地区　Ｃブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1232",
+    "name": "南地区　Ｄブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "2432",
+    "name": "南地区　Ｅブロック",
+    "category": "東部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1246",
+    "name": "ＳＷリーグ",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "106",
+    "name": "Ａブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1236",
+    "name": "Ｂブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1237",
+    "name": "Ｃブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1238",
+    "name": "Ｄブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1239",
+    "name": "Ｅブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1240",
+    "name": "Ｆブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1241",
+    "name": "Ｇブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1242",
+    "name": "Ｈブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1243",
+    "name": "Ｉブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1244",
+    "name": "Ｊブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1245",
+    "name": "Ｋブロック",
+    "category": "西部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1264",
+    "name": "ＳＳリーグ　Ａブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1388",
+    "name": "ＳＳリーグ　Ｂブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1389",
+    "name": "ＳＳリーグ　Ｃブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "91",
+    "name": "北足立北部　Ａブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1255",
+    "name": "北足立北部　Ｂブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1256",
+    "name": "北足立北部　Ｃブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1257",
+    "name": "さいたま市　Ａブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1258",
+    "name": "さいたま市　Ｂブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1259",
+    "name": "さいたま市　Ｃブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1260",
+    "name": "さいたま市　Ｄブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1261",
+    "name": "さいたま市　Ｅブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1262",
+    "name": "さいたま市　Ｆブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1263",
+    "name": "さいたま市　Ｇブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "2433",
+    "name": "さいたま市　Ｈブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1265",
+    "name": "北足立南部　Ａブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1266",
+    "name": "北足立南部　Ｂブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1267",
+    "name": "北足立南部　Ｃブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1268",
+    "name": "北足立南部　Ｄブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1269",
+    "name": "北足立南部　Ｅブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1270",
+    "name": "北足立南部　Ｆブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1271",
+    "name": "北足立南部　Ｇブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1272",
+    "name": "北足立南部　Ｈブロック",
+    "category": "南部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1251",
+    "name": "ＳＮリーグ",
+    "category": "北部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1252",
+    "name": "Ａブロック",
+    "category": "北部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1253",
+    "name": "Ｂブロック",
+    "category": "北部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "1254",
+    "name": "Ｃブロック",
+    "category": "北部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "2434",
+    "name": "Ｄブロック",
+    "category": "北部",
+    "type": "new",
+    "detail": []
+   },
+   {
+    "id": "2189",
+    "name": "少女ブロック",
+    "category": "少女",
+    "type": "new",
+    "detail": []
+   }
+  ]
+ }
+]
