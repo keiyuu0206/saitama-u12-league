@@ -1,0 +1,190 @@
+/* 埼玉県第4種リーグ 順位ボード */
+const $ = (s, el = document) => el.querySelector(s);
+const REGIONS = ["東部", "西部", "南部", "北部", "少女"];
+let DATA = null;
+let currentTab = "東部";
+let recentIds = new Set(); // 直近更新のリーグid
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g,
+  c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+const jpDate = iso => {
+  if (!iso) return "";
+  const d = new Date(iso);
+  return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;
+};
+
+async function init() {
+  try {
+    const [lg, hist] = await Promise.all([
+      fetch("data/leagues.json").then(r => r.json()),
+      fetch("data/history.json").then(r => r.json()).catch(() => []),
+    ]);
+    DATA = lg;
+    if (hist[0]) hist[0].changes.forEach(c => recentIds.add(c.id));
+    $("#updated").innerHTML =
+      `最終更新 <b>${jpDate(lg.generated_at)}</b> ・ ${lg.leagues.length}リーグ集計`;
+    renderHero();
+    renderTabs();
+    renderLeagues();
+    renderHistory(hist);
+    $("#search").addEventListener("input", onSearch);
+  } catch (e) {
+    $("#updated").textContent = "データの読み込みに失敗しました。時間をおいて再読み込みしてください。";
+  }
+}
+
+/* ---------- S1 / S2 ヒーロー ---------- */
+function renderHero() {
+  const hero = $("#hero");
+  const prefLeagues = DATA.leagues.filter(l => l.category === "県");
+  hero.innerHTML = prefLeagues.map(l => {
+    const cls = /Ｓ?S?１|Ｓ1|S1/.test(l.name.normalize("NFKC")) ? "s1" : "s2";
+    return `
+    <article class="hero-card ${cls}" data-league="${l.id}">
+      <div class="hc-head">
+        <span class="tier">${cls.toUpperCase()}</span>
+        <span class="tname">${esc(l.name)}</span>
+        ${l.pdf_date ? `<span class="pdfdate">${esc(l.pdf_date.replaceAll("-","/"))} 時点</span>` : ""}
+      </div>
+      ${standingsTable(l)}
+      ${links(l)}
+    </article>`;
+  }).join("") || "";
+}
+
+/* ---------- 地域タブ ---------- */
+function renderTabs() {
+  const tabs = $("#tabs");
+  tabs.innerHTML = REGIONS.map(r => {
+    const n = DATA.leagues.filter(l => l.category === r).length;
+    return `<button role="tab" aria-selected="${r === currentTab}" data-r="${r}">
+      ${r}<span class="cnt">${n}</span></button>`;
+  }).join("");
+  tabs.addEventListener("click", e => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    currentTab = b.dataset.r;
+    [...tabs.children].forEach(x => x.setAttribute("aria-selected", x === b));
+    renderLeagues();
+  });
+}
+
+/* ---------- リーグ一覧 ---------- */
+function renderLeagues(query = "") {
+  const sec = $("#leagues");
+  const q = query.trim();
+  let list;
+  if (q) {
+    // 検索時は全カテゴリ横断
+    list = DATA.leagues.filter(l => matches(l, q));
+    $("#tabs").classList.add("hidden");
+  } else {
+    list = DATA.leagues.filter(l => l.category === currentTab);
+    $("#tabs").classList.remove("hidden");
+  }
+  sec.innerHTML = list.map(l => leagueCard(l, q)).join("") ||
+    `<p class="lg-note">該当するリーグ・チームが見つかりませんでした。</p>`;
+}
+
+function matches(l, q) {
+  const nq = q.normalize("NFKC").toLowerCase();
+  const inName = l.name.normalize("NFKC").toLowerCase().includes(nq);
+  const teams = (l.standings?.map(s => s.team) || []).concat(l.teams || []);
+  const inTeam = teams.some(t => t.normalize("NFKC").toLowerCase().includes(nq));
+  return inName || inTeam;
+}
+
+function leagueCard(l, q) {
+  const open = q ? " open" : "";
+  const upd = recentIds.has(l.id) ? `<span class="badge-upd">更新あり</span>` : "";
+  return `
+  <details class="league"${open} data-league="${l.id}">
+    <summary>
+      <span class="cat-chip">${esc(l.category)}</span>
+      ${hl(esc(l.name), q)} ${upd}
+      <span class="lg-meta">${l.pdf_date ? esc(l.pdf_date.replaceAll("-","/")) + " 時点" : ""}</span>
+    </summary>
+    ${standingsTable(l, q)}
+    ${links(l)}
+  </details>`;
+}
+
+/* ---------- 順位表 ---------- */
+function standingsTable(l, q = "") {
+  if (!l.standings) {
+    return `<div class="lg-warn">この星取表は自動解析に対応していないレイアウトのため、
+      <a href="${esc(l.pdf_url || l.url)}" target="_blank" rel="noopener">公式PDF</a>を直接ご確認ください。</div>`;
+  }
+  const rows = l.standings.map(s => {
+    const hit = q && s.team.normalize("NFKC").toLowerCase()
+      .includes(q.normalize("NFKC").toLowerCase());
+    const rc = s.rank <= 3 ? ` r${s.rank}` : "";
+    return `<tr${hit ? ' class="hit"' : ""}>
+      <td><span class="rk${rc}">${s.rank ?? "-"}</span></td>
+      <td class="team">${hl(esc(s.team), q)}</td>
+      <td class="num">${s.played}</td>
+      <td class="num">${s.win}</td><td class="num">${s.draw}</td><td class="num">${s.loss}</td>
+      <td class="num pts">${s.points ?? "-"}</td>
+    </tr>`;
+  }).join("");
+  const note = l.status === "low_confidence" || l.standings.some(s => s.rank_estimated)
+    ? `<p class="lg-note">※ 順位はPDF記載または勝点から自動算出しています(得失点差等は未反映)。確定順位は公式PDFをご確認ください。</p>` : "";
+  return `<div class="tbl-wrap"><table>
+    <thead><tr><th>順位</th><th class="tteam">チーム</th><th>試合</th><th>勝</th><th>分</th><th>敗</th><th>勝点</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>${note}`;
+}
+
+function links(l) {
+  return `<div class="lg-links">
+    ${l.pdf_url ? `<a href="${esc(l.pdf_url)}" target="_blank" rel="noopener">公式PDF(星取表)</a>` : ""}
+    <a href="${esc(l.url)}" target="_blank" rel="noopener">連盟サイトのリーグページ</a>
+  </div>`;
+}
+
+/* ---------- 検索 ---------- */
+function onSearch(e) {
+  const q = e.target.value;
+  renderLeagues(q);
+  const meta = $("#searchMeta");
+  if (q.trim()) {
+    const hits = DATA.leagues.filter(l => matches(l, q)).length;
+    meta.textContent = `全カテゴリから ${hits} リーグがヒット`;
+    meta.hidden = false;
+    $("#hero").classList.add("hidden");
+    $("#historySec").classList.add("hidden");
+  } else {
+    meta.hidden = true;
+    $("#hero").classList.remove("hidden");
+    $("#historySec").classList.remove("hidden");
+  }
+}
+
+function hl(escaped, q) {
+  if (!q.trim()) return escaped;
+  const nq = q.normalize("NFKC");
+  try {
+    const re = new RegExp(nq.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
+    return escaped.replace(re, m => `<mark>${m}</mark>`);
+  } catch { return escaped; }
+}
+
+/* ---------- 更新履歴 ---------- */
+function renderHistory(hist) {
+  const el = $("#history");
+  if (!hist.length) {
+    el.innerHTML = `<p class="lg-note">まだ更新履歴はありません。初回集計後に表示されます。</p>`;
+    return;
+  }
+  el.innerHTML = hist.slice(0, 15).map(h => `
+    <div class="h-entry">
+      <span class="h-date">${esc(h.date)}</span>
+      <ul>${h.changes.map(c => `
+        <li>[${esc(c.category)}] ${esc(c.name)} ${c.type === "new" ? "(初回掲載)" : "を更新"}
+          ${c.detail?.length ? `<div class="d">${c.detail.map(esc).join(" ／ ")}</div>` : ""}
+        </li>`).join("")}
+      </ul>
+    </div>`).join("");
+}
+
+init();
