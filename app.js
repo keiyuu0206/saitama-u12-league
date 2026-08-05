@@ -211,4 +211,4 @@ function renderHistory(hist) {
     </div>`).join("");
 }
 
-init(); 
+init();
