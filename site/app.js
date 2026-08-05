@@ -116,23 +116,47 @@ function standingsTable(l, q = "") {
     return `<div class="lg-warn">この星取表は自動解析に対応していないレイアウトのため、
       <a href="${esc(l.pdf_url || l.url)}" target="_blank" rel="noopener">公式PDF</a>を直接ご確認ください。</div>`;
   }
+
+  // 行ごとの注記ラベル
+  const NOTE_LABEL = {
+    mismatch: "要確認",
+    estimated: "順位暫定",
+    tiebreak: "勝点同数",
+  };
+
   const rows = l.standings.map(s => {
     const hit = q && s.team.normalize("NFKC").toLowerCase()
       .includes(q.normalize("NFKC").toLowerCase());
     const rc = s.rank <= 3 ? ` r${s.rank}` : "";
+    const tag = s.note
+      ? ` <span class="note-tag note-${s.note}">${NOTE_LABEL[s.note]}</span>`
+      : "";
     return `<tr${hit ? ' class="hit"' : ""}>
       <td><span class="rk${rc}">${s.rank ?? "-"}</span></td>
-      <td class="team">${hl(esc(s.team), q)}</td>
+      <td class="team">${hl(esc(s.team), q)}${tag}</td>
       <td class="num">${s.played}</td>
       <td class="num">${s.win}</td><td class="num">${s.draw}</td><td class="num">${s.loss}</td>
       <td class="num pts">${s.points ?? "-"}</td>
     </tr>`;
   }).join("");
-  const note = l.status === "low_confidence" || l.standings.some(s => s.rank_estimated)
-    ? `<p class="lg-note">※ 順位はPDF記載または勝点から自動算出しています(得失点差等は未反映)。確定順位は公式PDFをご確認ください。</p>` : "";
+
+  // 表示中の注記種別に応じた凡例だけを出す
+  const kinds = new Set(l.standings.map(s => s.note).filter(Boolean));
+  const legendItems = [];
+  if (kinds.has("mismatch"))
+    legendItems.push(`<span class="note-tag note-mismatch">要確認</span> 勝点と勝敗数が一致しません。公式PDFの数値をご確認ください。`);
+  if (kinds.has("tiebreak"))
+    legendItems.push(`<span class="note-tag note-tiebreak">勝点同数</span> 勝点が同じチームがあります。順位は連盟の確定順位(得失点差等)に準拠しています。`);
+  if (kinds.has("estimated"))
+    legendItems.push(`<span class="note-tag note-estimated">順位暫定</span> PDFに順位の記載がないため勝点順で仮表示しています(得失点差等は未反映)。`);
+  const legend = legendItems.length
+    ? `<div class="note-legend">${legendItems.map(t => `<p>${t}</p>`).join("")}
+       <p class="note-src">確定順位・得失点差は必ず公式PDFをご確認ください。</p></div>`
+    : "";
+
   return `<div class="tbl-wrap"><table>
     <thead><tr><th>順位</th><th class="tteam">チーム</th><th>試合</th><th>勝</th><th>分</th><th>敗</th><th>勝点</th></tr></thead>
-    <tbody>${rows}</tbody></table></div>${note}`;
+    <tbody>${rows}</tbody></table></div>${legend}`;
 }
 
 function links(l) {
