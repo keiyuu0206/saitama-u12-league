@@ -1,258 +1,214 @@
-# -*- coding: utf-8 -*-
-"""
-埼玉県U-12サッカー連盟 第4種リーグ 収集スクリプト
+/* 埼玉県第4種リーグ 順位ボード */
+const $ = (s, el = document) => el.querySelector(s);
+const REGIONS = ["東部", "西部", "南部", "北部", "少女"];
+let DATA = null;
+let currentTab = "東部";
+let recentIds = new Set(); // 直近更新のリーグid
 
-1. /league/ からカテゴリ別のリーグ一覧を取得
-2. 各詳細ページから出場チームとPDF URLを取得
-3. PDFのSHA-256を前回と比較し、変更があったものだけ再解析(差分検出)
-4. site/data/ に leagues.json / hashes.json / history.json を出力
-"""
-import hashlib
-import json
-import re
-import sys
-import time
-from datetime import datetime, timezone, timedelta
-from pathlib import Path
-from urllib.parse import urljoin
+const esc = s => String(s ?? "").replace(/[&<>"']/g,
+  c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
-import requests
-from bs4 import BeautifulSoup
+const jpDate = iso => {
+  if (!iso) return "";
+  const d = new Date(iso);
+  return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;
+};
 
-from parser import parse_pdf
+async function init() {
+  try {
+    const [lg, hist] = await Promise.all([
+      fetch("data/leagues.json").then(r => r.json()),
+      fetch("data/history.json").then(r => r.json()).catch(() => []),
+    ]);
+    DATA = lg;
+    if (hist[0]) hist[0].changes.forEach(c => recentIds.add(c.id));
+    $("#updated").innerHTML =
+      `最終更新 <b>${jpDate(lg.generated_at)}</b> ・ ${lg.leagues.length}リーグ集計`;
+    renderHero();
+    renderTabs();
+    renderLeagues();
+    renderHistory(hist);
+    $("#search").addEventListener("input", onSearch);
+  } catch (e) {
+    $("#updated").textContent = "データの読み込みに失敗しました。時間をおいて再読み込みしてください。";
+  }
+}
 
-BASE = "https://www.saitama-u12.com"
-INDEX_URL = f"{BASE}/league/"
-JST = timezone(timedelta(hours=9))
+/* ---------- S1 / S2 ヒーロー ---------- */
+function renderHero() {
+  const hero = $("#hero");
+  const prefLeagues = DATA.leagues.filter(l => l.category === "県");
+  hero.innerHTML = prefLeagues.map(l => {
+    const cls = /Ｓ?S?１|Ｓ1|S1/.test(l.name.normalize("NFKC")) ? "s1" : "s2";
+    return `
+    <article class="hero-card ${cls}" data-league="${l.id}">
+      <div class="hc-head">
+        <span class="tier">${cls.toUpperCase()}</span>
+        <span class="tname">${esc(l.name)}</span>
+        ${l.pdf_date ? `<span class="pdfdate">${esc(l.pdf_date.replaceAll("-","/"))} 時点</span>` : ""}
+      </div>
+      ${standingsTable(l)}
+      ${links(l)}
+    </article>`;
+  }).join("") || "";
+}
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "site" / "data"
-PDF_CACHE = ROOT / ".pdf_cache"
+/* ---------- 地域タブ ---------- */
+function renderTabs() {
+  const tabs = $("#tabs");
+  tabs.innerHTML = REGIONS.map(r => {
+    const n = DATA.leagues.filter(l => l.category === r).length;
+    return `<button role="tab" aria-selected="${r === currentTab}" data-r="${r}">
+      ${r}<span class="cnt">${n}</span></button>`;
+  }).join("");
+  tabs.addEventListener("click", e => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    currentTab = b.dataset.r;
+    [...tabs.children].forEach(x => x.setAttribute("aria-selected", x === b));
+    renderLeagues();
+  });
+}
 
-CATEGORIES = ["県", "東部", "西部", "南部", "北部", "少女"]
+/* ---------- リーグ一覧 ---------- */
+function renderLeagues(query = "") {
+  const sec = $("#leagues");
+  const q = query.trim();
+  let list;
+  if (q) {
+    // 検索時は全カテゴリ横断
+    list = DATA.leagues.filter(l => matches(l, q));
+    $("#tabs").classList.add("hidden");
+  } else {
+    list = DATA.leagues.filter(l => l.category === currentTab);
+    $("#tabs").classList.remove("hidden");
+  }
+  sec.innerHTML = list.map(l => leagueCard(l, q)).join("") ||
+    `<p class="lg-note">該当するリーグ・チームが見つかりませんでした。</p>`;
+}
 
-session = requests.Session()
-session.headers.update({
-    "User-Agent": "saitama-u12-league-viewer/1.0 (standings aggregator; polite crawler)"
-})
-REQUEST_INTERVAL = 1.0  # サーバー負荷への配慮
+function matches(l, q) {
+  const nq = q.normalize("NFKC").toLowerCase();
+  const inName = l.name.normalize("NFKC").toLowerCase().includes(nq);
+  const teams = (l.standings?.map(s => s.team) || []).concat(l.teams || []);
+  const inTeam = teams.some(t => t.normalize("NFKC").toLowerCase().includes(nq));
+  return inName || inTeam;
+}
 
+function leagueCard(l, q) {
+  const open = q ? " open" : "";
+  const upd = recentIds.has(l.id) ? `<span class="badge-upd">更新あり</span>` : "";
+  return `
+  <details class="league"${open} data-league="${l.id}">
+    <summary>
+      <span class="cat-chip">${esc(l.category)}</span>
+      ${hl(esc(l.name), q)} ${upd}
+      <span class="lg-meta">${l.pdf_date ? esc(l.pdf_date.replaceAll("-","/")) + " 時点" : ""}</span>
+    </summary>
+    ${standingsTable(l, q)}
+    ${links(l)}
+  </details>`;
+}
 
-def get(url, **kw):
-    time.sleep(REQUEST_INTERVAL)
-    r = session.get(url, timeout=30, **kw)
-    r.raise_for_status()
-    return r
+/* ---------- 順位表 ---------- */
+function standingsTable(l, q = "") {
+  if (!l.standings) {
+    return `<div class="lg-warn">この星取表は自動解析に対応していないレイアウトのため、
+      <a href="${esc(l.pdf_url || l.url)}" target="_blank" rel="noopener">公式PDF</a>を直接ご確認ください。</div>`;
+  }
 
+  // 行ごとの注記ラベル
+  const NOTE_LABEL = {
+    mismatch: "要確認",
+    estimated: "順位暫定",
+    tiebreak: "勝点同数",
+  };
 
-def load_json(path, default):
-    if path.exists():
-        return json.loads(path.read_text(encoding="utf-8"))
-    return default
+  const rows = l.standings.map(s => {
+    const hit = q && s.team.normalize("NFKC").toLowerCase()
+      .includes(q.normalize("NFKC").toLowerCase());
+    const rc = s.rank <= 3 ? ` r${s.rank}` : "";
+    const tag = s.note
+      ? ` <span class="note-tag note-${s.note}">${NOTE_LABEL[s.note]}</span>`
+      : "";
+    return `<tr${hit ? ' class="hit"' : ""}>
+      <td><span class="rk${rc}">${s.rank ?? "-"}</span></td>
+      <td class="team">${hl(esc(s.team), q)}${tag}</td>
+      <td class="num">${s.played}</td>
+      <td class="num">${s.win}</td><td class="num">${s.draw}</td><td class="num">${s.loss}</td>
+      <td class="num pts">${s.points ?? "-"}</td>
+    </tr>`;
+  }).join("");
 
+  // 表示中の注記種別に応じた凡例だけを出す
+  const kinds = new Set(l.standings.map(s => s.note).filter(Boolean));
+  const legendItems = [];
+  if (kinds.has("mismatch"))
+    legendItems.push(`<span class="note-tag note-mismatch">要確認</span> 勝点と勝敗数が一致しません。公式PDFの数値をご確認ください。`);
+  if (kinds.has("tiebreak"))
+    legendItems.push(`<span class="note-tag note-tiebreak">勝点同数</span> 勝点が同じチームがあります。順位は連盟の確定順位(得失点差等)に準拠しています。`);
+  if (kinds.has("estimated"))
+    legendItems.push(`<span class="note-tag note-estimated">順位暫定</span> PDFに順位の記載がないため勝点順で仮表示しています(得失点差等は未反映)。`);
+  const legend = legendItems.length
+    ? `<div class="note-legend">${legendItems.map(t => `<p>${t}</p>`).join("")}
+       <p class="note-src">確定順位・得失点差は必ず公式PDFをご確認ください。</p></div>`
+    : "";
 
-def save_json(path, obj):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(obj, ensure_ascii=False, indent=1), encoding="utf-8"
-    )
+  return `<div class="tbl-wrap"><table>
+    <thead><tr><th>順位</th><th class="tteam">チーム</th><th>試合</th><th>勝</th><th>分</th><th>敗</th><th>勝点</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>${legend}`;
+}
 
+function links(l) {
+  return `<div class="lg-links">
+    ${l.pdf_url ? `<a href="${esc(l.pdf_url)}" target="_blank" rel="noopener">公式PDF(星取表)</a>` : ""}
+    <a href="${esc(l.url)}" target="_blank" rel="noopener">連盟サイトのリーグページ</a>
+  </div>`;
+}
 
-def fetch_league_index():
-    """一覧ページからカテゴリごとのリーグ(名前, id, URL)を取得"""
-    soup = BeautifulSoup(get(INDEX_URL).text, "html.parser")
-    leagues = []
-    current_cat = None
-    # 見出し(県/東部/...)の後に続くリンク一覧、という構造。
-    # 見出しタグの種類(h2〜h5等)に依存しないよう、文書順に走査して
-    # 「直前に現れたカテゴリ見出し」で分類する。
-    for el in soup.find_all(True):
-        txt = el.get_text(strip=True) if el.name in (
-            "h2", "h3", "h4", "h5", "dt", "caption") else None
-        if txt in CATEGORIES:
-            current_cat = txt
-        elif txt in ("大会情報一覧", "メニュー一覧"):
-            current_cat = None
-        elif el.name == "a" and current_cat:
-            href = el.get("href", "")
-            m = re.search(r"/league/detail/id=(\d+)", href)
-            if m:
-                leagues.append({
-                    "id": m.group(1),
-                    "name": el.get_text(strip=True),
-                    "category": current_cat,
-                    "url": urljoin(BASE, href),
-                })
-    # 重複除去(同一idが複数箇所に出る場合)
-    seen, uniq = set(), []
-    for lg in leagues:
-        if lg["id"] not in seen:
-            seen.add(lg["id"])
-            uniq.append(lg)
-    return uniq
+/* ---------- 検索 ---------- */
+function onSearch(e) {
+  const q = e.target.value;
+  renderLeagues(q);
+  const meta = $("#searchMeta");
+  if (q.trim()) {
+    const hits = DATA.leagues.filter(l => matches(l, q)).length;
+    meta.textContent = `全カテゴリから ${hits} リーグがヒット`;
+    meta.hidden = false;
+    $("#hero").classList.add("hidden");
+    $("#historySec").classList.add("hidden");
+  } else {
+    meta.hidden = true;
+    $("#hero").classList.remove("hidden");
+    $("#historySec").classList.remove("hidden");
+  }
+}
 
+function hl(escaped, q) {
+  if (!q.trim()) return escaped;
+  const nq = q.normalize("NFKC");
+  try {
+    const re = new RegExp(nq.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
+    return escaped.replace(re, m => `<mark>${m}</mark>`);
+  } catch { return escaped; }
+}
 
-def fetch_league_detail(url):
-    """詳細ページから出場チーム一覧とPDF URLを取得"""
-    soup = BeautifulSoup(get(url).text, "html.parser")
-    teams = []
-    # 「出場チーム」見出しの次の要素群にチーム名が改行区切りで入っている
-    for h in soup.find_all(["h3", "h4"]):
-        if "出場チーム" in h.get_text():
-            node = h.find_next_sibling()
-            while node and node.name not in ("h3", "h4"):
-                text = node.get_text("\n", strip=True)
-                for line in text.split("\n"):
-                    line = line.strip()
-                    if line and "http" not in line and len(line) < 60:
-                        teams.append(line)
-                node = node.find_next_sibling()
-            break
+/* ---------- 更新履歴 ---------- */
+function renderHistory(hist) {
+  const el = $("#history");
+  if (!hist.length) {
+    el.innerHTML = `<p class="lg-note">まだ更新履歴はありません。初回集計後に表示されます。</p>`;
+    return;
+  }
+  el.innerHTML = hist.slice(0, 15).map(h => `
+    <div class="h-entry">
+      <span class="h-date">${esc(h.date)}</span>
+      <ul>${h.changes.map(c => `
+        <li>[${esc(c.category)}] ${esc(c.name)} ${c.type === "new" ? "(初回掲載)" : "を更新"}
+          ${c.detail?.length ? `<div class="d">${c.detail.map(esc).join(" ／ ")}</div>` : ""}
+        </li>`).join("")}
+      </ul>
+    </div>`).join("");
+}
 
-    pdf_url = None
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if href.lower().endswith(".pdf") and "/files/topics/" in href:
-            pdf_url = urljoin(BASE, href)
-            break
-    if not pdf_url:
-        # gview埋め込みリンクからの抽出をフォールバックとして試す
-        m = re.search(r"url=(https?://[^\s\"'&]+\.pdf)", soup.decode())
-        if m:
-            pdf_url = m.group(1)
-    return teams, pdf_url
-
-
-def main():
-    now = datetime.now(JST)
-    today = now.strftime("%Y-%m-%d")
-
-    prev_hashes = load_json(DATA_DIR / "hashes.json", {})
-    prev_leagues = {
-        lg["id"]: lg
-        for lg in load_json(DATA_DIR / "leagues.json", {}).get("leagues", [])
-    }
-    history = load_json(DATA_DIR / "history.json", [])
-
-    PDF_CACHE.mkdir(exist_ok=True)
-
-    print("リーグ一覧を取得中...")
-    index = fetch_league_index()
-    print(f"  {len(index)} リーグを検出")
-
-    new_hashes = {}
-    leagues_out = []
-    changes = []
-
-    for lg in index:
-        lid = lg["id"]
-        print(f"[{lg['category']}] {lg['name']} (id={lid})")
-        try:
-            teams, pdf_url = fetch_league_detail(lg["url"])
-        except Exception as e:
-            print(f"  ! 詳細ページ取得失敗: {e}")
-            if lid in prev_leagues:  # 前回データを維持
-                leagues_out.append(prev_leagues[lid])
-                new_hashes[lid] = prev_hashes.get(lid, {})
-            continue
-
-        entry = {**lg, "teams": teams, "pdf_url": pdf_url}
-
-        if not pdf_url:
-            entry.update(status="no_pdf", standings=None, pdf_date=None)
-            leagues_out.append(entry)
-            new_hashes[lid] = {"sha256": None}
-            continue
-
-        try:
-            pdf_bytes = get(pdf_url).content
-        except Exception as e:
-            print(f"  ! PDF取得失敗: {e}")
-            if lid in prev_leagues:
-                leagues_out.append(prev_leagues[lid])
-                new_hashes[lid] = prev_hashes.get(lid, {})
-            continue
-
-        sha = hashlib.sha256(pdf_bytes).hexdigest()
-        prev = prev_hashes.get(lid, {})
-        unchanged = prev.get("sha256") == sha and lid in prev_leagues
-
-        new_hashes[lid] = {
-            "sha256": sha,
-            "pdf_url": pdf_url,
-            "last_changed": prev.get("last_changed", today) if unchanged else today,
-        }
-
-        if unchanged:
-            # 変更なし → 前回の解析結果を再利用(差分検出の要)
-            cached = prev_leagues[lid]
-            cached.update(name=lg["name"], category=lg["category"], teams=teams)
-            leagues_out.append(cached)
-            continue
-
-        # 変更あり → 解析
-        pdf_path = PDF_CACHE / f"{lid}.pdf"
-        pdf_path.write_bytes(pdf_bytes)
-        result = parse_pdf(str(pdf_path), entry_teams=teams)
-
-        if result["standings"]:
-            entry.update(
-                status="ok" if result.get("confident") else "low_confidence",
-                standings=result["standings"],
-                pdf_date=result["pdf_date"],
-            )
-        else:
-            entry.update(status="parse_failed", standings=None,
-                         pdf_date=result["pdf_date"])
-            print("  ! 解析失敗(PDFリンクのみ表示)")
-
-        entry["last_changed"] = today
-        leagues_out.append(entry)
-
-        # 差分内容(勝点変動)の算出
-        diff = describe_diff(prev_leagues.get(lid), entry)
-        changes.append({
-            "id": lid,
-            "name": lg["name"],
-            "category": lg["category"],
-            "type": "new" if lid not in prev_leagues else "updated",
-            "detail": diff,
-        })
-
-    # カテゴリ順・掲載順を保つ
-    order = {lid: i for i, lid in enumerate(l["id"] for l in index)}
-    leagues_out.sort(key=lambda l: order.get(l["id"], 999))
-
-    if changes:
-        history.insert(0, {"date": today, "time": now.strftime("%H:%M"),
-                           "changes": changes})
-        history = history[:60]  # 直近60回分を保持
-
-    save_json(DATA_DIR / "leagues.json", {
-        "generated_at": now.isoformat(),
-        "source": INDEX_URL,
-        "leagues": leagues_out,
-    })
-    save_json(DATA_DIR / "hashes.json", new_hashes)
-    save_json(DATA_DIR / "history.json", history)
-
-    print(f"\n完了: {len(leagues_out)} リーグ / 更新 {len(changes)} 件")
-    return 0
-
-
-def describe_diff(old, new):
-    """前回との勝点差分を人間可読な短文リストで返す"""
-    if not old or not old.get("standings") or not new.get("standings"):
-        return []
-    old_pts = {s["team"]: s.get("points") for s in old["standings"]}
-    notes = []
-    for s in new["standings"]:
-        before = old_pts.get(s["team"])
-        after = s.get("points")
-        if before is not None and after is not None and before != after:
-            notes.append(f"{s['team']} 勝点 {before}→{after}")
-    return notes[:10]
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+init(); 
