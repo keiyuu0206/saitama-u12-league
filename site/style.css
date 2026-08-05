@@ -125,6 +125,21 @@ mark{background:#FFE08A;padding:0 2px;border-radius:2px}
 .lg-note{padding:0 16px 12px;font-size:.78rem;color:var(--muted)}
 .lg-warn{padding:14px 16px;font-size:.85rem;background:#FDF3E7;border-top:1px solid var(--line)}
 
+/* 行内の注記タグ */
+.note-tag{display:inline-block;font-size:.66rem;font-weight:700;line-height:1.4;
+  padding:1px 6px;border-radius:4px;vertical-align:middle;white-space:nowrap;margin-left:2px}
+.note-mismatch{background:#FDE7E7;color:#B3261E;border:1px solid #E9A8A5}
+.note-tiebreak{background:#FFF3D6;color:#8A6100;border:1px solid #E7CC8A}
+.note-estimated{background:#EDEFF1;color:#5E6B64;border:1px solid #D2D8D4}
+
+/* 表下の凡例 */
+.note-legend{padding:10px 16px 14px;font-size:.76rem;color:var(--muted);
+  background:#FAFBFA;border-top:1px solid var(--line)}
+.note-legend p{margin:0 0 4px;line-height:1.5}
+.note-legend p:last-child{margin-bottom:0}
+.note-legend .note-tag{margin-right:4px}
+.note-src{color:var(--muted);font-size:.72rem;padding-top:2px}
+
 /* ===== history ===== */
 .history{margin-top:34px}
 .history h2{display:flex;align-items:center;gap:10px;font-size:1.05rem;margin-bottom:12px}
