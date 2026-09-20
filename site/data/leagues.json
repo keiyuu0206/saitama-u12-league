@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20T07:36:58.398401+09:00",
+ "generated_at": "2026-09-21T07:53:19.063301+09:00",
  "source": "https://www.saitama-u12.com/league/",
  "leagues": [
   {
@@ -168,24 +168,35 @@
      "note": "estimated"
     },
     {
+     "team": "レアル狭山ＦＣ",
+     "win": 6,
+     "draw": 2,
+     "loss": 1,
+     "played": 9,
+     "points": 20,
+     "rank": 2,
+     "rank_estimated": true,
+     "note": "estimated"
+    },
+    {
      "team": "Ｆ．Ｃ．ＶＥＬＳＡ",
      "win": 5,
      "draw": 2,
      "loss": 2,
      "played": 9,
      "points": 17,
-     "rank": 2,
+     "rank": 3,
      "rank_estimated": true,
      "note": "estimated"
     },
     {
-     "team": "レアル狭山ＦＣ",
+     "team": "ＪＳＣ ＧＲＡＮＴ",
      "win": 5,
      "draw": 2,
-     "loss": 1,
-     "played": 8,
+     "loss": 2,
+     "played": 9,
      "points": 17,
-     "rank": 2,
+     "rank": 3,
      "rank_estimated": true,
      "note": "estimated"
     },
@@ -196,29 +207,18 @@
      "loss": 3,
      "played": 9,
      "points": 14,
-     "rank": 4,
-     "rank_estimated": true,
-     "note": "estimated"
-    },
-    {
-     "team": "ＪＳＣ ＧＲＡＮＴ",
-     "win": 4,
-     "draw": 2,
-     "loss": 2,
-     "played": 8,
-     "points": 14,
-     "rank": 4,
+     "rank": 5,
      "rank_estimated": true,
      "note": "estimated"
     },
     {
      "team": "ＫＩＤＳＰＯＷＥＲ．ＳＣ",
-     "win": 3,
+     "win": 4,
      "draw": 2,
      "loss": 3,
-     "played": 8,
-     "points": 11,
-     "rank": 6,
+     "played": 9,
+     "points": 14,
+     "rank": 5,
      "rank_estimated": true,
      "note": "estimated"
     },
@@ -237,8 +237,8 @@
      "team": "ペラーダジュニアーズ",
      "win": 2,
      "draw": 1,
-     "loss": 5,
-     "played": 8,
+     "loss": 6,
+     "played": 9,
      "points": 7,
      "rank": 8,
      "rank_estimated": true,
@@ -248,8 +248,8 @@
      "team": "カムイジュニア千代田",
      "win": 1,
      "draw": 2,
-     "loss": 5,
-     "played": 8,
+     "loss": 6,
+     "played": 9,
      "points": 5,
      "rank": 9,
      "rank_estimated": true,
@@ -259,16 +259,16 @@
      "team": "東松山ぺレーニアフットボールクラブジュニア",
      "win": 1,
      "draw": 0,
-     "loss": 7,
-     "played": 8,
+     "loss": 8,
+     "played": 9,
      "points": 3,
      "rank": 10,
      "rank_estimated": true,
      "note": "estimated"
     }
    ],
-   "pdf_date": "2026-06-14",
-   "last_changed": "2026-08-06"
+   "pdf_date": "2026-09-12",
+   "last_changed": "2026-09-21"
   },
   {
    "id": "1228",
@@ -3604,34 +3604,34 @@
      "note": "estimated"
     },
     {
-     "team": "Cap東大宮FC",
-     "win": 2,
-     "draw": 1,
-     "loss": 3,
-     "played": 6,
-     "points": 7,
-     "rank": 4,
-     "rank_estimated": true,
-     "note": "estimated"
-    },
-    {
      "team": "なかよしくらぶ",
-     "win": 2,
+     "win": 3,
      "draw": 1,
      "loss": 3,
-     "played": 6,
-     "points": 7,
+     "played": 7,
+     "points": 10,
      "rank": 4,
      "rank_estimated": true,
      "note": "estimated"
     },
     {
      "team": "浦和大和田ジュニアーズサッカースポーツ少年団",
-     "win": 2,
+     "win": 3,
      "draw": 0,
      "loss": 4,
-     "played": 6,
-     "points": 6,
+     "played": 7,
+     "points": 9,
+     "rank": 5,
+     "rank_estimated": true,
+     "note": "estimated"
+    },
+    {
+     "team": "Cap東大宮FC",
+     "win": 2,
+     "draw": 1,
+     "loss": 4,
+     "played": 7,
+     "points": 7,
      "rank": 6,
      "rank_estimated": true,
      "note": "estimated"
@@ -3640,8 +3640,8 @@
      "team": "大宮指扇サッカースポーツ少年団",
      "win": 1,
      "draw": 0,
-     "loss": 5,
-     "played": 6,
+     "loss": 6,
+     "played": 7,
      "points": 3,
      "rank": 7,
      "rank_estimated": true,
@@ -3659,8 +3659,8 @@
      "note": "estimated"
     }
    ],
-   "pdf_date": "2026-07-25",
-   "last_changed": "2026-08-18"
+   "pdf_date": "2026-09-06",
+   "last_changed": "2026-09-21"
   },
   {
    "id": "1258",
@@ -3901,46 +3901,46 @@
    "status": "ok",
    "standings": [
     {
+     "team": "大宮日進スポーツ少年団",
+     "win": 8,
+     "draw": 0,
+     "loss": 0,
+     "played": 8,
+     "points": 24,
+     "rank": 1,
+     "rank_estimated": true,
+     "note": "estimated"
+    },
+    {
      "team": "浦和大谷口サッカースポーツ少年団",
      "win": 6,
      "draw": 1,
      "loss": 1,
      "played": 8,
      "points": 19,
-     "rank": 1,
+     "rank": 2,
      "rank_estimated": true,
      "note": "estimated"
     },
     {
-     "team": "大宮日進スポーツ少年団",
-     "win": 6,
-     "draw": 0,
-     "loss": 0,
-     "played": 6,
-     "points": 18,
-     "rank": 2,
+     "team": "大宮春岡FCスポーツ少年団",
+     "win": 5,
+     "draw": 1,
+     "loss": 2,
+     "played": 8,
+     "points": 16,
+     "rank": 3,
      "rank_estimated": true,
      "note": "estimated"
     },
     {
      "team": "田島・新開合同",
      "win": 5,
-     "draw": 0,
-     "loss": 1,
-     "played": 6,
-     "points": 15,
-     "rank": 3,
-     "rank_estimated": true,
-     "note": "estimated"
-    },
-    {
-     "team": "大宮春岡FCスポーツ少年団",
-     "win": 4,
-     "draw": 0,
+     "draw": 1,
      "loss": 2,
-     "played": 6,
-     "points": 12,
-     "rank": 4,
+     "played": 8,
+     "points": 16,
+     "rank": 3,
      "rank_estimated": true,
      "note": "estimated"
     },
@@ -3951,7 +3951,7 @@
      "loss": 4,
      "played": 8,
      "points": 12,
-     "rank": 4,
+     "rank": 5,
      "rank_estimated": true,
      "note": "estimated"
     },
@@ -3959,8 +3959,8 @@
      "team": "RěēMAitokuFootballClubSilver",
      "win": 3,
      "draw": 1,
-     "loss": 2,
-     "played": 6,
+     "loss": 4,
+     "played": 8,
      "points": 10,
      "rank": 6,
      "rank_estimated": true,
@@ -3989,8 +3989,8 @@
      "note": "estimated"
     }
    ],
-   "pdf_date": "2026-07-10",
-   "last_changed": "2026-08-06"
+   "pdf_date": "2026-09-05",
+   "last_changed": "2026-09-21"
   },
   {
    "id": "1261",
@@ -4316,24 +4316,35 @@
    "status": "ok",
    "standings": [
     {
+     "team": "浦和三室サッカースポーツ少年団",
+     "win": 6,
+     "draw": 0,
+     "loss": 0,
+     "played": 6,
+     "points": 18,
+     "rank": 1,
+     "rank_estimated": true,
+     "note": "estimated"
+    },
+    {
      "team": "浦和文蔵サッカースポーツ少年団",
      "win": 5,
      "draw": 0,
      "loss": 1,
      "played": 6,
      "points": 15,
-     "rank": 1,
+     "rank": 2,
      "rank_estimated": true,
      "note": "estimated"
     },
     {
-     "team": "浦和三室サッカースポーツ少年団",
-     "win": 4,
-     "draw": 0,
-     "loss": 0,
-     "played": 4,
-     "points": 12,
-     "rank": 2,
+     "team": "大宮大成サッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 2,
+     "played": 6,
+     "points": 10,
+     "rank": 3,
      "rank_estimated": true,
      "note": "estimated"
     },
@@ -4344,28 +4355,17 @@
      "loss": 3,
      "played": 6,
      "points": 9,
-     "rank": 3,
-     "rank_estimated": true,
-     "note": "estimated"
-    },
-    {
-     "team": "大宮大成サッカースポーツ少年団",
-     "win": 2,
-     "draw": 1,
-     "loss": 2,
-     "played": 5,
-     "points": 7,
      "rank": 4,
      "rank_estimated": true,
      "note": "estimated"
     },
     {
      "team": "与野西北サッカースポーツ少年団",
-     "win": 1,
+     "win": 2,
      "draw": 1,
-     "loss": 2,
-     "played": 4,
-     "points": 4,
+     "loss": 3,
+     "played": 6,
+     "points": 7,
      "rank": 5,
      "rank_estimated": true,
      "note": "estimated"
@@ -4374,8 +4374,8 @@
      "team": "浦和大東サッカースポーツ少年団",
      "win": 1,
      "draw": 0,
-     "loss": 3,
-     "played": 4,
+     "loss": 5,
+     "played": 6,
      "points": 3,
      "rank": 6,
      "rank_estimated": true,
@@ -4385,16 +4385,16 @@
      "team": "浦和仲町サッカー少年団B",
      "win": 0,
      "draw": 0,
-     "loss": 5,
-     "played": 5,
+     "loss": 6,
+     "played": 6,
      "points": 0,
      "rank": 7,
      "rank_estimated": true,
      "note": "estimated"
     }
    ],
-   "pdf_date": "2026-07-11",
-   "last_changed": "2026-08-06"
+   "pdf_date": "2026-09-06",
+   "last_changed": "2026-09-21"
   },
   {
    "id": "1265",
@@ -5187,60 +5187,60 @@
    "standings": [
     {
      "team": "ＦＣ宗岡",
-     "win": 2,
-     "draw": 1,
-     "loss": 2,
-     "played": 5,
+     "win": 7,
+     "draw": 0,
+     "loss": 1,
+     "played": 8,
      "points": 6,
      "rank": 1,
      "note": "mismatch"
     },
     {
      "team": "喜沢サッカースポーツ少年団",
-     "win": 3,
+     "win": 8,
      "draw": 0,
-     "loss": 3,
-     "played": 6,
+     "loss": 0,
+     "played": 8,
      "points": 6,
      "rank": 2,
      "note": "mismatch"
     },
     {
      "team": "戸田南FCスポーツ少年団",
-     "win": 3,
+     "win": 5,
      "draw": 1,
      "loss": 2,
-     "played": 6,
+     "played": 8,
      "points": 3,
      "rank": 3,
      "note": "mismatch"
     },
     {
      "team": "フォルチFCジュニア",
-     "win": 4,
+     "win": 5,
      "draw": 1,
-     "loss": 1,
-     "played": 6,
+     "loss": 2,
+     "played": 8,
      "points": 3,
      "rank": 4,
      "note": "mismatch"
     },
     {
      "team": "新座ストロングサッカークラブ",
-     "win": 1,
-     "draw": 2,
-     "loss": 2,
-     "played": 5,
+     "win": 3,
+     "draw": 1,
+     "loss": 4,
+     "played": 8,
      "points": 3,
      "rank": 5,
      "note": "mismatch"
     },
     {
      "team": "ぺルナールＳＣ",
-     "win": 2,
+     "win": 3,
      "draw": 1,
-     "loss": 3,
-     "played": 6,
+     "loss": 4,
+     "played": 8,
      "points": 3,
      "rank": 6,
      "note": "mismatch"
@@ -5248,36 +5248,36 @@
     {
      "team": "川口朝日リボルバーサッカー少年団",
      "win": 0,
-     "draw": 0,
-     "loss": 3,
-     "played": 3,
+     "draw": 2,
+     "loss": 6,
+     "played": 8,
      "points": 3,
      "rank": 7,
      "note": "mismatch"
     },
     {
      "team": "蕨北町サッカー 　トルメンタ",
-     "win": 4,
-     "draw": 0,
-     "loss": 1,
-     "played": 5,
-     "points": 12,
+     "win": 1,
+     "draw": 1,
+     "loss": 6,
+     "played": 8,
+     "points": 4,
      "rank": 8,
      "note": null
     },
     {
      "team": "蕨中央サッカースポーツ少年団",
      "win": 0,
-     "draw": 0,
-     "loss": 2,
-     "played": 2,
-     "points": 0,
+     "draw": 1,
+     "loss": 7,
+     "played": 8,
+     "points": 1,
      "rank": 9,
      "note": null
     }
    ],
-   "pdf_date": "2026-05-24",
-   "last_changed": "2026-08-06"
+   "pdf_date": "2026-09-05",
+   "last_changed": "2026-09-21"
   },
   {
    "id": "1251",
