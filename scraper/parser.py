@@ -101,11 +101,39 @@ def _points_anchors(words, pts_band, header_bottom):
     return anchors
 
 
+RESULT_OF = {MARK_WIN: "win", MARK_DRAW: "draw", MARK_LOSS: "loss"}
+
+
+def _opponent_columns(words, pts_band):
+    """対戦相手の列ヘッダーを x 範囲付きで返す [{x0,x1,cx,label}, ...]。
+
+    勝点ヘッダーと同じ行にある、チーム名列より右・勝点列より左の短縮チーム名。
+    pts_band[0] は勝点ヘッダー x0 から pad を引いた値なので、ここでは
+    pad を戻した実際の勝点ヘッダー左端(pts_band[0] + pad相当)を右境界に使う。
+    """
+    hdr_top = pts_band[2]
+    pts_left = pts_band[0] + 8  # _band の pad=8 を戻す
+    cols = []
+    for w in sorted(words, key=lambda w: w["x0"]):
+        if abs(w["top"] - hdr_top) <= 5 and w["x0"] > NAME_X_MAX \
+                and (w["x0"] + w["x1"]) / 2 < pts_left:
+            # ヘッダー語そのもの(勝点/順位/勝ち点)は除外
+            if unicodedata.normalize("NFKC", w["text"]).strip() in (
+                    "勝点", "勝ち点", "順位"):
+                continue
+            cols.append({
+                "x0": w["x0"], "x1": w["x1"],
+                "cx": (w["x0"] + w["x1"]) / 2,
+                "label": w["text"].strip(),
+            })
+    return cols
+
+
 def parse_page(page, entry_teams=None):
     """1ページ分の星取表を解析して standings のリストを返す。
 
     勝点列の数字を各チームのアンカーとし、その上下の帯からマーク・チーム名・
-    順位を集める。1段組・2段組いずれのレイアウトにも対応する。
+    順位・対戦成績を集める。1段組・2段組いずれのレイアウトにも対応する。
     """
     words = page.extract_words()
     if not words:
@@ -120,6 +148,8 @@ def parse_page(page, entry_teams=None):
     anchors = _points_anchors(words, pts_band, header_bottom)
     if not anchors:
         return None
+
+    opp_cols = _opponent_columns(words, pts_band)
 
     # 各チームの担当y区間 = 隣接アンカーの中点。名前は勝点より少し上に出るため
     # 上側は広め(-0.62)、下側はやや狭め(0.55)に取る。
@@ -137,9 +167,26 @@ def parse_page(page, entry_teams=None):
 
     norm_entries = [(normalize(t), t) for t in (entry_teams or [])]
     standings = []
+    n_rows = len(anchors)
 
-    for (atop, pts), (y0, y1) in zip(anchors, bounds):
+    for row_idx, ((atop, pts), (y0, y1)) in enumerate(zip(anchors, bounds)):
         cells = [w for w in words if y0 <= w["top"] < y1]
+
+        # 対戦成績: 列ごとに、その x 範囲に入るマークを集める
+        h2h = []
+        if opp_cols:
+            for col_idx, col in enumerate(opp_cols):
+                if col_idx == row_idx:
+                    h2h.append(None)  # 自チーム(✳)
+                    continue
+                res = []
+                for w in cells:
+                    cx = (w["x0"] + w["x1"]) / 2
+                    if col["x0"] - 4 <= cx <= col["x1"] + 4:
+                        for c in w["text"]:
+                            if c in MARKS:
+                                res.append(RESULT_OF[c])
+                h2h.append(res)  # [] は未対戦、['win'] や ['win','loss'] など
 
         # 勝敗マーク(チーム名列より右)
         marks = "".join(
@@ -189,10 +236,25 @@ def parse_page(page, entry_teams=None):
             "played": win + draw + loss,
             "points": pts,
             "rank": rank,
+            "h2h": h2h,  # opp_labels と同じ並び。None=自分, []=未対戦
         })
 
     if not standings:
         return None
+
+    # 対戦相手ラベル(短縮名)を正式チーム名に寄せて全チーム共通で保持
+    if opp_cols:
+        labels = [c["label"] for c in opp_cols]
+        full_names = [s["team"] for s in standings]
+        # 列数と行数が一致する場合、列ラベルは各チームの短縮名に対応する
+        resolved = []
+        for i, lab in enumerate(labels):
+            if i < len(full_names) and full_names[i]:
+                resolved.append(full_names[i])
+            else:
+                resolved.append(lab)
+        for s in standings:
+            s["opp_labels"] = resolved
 
     # 勝点が取れなかった行は 3勝点方式で補完(マークがあれば)
     for s in standings:
