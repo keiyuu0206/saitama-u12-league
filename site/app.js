@@ -54,10 +54,11 @@ function renderHero() {
           </span>
         </div>
         ${standingsTable(l)}
-        ${l.standings ? "" : links(l)}
+        ${links(l)}
       </article>`;
   }).join("");
   hero.innerHTML = `<p class="sec-label">県リーグ</p><div class="flagships">${cards}</div>`;
+  bindTeamButtons(hero);
 }
 
 /* ---------- 地域タブ ---------- */
@@ -114,7 +115,7 @@ function leagueCard(l, q) {
       <svg class="chev" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </summary>
     ${standingsTable(l, q)}
-    ${l.standings ? "" : links(l)}
+    ${links(l)}
   </details>`;
 }
 
@@ -251,9 +252,12 @@ function h2hPanel(s, league) {
 }
 
 function links(l) {
-  return `<div class="lg-links">
-    ${l.pdf_url ? `<a href="${esc(l.pdf_url)}" target="_blank" rel="noopener">公式PDF(星取表)</a>` : ""}
-    <a href="${esc(l.url)}" target="_blank" rel="noopener">連盟サイトのリーグページ</a>
+  return `<div class="lg-foot">
+    <div class="lg-links">
+      ${l.pdf_url ? `<a href="${esc(l.pdf_url)}" target="_blank" rel="noopener">公式PDF(星取表)</a>` : ""}
+      <a href="${esc(l.url)}" target="_blank" rel="noopener">連盟サイトのリーグページ</a>
+    </div>
+    <p class="lg-caution">順位・勝点・対戦成績は公式PDFの自動解析による参考値です。確定情報は公式PDFをご確認ください。</p>
   </div>`;
 }
 
