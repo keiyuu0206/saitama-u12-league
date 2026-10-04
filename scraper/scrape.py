@@ -38,11 +38,21 @@ session.headers.update({
 REQUEST_INTERVAL = 1.0  # サーバー負荷への配慮
 
 
-def get(url, **kw):
-    time.sleep(REQUEST_INTERVAL)
-    r = session.get(url, timeout=30, **kw)
-    r.raise_for_status()
-    return r
+def get(url, retries=3, **kw):
+    """GET。一時的な失敗に備えて指数バックオフでリトライする。"""
+    last = None
+    for attempt in range(retries):
+        time.sleep(REQUEST_INTERVAL)
+        try:
+            r = session.get(url, timeout=30, **kw)
+            r.raise_for_status()
+            return r
+        except Exception as e:
+            last = e
+            wait = 2 ** attempt  # 1s, 2s, 4s
+            print(f"  … 取得失敗(試行{attempt + 1}/{retries}): {e} → {wait}s後に再試行")
+            time.sleep(wait)
+    raise last
 
 
 def load_json(path, default):
@@ -127,12 +137,21 @@ def main():
     now = datetime.now(JST)
     today = now.strftime("%Y-%m-%d")
 
+    # 保存済みデータを読み込む。手動編集などで型が壊れていても
+    # 既定値にフォールバックして処理を止めない(過去の障害対策)。
     prev_hashes = load_json(DATA_DIR / "hashes.json", {})
-    prev_leagues = {
-        lg["id"]: lg
-        for lg in load_json(DATA_DIR / "leagues.json", {}).get("leagues", [])
-    }
+    if not isinstance(prev_hashes, dict):
+        print("! hashes.json が不正な形式のため初期化します")
+        prev_hashes = {}
+
+    leagues_doc = load_json(DATA_DIR / "leagues.json", {})
+    prev_list = leagues_doc.get("leagues", []) if isinstance(leagues_doc, dict) else []
+    prev_leagues = {lg["id"]: lg for lg in prev_list if isinstance(lg, dict) and "id" in lg}
+
     history = load_json(DATA_DIR / "history.json", [])
+    if not isinstance(history, list):
+        print("! history.json が不正な形式のため初期化します")
+        history = []
 
     PDF_CACHE.mkdir(exist_ok=True)
 
@@ -168,6 +187,15 @@ def main():
             pdf_bytes = get(pdf_url).content
         except Exception as e:
             print(f"  ! PDF取得失敗: {e}")
+            if lid in prev_leagues:
+                leagues_out.append(prev_leagues[lid])
+                new_hashes[lid] = prev_hashes.get(lid, {})
+            continue
+
+        # 取得物が本物のPDFか検証(エラーページ等がPDF拡張子で返るケースを排除)。
+        # 不正なら前回データを維持し、ハッシュも前回値を保って次回に再取得させる。
+        if not pdf_bytes[:5].startswith(b"%PDF"):
+            print(f"  ! PDFではないデータを受信({len(pdf_bytes)}バイト)。前回データを維持")
             if lid in prev_leagues:
                 leagues_out.append(prev_leagues[lid])
                 new_hashes[lid] = prev_hashes.get(lid, {})
