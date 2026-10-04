@@ -177,8 +177,9 @@ mark{background:#FFE48A;color:inherit;padding:0 2px;border-radius:3px}
 
 /* 解析不可リーグ */
 .lg-warn{padding:16px;font-size:.88rem;color:var(--ink);background:#FDF6EC;border-top:1px solid var(--card-line)}
-.lg-links{display:flex;gap:16px;flex-wrap:wrap;padding:12px 16px 15px;font-size:.82rem;
-  border-top:1px solid var(--card-line)}
+.lg-foot{border-top:1px solid var(--card-line)}
+.lg-links{display:flex;gap:16px;flex-wrap:wrap;padding:12px 16px 6px;font-size:.82rem}
+.lg-caution{padding:0 16px 13px;font-size:.73rem;color:var(--muted);line-height:1.5}
 
 /* ===== tabs ===== */
 .tabs{display:flex;gap:7px;overflow-x:auto;padding:4px 0 16px;-webkit-overflow-scrolling:touch;
