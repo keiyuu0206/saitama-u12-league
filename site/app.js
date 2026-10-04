@@ -1,18 +1,19 @@
-/* 埼玉県第4種リーグ 順位ボード */
+/* 埼玉県第4種サッカーリーグ 順位ボード */
 const $ = (s, el = document) => el.querySelector(s);
 const REGIONS = ["東部", "西部", "南部", "北部", "少女"];
 let DATA = null;
 let currentTab = "東部";
-let recentIds = new Set(); // 直近更新のリーグid
+let recentIds = new Set();
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g,
-  c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 const jpDate = iso => {
   if (!iso) return "";
   const d = new Date(iso);
-  return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;
+  return `${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()}`;
 };
+const pdfDate = s => s ? esc(s.replaceAll("-", "/")) : "";
 
 async function init() {
   try {
@@ -21,36 +22,42 @@ async function init() {
       fetch("data/history.json").then(r => r.json()).catch(() => []),
     ]);
     DATA = lg;
-    if (hist[0]) hist[0].changes.forEach(c => recentIds.add(c.id));
+    if (Array.isArray(hist) && hist[0]) hist[0].changes.forEach(c => recentIds.add(c.id));
     $("#updated").innerHTML =
-      `最終更新 <b>${jpDate(lg.generated_at)}</b> ・ ${lg.leagues.length}リーグ集計`;
+      `最終更新 <b>${jpDate(lg.generated_at)}</b> ／ 全${lg.leagues.length}リーグ`;
     renderHero();
     renderTabs();
     renderLeagues();
-    renderHistory(hist);
+    renderHistory(Array.isArray(hist) ? hist : []);
     $("#search").addEventListener("input", onSearch);
   } catch (e) {
-    $("#updated").textContent = "データの読み込みに失敗しました。時間をおいて再読み込みしてください。";
+    $("#updated").textContent = "データを読み込めませんでした。時間をおいて再読み込みしてください。";
   }
 }
 
-/* ---------- S1 / S2 ヒーロー ---------- */
+/* ---------- 県リーグ(S1/S2)ヒーロー ---------- */
 function renderHero() {
   const hero = $("#hero");
-  const prefLeagues = DATA.leagues.filter(l => l.category === "県");
-  hero.innerHTML = prefLeagues.map(l => {
-    const cls = /Ｓ?S?１|Ｓ1|S1/.test(l.name.normalize("NFKC")) ? "s1" : "s2";
+  const pref = DATA.leagues.filter(l => l.category === "県");
+  if (!pref.length) { hero.innerHTML = ""; return; }
+  const cards = pref.map(l => {
+    const nn = l.name.normalize("NFKC");
+    const tier = /S?1|Ｓ1/.test(nn) ? "s1" : /S?2|Ｓ2/.test(nn) ? "s2" : "";
+    const tierLabel = tier ? tier.toUpperCase() : "県";
     return `
-    <article class="hero-card ${cls}" data-league="${l.id}">
-      <div class="hc-head">
-        <span class="tier">${cls.toUpperCase()}</span>
-        <span class="tname">${esc(l.name)}</span>
-        ${l.pdf_date ? `<span class="pdfdate">${esc(l.pdf_date.replaceAll("-","/"))} 時点</span>` : ""}
-      </div>
-      ${standingsTable(l)}
-      ${links(l)}
-    </article>`;
-  }).join("") || "";
+      <article class="flagship">
+        <div class="flag-head ${tier}">
+          <span class="flag-tier">${tierLabel}</span>
+          <span class="flag-meta">
+            <span class="flag-name">${esc(l.name)}</span>
+            ${l.pdf_date ? `<span class="flag-date">${pdfDate(l.pdf_date)} 時点</span>` : ""}
+          </span>
+        </div>
+        ${standingsTable(l)}
+        ${l.standings ? "" : links(l)}
+      </article>`;
+  }).join("");
+  hero.innerHTML = `<p class="sec-label">県リーグ</p><div class="flagships">${cards}</div>`;
 }
 
 /* ---------- 地域タブ ---------- */
@@ -76,87 +83,171 @@ function renderLeagues(query = "") {
   const q = query.trim();
   let list;
   if (q) {
-    // 検索時は全カテゴリ横断
     list = DATA.leagues.filter(l => matches(l, q));
     $("#tabs").classList.add("hidden");
   } else {
     list = DATA.leagues.filter(l => l.category === currentTab);
     $("#tabs").classList.remove("hidden");
   }
-  sec.innerHTML = list.map(l => leagueCard(l, q)).join("") ||
-    `<p class="lg-note">該当するリーグ・チームが見つかりませんでした。</p>`;
+  sec.innerHTML = list.length
+    ? list.map(l => leagueCard(l, q)).join("")
+    : `<p class="note-legend">「${esc(q)}」に一致するリーグ・チームは見つかりませんでした。</p>`;
+  bindTeamButtons(sec);
 }
 
 function matches(l, q) {
   const nq = q.normalize("NFKC").toLowerCase();
-  const inName = l.name.normalize("NFKC").toLowerCase().includes(nq);
+  if (l.name.normalize("NFKC").toLowerCase().includes(nq)) return true;
   const teams = (l.standings?.map(s => s.team) || []).concat(l.teams || []);
-  const inTeam = teams.some(t => t.normalize("NFKC").toLowerCase().includes(nq));
-  return inName || inTeam;
+  return teams.some(t => t.normalize("NFKC").toLowerCase().includes(nq));
 }
 
 function leagueCard(l, q) {
   const open = q ? " open" : "";
-  const upd = recentIds.has(l.id) ? `<span class="badge-upd">更新あり</span>` : "";
+  const upd = recentIds.has(l.id) ? `<span class="badge-upd">更新</span>` : "";
   return `
-  <details class="league"${open} data-league="${l.id}">
+  <details class="league"${open} data-league="${esc(l.id)}">
     <summary>
-      <span class="cat-chip">${esc(l.category)}</span>
-      ${hl(esc(l.name), q)} ${upd}
-      <span class="lg-meta">${l.pdf_date ? esc(l.pdf_date.replaceAll("-","/")) + " 時点" : ""}</span>
+      <span class="chip">${esc(l.category)}</span>
+      <span class="lg-name">${hl(esc(l.name), q)}</span> ${upd}
+      <span class="lg-date">${l.pdf_date ? pdfDate(l.pdf_date) : ""}</span>
+      <svg class="chev" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </summary>
     ${standingsTable(l, q)}
-    ${links(l)}
+    ${l.standings ? "" : links(l)}
   </details>`;
 }
 
 /* ---------- 順位表 ---------- */
 function standingsTable(l, q = "") {
   if (!l.standings) {
-    return `<div class="lg-warn">この星取表は自動解析に対応していないレイアウトのため、
-      <a href="${esc(l.pdf_url || l.url)}" target="_blank" rel="noopener">公式PDF</a>を直接ご確認ください。</div>`;
+    return `<div class="lg-warn">この星取表は現在のレイアウトでは自動で読み取れませんでした。
+      <a href="${esc(l.pdf_url || l.url)}" target="_blank" rel="noopener">公式PDFを開く</a></div>`;
   }
-
-  // 行ごとの注記ラベル
-  const NOTE_LABEL = {
-    mismatch: "要確認",
-    estimated: "順位暫定",
-    tiebreak: "勝点同数",
-  };
-
-  const rows = l.standings.map(s => {
+  const lid = esc(l.id);
+  const rows = l.standings.map((s, i) => {
     const hit = q && s.team.normalize("NFKC").toLowerCase()
       .includes(q.normalize("NFKC").toLowerCase());
     const rc = s.rank <= 3 ? ` r${s.rank}` : "";
-    const tag = s.note
-      ? ` <span class="note-tag note-${s.note}">${NOTE_LABEL[s.note]}</span>`
+    const hasH2h = Array.isArray(s.h2h) && s.h2h.some(x => x && x.length);
+    const tag = s.note === "mismatch"
+      ? ` <span class="note-tag note-mismatch">要確認</span>`
+      : s.note === "tiebreak"
+      ? ` <span class="note-tag note-tiebreak">勝点同数</span>` : "";
+    const chev = hasH2h
+      ? `<svg class="mini-chev" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`
       : "";
-    return `<tr${hit ? ' class="hit"' : ""}>
-      <td><span class="rk${rc}">${s.rank ?? "-"}</span></td>
-      <td class="team">${hl(esc(s.team), q)}${tag}</td>
-      <td class="num">${s.played}</td>
-      <td class="num">${s.win}</td><td class="num">${s.draw}</td><td class="num">${s.loss}</td>
-      <td class="num pts">${s.points ?? "-"}</td>
+    const nameCell = hasH2h
+      ? `<button class="team-btn" data-league="${lid}" data-idx="${i}" aria-expanded="false">
+           <span class="rank-plate${rc}">${s.rank ?? "-"}</span>
+           <span class="tname">${hl(esc(s.team), q)}${tag}</span>${chev}
+         </button>`
+      : `<div class="team-btn" style="cursor:default">
+           <span class="rank-plate${rc}">${s.rank ?? "-"}</span>
+           <span class="tname">${hl(esc(s.team), q)}${tag}</span>
+         </div>`;
+    return `<tr${hit ? ' class="hit"' : ""} data-row="${i}">
+      <td class="c-team">${nameCell}</td>
+      <td class="c-num"><div class="cell">${s.played}</div></td>
+      <td class="c-num"><div class="cell">${s.win}</div></td>
+      <td class="c-num"><div class="cell">${s.draw}</div></td>
+      <td class="c-num"><div class="cell">${s.loss}</div></td>
+      <td class="c-pts"><div class="cell">${s.points ?? "-"}</div></td>
     </tr>`;
   }).join("");
 
-  // 表示中の注記種別に応じた凡例だけを出す
+  // 注記凡例(要確認・勝点同数のみ。暫定表記は表示しない)
   const kinds = new Set(l.standings.map(s => s.note).filter(Boolean));
-  const legendItems = [];
+  const items = [];
   if (kinds.has("mismatch"))
-    legendItems.push(`<span class="note-tag note-mismatch">要確認</span> 勝点と勝敗数が一致しません。公式PDFの数値をご確認ください。`);
+    items.push(`<span class="note-tag note-mismatch">要確認</span> 勝点と勝敗数が一致しません。公式PDFの数値をご確認ください。`);
   if (kinds.has("tiebreak"))
-    legendItems.push(`<span class="note-tag note-tiebreak">勝点同数</span> 勝点が同じチームがあります。順位は連盟の確定順位(得失点差等)に準拠しています。`);
-  if (kinds.has("estimated"))
-    legendItems.push(`<span class="note-tag note-estimated">順位暫定</span> PDFに順位の記載がないため勝点順で仮表示しています(得失点差等は未反映)。`);
-  const legend = legendItems.length
-    ? `<div class="note-legend">${legendItems.map(t => `<p>${t}</p>`).join("")}
-       <p class="note-src">確定順位・得失点差は必ず公式PDFをご確認ください。</p></div>`
-    : "";
+    items.push(`<span class="note-tag note-tiebreak">勝点同数</span> 勝点が同じチームがあります。順位は連盟の確定順位(得失点差等)に準拠しています。`);
+  const legend = items.length
+    ? `<div class="note-legend">${items.map(t => `<p>${t}</p>`).join("")}</div>` : "";
 
   return `<div class="tbl-wrap"><table>
-    <thead><tr><th>順位</th><th class="tteam">チーム</th><th>試合</th><th>勝</th><th>分</th><th>敗</th><th>勝点</th></tr></thead>
+    <thead><tr>
+      <th class="th-team">順位・チーム</th>
+      <th>試合</th><th>勝</th><th>分</th><th>敗</th><th>勝点</th>
+    </tr></thead>
     <tbody>${rows}</tbody></table></div>${legend}`;
+}
+
+/* ---------- 対戦成績の展開 ---------- */
+function bindTeamButtons(root) {
+  root.querySelectorAll("button.team-btn").forEach(btn => {
+    btn.addEventListener("click", () => toggleH2h(btn));
+  });
+}
+
+function toggleH2h(btn) {
+  const lid = btn.dataset.league;
+  const idx = +btn.dataset.idx;
+  const tr = btn.closest("tr");
+  const next = tr.nextElementSibling;
+  // 既に開いていれば閉じる
+  if (next && next.classList.contains("h2h-row")) {
+    next.remove();
+    tr.classList.remove("open-row");
+    btn.setAttribute("aria-expanded", "false");
+    return;
+  }
+  // 同リーグの他の展開を閉じる
+  const tbody = tr.parentElement;
+  tbody.querySelectorAll(".h2h-row").forEach(r => r.remove());
+  tbody.querySelectorAll(".open-row").forEach(r => {
+    r.classList.remove("open-row");
+    const b = r.querySelector(".team-btn");
+    if (b) b.setAttribute("aria-expanded", "false");
+  });
+
+  const league = DATA.leagues.find(l => String(l.id) === String(lid));
+  const s = league?.standings?.[idx];
+  if (!s) return;
+  const colspan = 6;
+  const row = document.createElement("tr");
+  row.className = "h2h-row";
+  row.innerHTML = `<td colspan="${colspan}">${h2hPanel(s, league)}</td>`;
+  tr.after(row);
+  tr.classList.add("open-row");
+  btn.setAttribute("aria-expanded", "true");
+}
+
+function h2hPanel(s, league) {
+  const labels = s.opp_labels || [];
+  const items = [];
+  (s.h2h || []).forEach((res, i) => {
+    if (res === null) return;                 // 自分自身
+    const opp = labels[i] || `相手${i + 1}`;
+    let marks;
+    if (!res || !res.length) {
+      marks = `<span class="rmark none">—</span>`;
+    } else {
+      marks = res.map(r => {
+        const label = { win: "○", draw: "△", loss: "●" }[r];
+        return `<span class="rmark ${r}">${label}</span>`;
+      }).join("");
+    }
+    const played = res && res.length;
+    items.push(`<div class="h2h-item">
+      <span class="h2h-opp">${esc(opp)}</span>
+      <span class="h2h-marks">${marks}</span>
+    </div>`);
+  });
+  const body = items.length
+    ? `<div class="h2h-list">${items.join("")}</div>`
+    : `<p class="h2h-empty">対戦結果の記録がありません。</p>`;
+  const pdf = league.pdf_url
+    ? `<a class="h2h-pdf" href="${esc(league.pdf_url)}" target="_blank" rel="noopener">公式PDF</a>` : "";
+  return `<div class="h2h-panel">
+    <p class="h2h-title"><span class="pill">${esc(s.team)}</span>の対戦成績</p>
+    ${body}
+    <div class="h2h-sum">
+      <span>${s.played}試合　<b>${s.win}</b>勝 <b>${s.draw}</b>分 <b>${s.loss}</b>敗　勝点 <b>${s.points ?? "-"}</b></span>
+      ${pdf}
+    </div>
+  </div>`;
 }
 
 function links(l) {
@@ -185,7 +276,7 @@ function onSearch(e) {
 }
 
 function hl(escaped, q) {
-  if (!q.trim()) return escaped;
+  if (!q || !q.trim()) return escaped;
   const nq = q.normalize("NFKC");
   try {
     const re = new RegExp(nq.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
@@ -197,14 +288,14 @@ function hl(escaped, q) {
 function renderHistory(hist) {
   const el = $("#history");
   if (!hist.length) {
-    el.innerHTML = `<p class="lg-note">まだ更新履歴はありません。初回集計後に表示されます。</p>`;
+    el.innerHTML = `<p class="note-legend">まだ更新履歴はありません。日々の集計で変更が出ると、ここに差分が記録されます。</p>`;
     return;
   }
   el.innerHTML = hist.slice(0, 15).map(h => `
     <div class="h-entry">
       <span class="h-date">${esc(h.date)}</span>
       <ul>${h.changes.map(c => `
-        <li>[${esc(c.category)}] ${esc(c.name)} ${c.type === "new" ? "(初回掲載)" : "を更新"}
+        <li>[${esc(c.category)}] ${esc(c.name)}${c.type === "new" ? "(初回掲載)" : ""}
           ${c.detail?.length ? `<div class="d">${c.detail.map(esc).join(" ／ ")}</div>` : ""}
         </li>`).join("")}
       </ul>
