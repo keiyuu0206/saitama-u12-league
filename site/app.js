@@ -79,20 +79,46 @@ function renderTabs() {
 }
 
 /* ---------- リーグ一覧 ---------- */
+// 各地域の代表リーグ(SE/SW/SS/SNリーグ、少女ブロック)かどうか。
+// 代表リーグはタブを開いた時点で順位表を展開して表示する。
+function isFeatured(l) {
+  const n = l.name.normalize("NFKC").toUpperCase().replace(/\s/g, "");
+  if (/^(SE|SW|SS|SN)リーグ/.test(n)) return true;   // SE/SW/SS/SNリーグ(ブロック有無問わず)
+  if (l.category === "少女") return true;             // 少女カテゴリは代表扱い
+  return false;
+}
+
 function renderLeagues(query = "") {
   const sec = $("#leagues");
   const q = query.trim();
   let list;
   if (q) {
+    // 検索時は全カテゴリ横断。全カードを展開して見せる(従来通り)
     list = DATA.leagues.filter(l => matches(l, q));
     $("#tabs").classList.add("hidden");
-  } else {
-    list = DATA.leagues.filter(l => l.category === currentTab);
-    $("#tabs").classList.remove("hidden");
+    sec.innerHTML = list.length
+      ? list.map(l => leagueCard(l, q, true)).join("")
+      : `<p class="note-legend">「${esc(q)}」に一致するリーグ・チームは見つかりませんでした。</p>`;
+    bindTeamButtons(sec);
+    return;
   }
-  sec.innerHTML = list.length
-    ? list.map(l => leagueCard(l, q)).join("")
-    : `<p class="note-legend">「${esc(q)}」に一致するリーグ・チームは見つかりませんでした。</p>`;
+
+  $("#tabs").classList.remove("hidden");
+  list = DATA.leagues.filter(l => l.category === currentTab);
+  // 代表リーグを上に、その他を下に並べ替え(各グループ内は元の順序を保つ)
+  const featured = list.filter(isFeatured);
+  const others = list.filter(l => !isFeatured(l));
+
+  let html = "";
+  if (featured.length) {
+    html += `<p class="sec-label">${esc(currentTab)}の代表リーグ</p>`;
+    html += featured.map(l => leagueCard(l, q, true)).join("");  // 展開
+  }
+  if (others.length) {
+    html += `<p class="sec-label">ブロック別</p>`;
+    html += others.map(l => leagueCard(l, q, false)).join("");   // 閉じる
+  }
+  sec.innerHTML = html || `<p class="note-legend">このカテゴリにはリーグがありません。</p>`;
   bindTeamButtons(sec);
 }
 
@@ -103,8 +129,8 @@ function matches(l, q) {
   return teams.some(t => t.normalize("NFKC").toLowerCase().includes(nq));
 }
 
-function leagueCard(l, q) {
-  const open = q ? " open" : "";
+function leagueCard(l, q, forceOpen = false) {
+  const open = (q || forceOpen) ? " open" : "";
   const upd = recentIds.has(l.id) ? `<span class="badge-upd">更新</span>` : "";
   return `
   <details class="league"${open} data-league="${esc(l.id)}">
@@ -288,22 +314,54 @@ function hl(escaped, q) {
   } catch { return escaped; }
 }
 
-/* ---------- 更新履歴 ---------- */
-function renderHistory(hist) {
-  const el = $("#history");
-  if (!hist.length) {
-    el.innerHTML = `<p class="note-legend">まだ更新履歴はありません。日々の集計で変更が出ると、ここに差分が記録されます。</p>`;
-    return;
-  }
-  el.innerHTML = hist.slice(0, 15).map(h => `
-    <div class="h-entry">
+/* ---------- 更新履歴(最初3件+もっと見る) ---------- */
+const HISTORY_INITIAL = 3;
+
+function historyEntryHtml(h) {
+  return `<div class="h-entry">
       <span class="h-date">${esc(h.date)}</span>
       <ul>${h.changes.map(c => `
         <li>[${esc(c.category)}] ${esc(c.name)}${c.type === "new" ? "(初回掲載)" : ""}
           ${c.detail?.length ? `<div class="d">${c.detail.map(esc).join(" ／ ")}</div>` : ""}
         </li>`).join("")}
       </ul>
-    </div>`).join("");
+    </div>`;
+}
+
+function renderHistory(hist) {
+  const el = $("#history");
+  if (!hist.length) {
+    el.innerHTML = `<p class="note-legend">まだ更新履歴はありません。日々の集計で変更が出ると、ここに差分が記録されます。</p>`;
+    return;
+  }
+  const shown = hist.slice(0, 60);
+  const head = shown.slice(0, HISTORY_INITIAL);
+  const rest = shown.slice(HISTORY_INITIAL);
+
+  el.innerHTML = `
+    <div id="hist-head">${head.map(historyEntryHtml).join("")}</div>
+    <div id="hist-rest" class="hidden">${rest.map(historyEntryHtml).join("")}</div>
+    ${rest.length ? `<button id="hist-toggle" class="hist-more" aria-expanded="false">
+        過去の履歴をもっと見る(あと${rest.length}件)</button>` : ""}
+  `;
+
+  const btn = $("#hist-toggle");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      const rest = $("#hist-rest");
+      const open = !rest.classList.contains("hidden");
+      if (open) {
+        rest.classList.add("hidden");
+        btn.textContent = `過去の履歴をもっと見る(あと${shown.length - HISTORY_INITIAL}件)`;
+        btn.setAttribute("aria-expanded", "false");
+        $("#historySec").scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        rest.classList.remove("hidden");
+        btn.textContent = "履歴を閉じる";
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  }
 }
 
 init();
