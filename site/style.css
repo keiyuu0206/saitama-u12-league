@@ -142,7 +142,7 @@ mark{background:#FFE48A;color:inherit;padding:0 2px;border-radius:3px}
 
 /* ===== 対戦成績(展開) ===== */
 .h2h-row>td{padding:0;background:#FAFBFD;border-bottom:1px solid var(--card-line)}
-.h2h-panel{padding:4px 14px 16px}
+.h2h-panel{padding:4px 14px 16px;text-align:left}
 .h2h-title{font-size:.76rem;color:var(--muted);font-weight:700;margin:10px 0 8px;
   display:flex;align-items:center;gap:7px}
 .h2h-title .pill{font-family:var(--num);background:var(--navy);color:#fff;border-radius:5px;
@@ -166,7 +166,7 @@ mark{background:#FFE48A;color:inherit;padding:0 2px;border-radius:3px}
 
 /* ===== 注記(要確認・勝点同数) ===== */
 .note-tag{display:inline-block;font-size:.64rem;font-weight:700;line-height:1.4;
-  padding:1px 6px;border-radius:5px;vertical-align:middle;margin-left:6px;white-space:nowrap}
+  padding:1px 6px;border-radius:5px;vertical-align:middle;margin-left:6px;white-space:normal}
 .note-mismatch{background:rgba(210,59,59,.12);color:var(--red);border:1px solid rgba(210,59,59,.35)}
 .note-tiebreak{background:rgba(224,161,6,.14);color:#8A6100;border:1px solid rgba(224,161,6,.4)}
 .note-legend{padding:11px 16px 15px;font-size:.76rem;color:var(--muted);background:#F7F9FB;
