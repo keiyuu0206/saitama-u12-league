@@ -1,96 +1,345 @@
 # -*- coding: utf-8 -*-
-"""実PDF(星取表)のレイアウトを再現してパーサーを検証する"""
-from reportlab.lib.pagesizes import landscape, A4
-from reportlab.pdfgen import canvas
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.cidfonts import UnicodeCIDFont
+"""
+埼玉県第4種リーグ 星取表PDFパーサー
 
-from parser import parse_pdf
+PDFの単純なテキスト抽出では列の対応(勝点・順位)が崩れるため、
+pdfplumber の単語座標を用いて行(チーム)と列(勝点/順位)を照合する。
+"""
+import re
+import unicodedata
 
-pdfmetrics.registerFont(UnicodeCIDFont("HeiseiKakuGo-W5"))
-F = "HeiseiKakuGo-W5"
+import pdfplumber
 
-TEAMS = [
-    # (名称, 所在地, 結果9試合, 勝点, 順位[Noneなら空欄])
-    ("レジスタFC", "八潮市", "●●△○●○○○○", 16, None),
-    ("RB大宮アルディージャU-12", "さいたま市", "○△●○○○○○○", 22, None),
-    ("上尾朝日FCスポーツ少年団", "上尾市", "○△○△●○○○○", 20, None),
-    ("エクセレントフィートFC", "さいたま市", "△○●○●○○○○", 19, None),
-    ("新座片山フットボールクラブ少年団", "新座市", "●●△●●●●△△", 3, None),
-    ("浦和レッドダイヤモンズジュニア", "さいたま市", "○●○○○○○○○", 24, None),
-    ("FCアビリスタ", "川口市", "●●●●○●●○○", 9, None),
-    ("1FC川越水上公園", "川越市", "●●●●○●○●●", 6, None),
-    ("江南南サッカー少年団", "熊谷市", "●●●●△●●○●", 4, None),
-    ("ヴィオレータフットボールクラブ", "さいたま市", "●●●●△●●○○", 7, None),
-]
+MARK_WIN = "○"
+MARK_DRAW = "△"
+MARK_LOSS = "●"
+MARKS = {MARK_WIN, MARK_DRAW, MARK_LOSS}
 
-ENTRY = [t[0] for t in TEAMS]
+DATE_RE = re.compile(r"(20\d{2})\s*[/年]\s*(\d{1,2})\s*[/月]\s*(\d{1,2})")
 
 
-def build_pdf(path, with_rank):
-    c = canvas.Canvas(path, pagesize=landscape(A4))
-    W, H = landscape(A4)
-    c.setFont(F, 12)
-    c.drawString(40, H - 40, "２０２６年度　埼玉県第４種サッカーリーグ戦　勝敗表")
-    c.setFont(F, 9)
-    c.drawString(40, H - 58, "県Ｓ１リーグ")
-    c.drawRightString(W - 40, H - 40, "2026/6/14 現在")
+def normalize(s: str) -> str:
+    """全角/半角・空白・記号ゆれを吸収した比較用文字列を返す"""
+    s = unicodedata.normalize("NFKC", s)
+    s = re.sub(r"\s+", "", s)
+    s = s.replace("－", "-").replace("ー", "-").replace("−", "-")
+    return s.upper()
 
-    grid_x, pts_x, rank_x = 260, 640, 700
-    top_y, row_h, cell_w = H - 90, 30, 40
 
-    c.setFont(F, 7)
-    for j, t in enumerate(TEAMS):
-        c.drawCentredString(grid_x + j * cell_w + cell_w / 2, top_y, t[0][:4])
-    c.drawCentredString(pts_x, top_y, "勝点")
-    c.drawCentredString(rank_x, top_y, "順位")
+def _digits(text: str):
+    """✳等の装飾を除いた数値を取り出す。数値でなければNone"""
+    m = re.search(r"\d+", unicodedata.normalize("NFKC", text))
+    return int(m.group()) if m else None
 
-    ranks_sorted = sorted(TEAMS, key=lambda t: -t[3])
-    rank_of = {t[0]: i + 1 for i, t in enumerate(ranks_sorted)}
 
-    for i, (name, city, marks, pts, _) in enumerate(TEAMS):
-        y = top_y - (i + 1) * row_h
-        c.setFont(F, 8)
-        c.drawString(40, y + 6, name)
-        c.setFont(F, 6)
-        c.drawString(40, y - 4, f"({city})")
-        c.setFont(F, 9)
-        k = 0
-        for j in range(len(TEAMS)):
-            if j == i:
-                c.drawCentredString(grid_x + j * cell_w + cell_w / 2, y, "✳")
+def _find_column_band(words, label):
+    """ヘッダー語(勝点/順位)のx範囲を返す。見つからなければNone"""
+    cands = [w for w in words if label in w["text"]]
+    if not cands:
+        return None
+    w = cands[0]
+    cx = (w["x0"] + w["x1"]) / 2
+    width = max(w["x1"] - w["x0"], 20)
+    return (cx - width, cx + width)
+
+
+def _band(words, label, pad=8):
+    """ヘッダー語(勝点/順位)のx範囲を返す。見つからなければNone。
+
+    PDFによっては「勝点」が1語で入る場合と1文字ずつ分離する場合があるため、
+    まず1語一致を試し、なければ同じ行で label の各文字が連続する箇所を探す。
+    """
+    for w in words:
+        if label in w["text"]:
+            return (w["x0"] - pad, w["x1"] + pad, w["top"])
+
+    # 1文字ずつ分離しているケース: 同一行(top±4)で label の文字が順に並ぶ範囲を探す
+    chars = list(label)
+    for w0 in words:
+        if w0["text"] != chars[0]:
+            continue
+        row = sorted(
+            (w for w in words if abs(w["top"] - w0["top"]) <= 4),
+            key=lambda w: w["x0"],
+        )
+        seq = "".join(w["text"] for w in row)
+        idx = seq.find(label)
+        if idx == -1:
+            continue
+        # label に対応する単語群の x 範囲を求める
+        pos, matched = 0, []
+        for w in row:
+            wlen = len(w["text"])
+            if pos < idx + len(label) and pos + wlen > idx:
+                matched.append(w)
+            pos += wlen
+        if matched:
+            return (min(m["x0"] for m in matched) - pad,
+                    max(m["x1"] for m in matched) + pad,
+                    w0["top"])
+    return None
+
+
+NAME_X_MAX = 160  # チーム名列の右端の目安(x0がこれ未満なら名前列とみなす)
+HEADER_WORDS = {"勝点", "勝ち点", "順位", "現在"}
+
+
+def _points_anchors(words, pts_band, header_bottom):
+    """
+    勝点列の数字を各チームの縦アンカーとして返す [(top, points), ...]。
+    2段組でもチーム1つにつき勝点は1つなので、行分裂に強い。
+    """
+    anchors = []
+    lo, hi = pts_band[0], pts_band[1]
+    for w in words:
+        cx = (w["x0"] + w["x1"]) / 2
+        if lo <= cx <= hi and w["top"] > header_bottom:
+            v = _digits(w["text"])
+            if v is not None and not (1900 <= v <= 2100):  # 日付(2026等)を除外
+                anchors.append((w["top"], v))
+    anchors.sort()
+    return anchors
+
+
+RESULT_OF = {MARK_WIN: "win", MARK_DRAW: "draw", MARK_LOSS: "loss"}
+
+
+def _opponent_columns(words, pts_band):
+    """対戦相手の列ヘッダーを x 範囲付きで返す [{x0,x1,cx,label}, ...]。
+
+    勝点ヘッダーと同じ行にある、チーム名列より右・勝点列より左の短縮チーム名。
+    pts_band[0] は勝点ヘッダー x0 から pad を引いた値なので、ここでは
+    pad を戻した実際の勝点ヘッダー左端(pts_band[0] + pad相当)を右境界に使う。
+    """
+    hdr_top = pts_band[2]
+    pts_left = pts_band[0] + 8  # _band の pad=8 を戻す
+    cols = []
+    for w in sorted(words, key=lambda w: w["x0"]):
+        if abs(w["top"] - hdr_top) <= 5 and w["x0"] > NAME_X_MAX \
+                and (w["x0"] + w["x1"]) / 2 < pts_left:
+            # ヘッダー語そのもの(勝点/順位/勝ち点)は除外
+            if unicodedata.normalize("NFKC", w["text"]).strip() in (
+                    "勝点", "勝ち点", "順位"):
                 continue
-            c.drawCentredString(grid_x + j * cell_w + cell_w / 2, y, marks[k])
-            k += 1
-        c.drawCentredString(pts_x, y, str(pts))
-        if with_rank:
-            c.drawCentredString(rank_x, y, str(rank_of[name]))
-    c.save()
+            cols.append({
+                "x0": w["x0"], "x1": w["x1"],
+                "cx": (w["x0"] + w["x1"]) / 2,
+                "label": w["text"].strip(),
+            })
+    return cols
 
 
-def check(path, expect_rank_from_pdf):
-    res = parse_pdf(path, entry_teams=ENTRY)
-    st = res["standings"]
-    assert st, "解析結果が空"
-    assert len(st) == 10, f"行数 {len(st)} != 10"
-    assert res["pdf_date"] == "2026-06-14", res["pdf_date"]
-    assert res["confident"], "妥当性チェック不合格"
-    by_team = {s["team"]: s for s in st}
-    urawa = by_team["浦和レッドダイヤモンズジュニア"]
-    assert urawa["points"] == 24 and urawa["rank"] == 1, urawa
-    assert urawa["win"] == 8 and urawa["loss"] == 1 and urawa["draw"] == 0
-    katayama = by_team["新座片山フットボールクラブ少年団"]
-    assert katayama["points"] == 3 and katayama["rank"] == 10, katayama
-    regista = by_team["レジスタFC"]
-    assert regista["points"] == 16 and regista["played"] == 9
-    if not expect_rank_from_pdf:
-        assert all(s.get("rank_estimated") for s in st)
-    print(f"OK: {path}  (1位: {st[0]['team']} 勝点{st[0]['points']})")
+def parse_page(page, entry_teams=None):
+    """1ページ分の星取表を解析して standings のリストを返す。
+
+    勝点列の数字を各チームのアンカーとし、その上下の帯からマーク・チーム名・
+    順位・対戦成績を集める。1段組・2段組いずれのレイアウトにも対応する。
+    """
+    words = page.extract_words()
+    if not words:
+        return None
+
+    pts_band = _band(words, "勝点") or _band(words, "勝ち点")
+    rank_band = _band(words, "順位")
+    if pts_band is None:
+        return None  # 星取表(勝点列)が無いページ
+
+    header_bottom = pts_band[2] + 12
+    anchors = _points_anchors(words, pts_band, header_bottom)
+    if not anchors:
+        return None
+
+    opp_cols = _opponent_columns(words, pts_band)
+
+    # 各チームの担当y区間 = 隣接アンカーの中点。名前は勝点より少し上に出るため
+    # 上側は広め(-0.62)、下側はやや狭め(0.55)に取る。
+    bounds = []
+    for i, (top_i, _) in enumerate(anchors):
+        if i > 0:
+            up = top_i - (top_i - anchors[i - 1][0]) * 0.62
+        else:
+            up = top_i - 44
+        if i < len(anchors) - 1:
+            dn = top_i + (anchors[i + 1][0] - top_i) * 0.55
+        else:
+            dn = top_i + 44
+        bounds.append((up, dn))
+
+    norm_entries = [(normalize(t), t) for t in (entry_teams or [])]
+    standings = []
+    n_rows = len(anchors)
+
+    for row_idx, ((atop, pts), (y0, y1)) in enumerate(zip(anchors, bounds)):
+        cells = [w for w in words if y0 <= w["top"] < y1]
+
+        # 対戦成績: 列ごとに、その x 範囲に入るマークを集める
+        h2h = []
+        if opp_cols:
+            for col_idx, col in enumerate(opp_cols):
+                if col_idx == row_idx:
+                    h2h.append(None)  # 自チーム(✳)
+                    continue
+                res = []
+                for w in cells:
+                    cx = (w["x0"] + w["x1"]) / 2
+                    if col["x0"] - 4 <= cx <= col["x1"] + 4:
+                        for c in w["text"]:
+                            if c in MARKS:
+                                res.append(RESULT_OF[c])
+                h2h.append(res)  # [] は未対戦、['win'] や ['win','loss'] など
+
+        # 勝敗マーク(チーム名列より右)
+        marks = "".join(
+            c for w in cells if w["x0"] > NAME_X_MAX
+            for c in w["text"] if c in MARKS
+        )
+        win, draw, loss = (marks.count(m) for m in (MARK_WIN, MARK_DRAW, MARK_LOSS))
+
+        # チーム名(x0が名前列内・日本語/英字を含む・括弧書きや数値は除外)
+        name_words = []
+        for w in sorted((c for c in cells if c["x0"] < NAME_X_MAX),
+                        key=lambda w: (w["top"], w["x0"])):
+            t = w["text"]
+            tn = unicodedata.normalize("NFKC", t)
+            if tn in HEADER_WORDS:
+                continue
+            if re.fullmatch(r"[（(].*[)）]?", t):  # (さいたま市) 等
+                continue
+            if _digits(t) is not None and not re.search(r"[一-龥ぁ-んァ-ヶA-Za-z]", tn):
+                continue
+            if not re.search(r"[一-龥ぁ-んァ-ヶA-Za-zＡ-Ｚａ-ｚ]", tn):
+                continue
+            name_words.append(t)
+        raw_name = "".join(name_words).strip()
+
+        # 出場チームリストと照合して正式名称に寄せる
+        team = raw_name
+        if norm_entries and raw_name:
+            n = normalize(raw_name)
+            for nn, original in norm_entries:
+                if n == nn or (len(n) >= 3 and (n in nn or nn in n)):
+                    team = original
+                    break
+
+        # 順位
+        rank = None
+        if rank_band:
+            for w in cells:
+                cx = (w["x0"] + w["x1"]) / 2
+                if rank_band[0] <= cx <= rank_band[1] and _digits(w["text"]) is not None:
+                    rank = _digits(w["text"])
+                    break
+
+        played = win + draw + loss
+        standings.append({
+            "team": team,
+            "win": win, "draw": draw, "loss": loss,
+            "played": played,
+            # 勝点はアプリ側で計算した値(3勝+分)を正とする
+            "points": 3 * win + draw,
+            # PDFに記載されていた勝点(照合用。食い違えば要確認表示)
+            "pdf_points": pts,
+            "rank": rank,
+            "h2h": h2h,  # opp_labels と同じ並び。None=自分, []=未対戦
+        })
+
+    if not standings:
+        return None
+
+    # 対戦相手ラベル(短縮名)を正式チーム名に寄せて全チーム共通で保持
+    if opp_cols:
+        labels = [c["label"] for c in opp_cols]
+        full_names = [s["team"] for s in standings]
+        # 列数と行数が一致する場合、列ラベルは各チームの短縮名に対応する
+        resolved = []
+        for i, lab in enumerate(labels):
+            if i < len(full_names) and full_names[i]:
+                resolved.append(full_names[i])
+            else:
+                resolved.append(lab)
+        for s in standings:
+            s["opp_labels"] = resolved
+
+    # points は常にアプリ計算値(3勝+分)なので補完は不要。
+
+    # 順位列が無い場合は勝点降順で付与(同点は同順位)
+    if all(s["rank"] is None for s in standings):
+        ordered = sorted(
+            standings, key=lambda s: (-(s["points"] or 0), -s["win"]),
+        )
+        last_pts, last_rank = None, 0
+        for i, s in enumerate(ordered, 1):
+            if s["points"] != last_pts:
+                last_rank, last_pts = i, s["points"]
+            s["rank"] = last_rank
+            s["rank_estimated"] = True
+
+    standings.sort(key=lambda s: (s["rank"] is None, s["rank"] or 999, -(s["points"] or 0)))
+
+    _annotate(standings)
+    return standings
 
 
-if __name__ == "__main__":
-    build_pdf("/tmp/test_with_rank.pdf", with_rank=True)
-    build_pdf("/tmp/test_no_rank.pdf", with_rank=False)
-    check("/tmp/test_with_rank.pdf", expect_rank_from_pdf=True)
-    check("/tmp/test_no_rank.pdf", expect_rank_from_pdf=False)
-    print("全テスト合格")
+def _annotate(standings):
+    """各行に表示用の注記フラグ note を付ける。
+
+    note の値(いずれか / 複数該当時は優先度の高いものを1つ):
+      "mismatch"   … PDF記載の勝点と、アプリ計算の勝点(3勝+分)が食い違う
+                      → PDFの読み取りか、PDF側の数値に要確認
+      "estimated"  … 順位がサイト側の暫定算出(PDFに順位列が無い・得失点差未反映)
+      "tiebreak"   … PDF順位に準拠しているが、同勝点で前後している箇所
+    """
+    # 同勝点グループを把握(tiebreak判定用)。points はアプリ計算値。
+    from collections import Counter
+    pts_count = Counter(s["points"] for s in standings if s["points"] is not None)
+
+    for s in standings:
+        note = None
+        pdf_pts = s.get("pdf_points")
+        # 1) PDF記載の勝点とアプリ計算値が食い違う(最優先。要確認)
+        if pdf_pts is not None and s["points"] is not None and pdf_pts != s["points"]:
+            note = "mismatch"
+        # 2) PDF順位に従っているが、同勝点のチームが他にもいる(勝点同数)
+        #    ※ 順位がアプリ側の暫定算出(rank_estimated)でも「暫定」表記は出さない方針。
+        elif s["points"] is not None and pts_count[s["points"]] >= 2:
+            note = "tiebreak"
+        s["note"] = note
+
+
+def parse_pdf(path, entry_teams=None):
+    """
+    PDF全体を解析する。星取表を含むページのうち
+    最も多くの行が取れたページの結果を採用する。
+    戻り値: {"standings": [...], "pdf_date": "YYYY-MM-DD"|None, "pages": n}
+    """
+    best = None
+    pdf_date = None
+    with pdfplumber.open(path) as pdf:
+        for page in pdf.pages:
+            text = page.extract_text() or ""
+            m = DATE_RE.search(text)
+            if m and not pdf_date:
+                y, mo, d = m.groups()
+                pdf_date = f"{y}-{int(mo):02d}-{int(d):02d}"
+            try:
+                st = parse_page(page, entry_teams)
+            except Exception:
+                st = None
+            if st and (best is None or len(st) > len(best)):
+                best = st
+        n_pages = len(pdf.pages)
+
+    if not best:
+        return {"standings": None, "pdf_date": pdf_date, "pages": n_pages}
+
+    # 妥当性チェック: PDF記載の勝点とアプリ計算値(3勝+分)が
+    # 過半数で一致していれば、PDFを正しく読めたと判断する。
+    checkable = [s for s in best if s.get("pdf_points") is not None]
+    ok = sum(1 for s in checkable if s["pdf_points"] == s["points"])
+    confident = (not checkable) or ok >= max(1, len(checkable) // 2)
+    return {
+        "standings": best,
+        "pdf_date": pdf_date,
+        "pages": n_pages,
+        "confident": confident,
+    }
