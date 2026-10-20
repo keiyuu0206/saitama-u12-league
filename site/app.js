@@ -145,6 +145,25 @@ function leagueCard(l, q, forceOpen = false) {
   </details>`;
 }
 
+/* ---------- 注記 ---------- */
+// 新形式(notes配列)と旧形式(note単体)の両方に対応
+function rowNotes(s) {
+  if (Array.isArray(s.notes)) return s.notes;
+  return s.note ? [s.note] : [];
+}
+function noteTags(s) {
+  const n = rowNotes(s);
+  const out = [];
+  const diffs = [];
+  if (n.includes("rankdiff") && s.pdf_rank != null) diffs.push(`PDF ${s.pdf_rank}位`);
+  if (n.includes("mismatch") && s.pdf_points != null) diffs.push(`PDF勝点 ${s.pdf_points}`);
+  if (n.includes("rankdiff") || n.includes("mismatch"))
+    out.push(`<span class="note-tag note-mismatch">要確認${diffs.length ? "(" + esc(diffs.join("・")) + ")" : ""}</span>`);
+  if (n.includes("tiebreak"))
+    out.push(`<span class="note-tag note-tiebreak">勝点同数</span>`);
+  return out.length ? " " + out.join(" ") : "";
+}
+
 /* ---------- 順位表 ---------- */
 function standingsTable(l, q = "") {
   if (!l.standings) {
@@ -157,10 +176,7 @@ function standingsTable(l, q = "") {
       .includes(q.normalize("NFKC").toLowerCase());
     const rc = s.rank <= 3 ? ` r${s.rank}` : "";
     const hasH2h = Array.isArray(s.h2h) && s.h2h.some(x => x && x.length);
-    const tag = s.note === "mismatch"
-      ? ` <span class="note-tag note-mismatch">要確認</span>`
-      : s.note === "tiebreak"
-      ? ` <span class="note-tag note-tiebreak">勝点同数</span>` : "";
+    const tag = noteTags(s);
     const chev = hasH2h
       ? `<svg class="mini-chev" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`
       : "";
@@ -183,13 +199,15 @@ function standingsTable(l, q = "") {
     </tr>`;
   }).join("");
 
-  // 注記凡例(要確認・勝点同数のみ。暫定表記は表示しない)
-  const kinds = new Set(l.standings.map(s => s.note).filter(Boolean));
+  // 注記凡例(そのリーグに出ている注記だけを説明する)
+  const kinds = new Set(l.standings.flatMap(rowNotes));
   const items = [];
   if (kinds.has("mismatch"))
-    items.push(`<span class="note-tag note-mismatch">要確認</span> 勝点と勝敗数が一致しません。公式PDFの数値をご確認ください。`);
+    items.push(`<span class="note-tag note-mismatch">要確認</span> 勝敗数から計算した勝点と、PDF記載の勝点が一致しません(カッコ内はPDFの値)。勝点はアプリの計算値を表示しています。`);
+  if (kinds.has("rankdiff"))
+    items.push(`<span class="note-tag note-mismatch">要確認</span> PDF記載の順位が勝点と一致しません(カッコ内はPDFの値)。順位は勝点順で表示し、勝点が同じ場合のみPDFの順位を採用しています。`);
   if (kinds.has("tiebreak"))
-    items.push(`<span class="note-tag note-tiebreak">勝点同数</span> 勝点が同じチームがあります。順位は連盟の確定順位(得失点差等)に準拠しています。`);
+    items.push(`<span class="note-tag note-tiebreak">勝点同数</span> 勝点が同じチームの上下は、連盟の確定順位(得失点差等)に準拠しています。`);
   const legend = items.length
     ? `<div class="note-legend">${items.map(t => `<p>${t}</p>`).join("")}</div>` : "";
 
@@ -252,7 +270,7 @@ function h2hPanel(s, league) {
       marks = `<span class="rmark none">—</span>`;
     } else {
       marks = res.map(r => {
-        const label = { win: "○", draw: "△", loss: "●" }[r];
+        const label = { win: "勝", draw: "分", loss: "敗" }[r];
         return `<span class="rmark ${r}">${label}</span>`;
       }).join("");
     }
