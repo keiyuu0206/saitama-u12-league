@@ -129,6 +129,28 @@ def _opponent_columns(words, pts_band):
     return cols
 
 
+def _match_entry(raw_name, norm_entries):
+    """PDFから読んだチーム名を、連盟サイトの出場チーム名に照合する。
+
+    1) 正規化後に完全一致するものを最優先
+    2) なければ部分一致する候補のうち、文字数の差が最小のもの
+    3) どれにも当たらなければ PDF の読み取り名をそのまま使う
+    """
+    if not raw_name or not norm_entries:
+        return raw_name
+    n = normalize(raw_name)
+    for nn, original in norm_entries:
+        if n == nn:
+            return original
+    best, best_diff = None, None
+    for nn, original in norm_entries:
+        if len(n) >= 3 and (n in nn or nn in n):
+            diff = abs(len(nn) - len(n))
+            if best_diff is None or diff < best_diff:
+                best, best_diff = original, diff
+    return best or raw_name
+
+
 def parse_page(page, entry_teams=None):
     """1ページ分の星取表を解析して standings のリストを返す。
 
@@ -197,8 +219,18 @@ def parse_page(page, entry_teams=None):
 
         # チーム名(x0が名前列内・日本語/英字を含む・括弧書きや数値は除外)
         name_words = []
-        for w in sorted((c for c in cells if c["x0"] < NAME_X_MAX),
-                        key=lambda w: (w["top"], w["x0"])):
+        # 同じ行の語は左から順に読む。アクセント付き文字(ě など)は
+        # わずかに上にずれて抽出されるため、top の差が小さい語は同一行とみなす。
+        name_cells = sorted((c for c in cells if c["x0"] < NAME_X_MAX),
+                            key=lambda w: w["top"])
+        lines = []
+        for w in name_cells:
+            if lines and abs(w["top"] - lines[-1][0]["top"]) <= 4:
+                lines[-1].append(w)
+            else:
+                lines.append([w])
+        ordered_words = [w for line in lines for w in sorted(line, key=lambda w: w["x0"])]
+        for w in ordered_words:
             t = w["text"]
             tn = unicodedata.normalize("NFKC", t)
             if tn in HEADER_WORDS:
@@ -212,14 +244,11 @@ def parse_page(page, entry_teams=None):
             name_words.append(t)
         raw_name = "".join(name_words).strip()
 
-        # 出場チームリストと照合して正式名称に寄せる
-        team = raw_name
-        if norm_entries and raw_name:
-            n = normalize(raw_name)
-            for nn, original in norm_entries:
-                if n == nn or (len(n) >= 3 and (n in nn or nn in n)):
-                    team = original
-                    break
+        # 出場チームリストと照合して正式名称に寄せる。
+        # 「FCチベッタ」と「FCチベッタ深谷」のように一方が他方を含む名前があるため、
+        # 最初に見つかった部分一致ではなく、完全一致を最優先し、
+        # 次に文字数の差が最も小さい(=最も近い)候補を選ぶ。
+        team = _match_entry(raw_name, norm_entries)
 
         # 順位
         rank = None
@@ -260,50 +289,56 @@ def parse_page(page, entry_teams=None):
         for s in standings:
             s["opp_labels"] = resolved
 
-    # points は常にアプリ計算値(3勝+分)なので補完は不要。
+    # ---- 順位の決定 ----------------------------------------------------
+    # 勝点(アプリ計算値)の高い順に並べ、勝点が同じチームの間だけ
+    # PDFの順位(得失点差等を反映した連盟の判断)で上下を決める。
+    # PDFの順位が勝点と整合していれば結果はPDFと同一になり、
+    # PDF側が矛盾している場合のみアプリの計算が優先される。
+    for s in standings:
+        s["pdf_rank"] = s["rank"]  # PDF記載の順位(照合・表示用)
 
-    # 順位列が無い場合は勝点降順で付与(同点は同順位)
-    if all(s["rank"] is None for s in standings):
-        ordered = sorted(
-            standings, key=lambda s: (-(s["points"] or 0), -s["win"]),
-        )
-        last_pts, last_rank = None, 0
-        for i, s in enumerate(ordered, 1):
-            if s["points"] != last_pts:
-                last_rank, last_pts = i, s["points"]
-            s["rank"] = last_rank
-            s["rank_estimated"] = True
+    ordered = sorted(
+        standings,
+        key=lambda s: (-(s["points"] or 0),
+                       s["pdf_rank"] if s["pdf_rank"] is not None else 999),
+    )
+    prev_key, prev_rank = None, 0
+    for i, s in enumerate(ordered, 1):
+        # 勝点もPDF順位も同じ(またはPDF順位なし)なら同順位
+        key = (s["points"], s["pdf_rank"])
+        if key != prev_key:
+            prev_rank, prev_key = i, key
+        s["rank"] = prev_rank
 
-    standings.sort(key=lambda s: (s["rank"] is None, s["rank"] or 999, -(s["points"] or 0)))
-
+    standings[:] = ordered
     _annotate(standings)
     return standings
 
 
 def _annotate(standings):
-    """各行に表示用の注記フラグ note を付ける。
+    """各行に表示用の注記リスト notes を付ける(該当するものすべて)。
 
-    note の値(いずれか / 複数該当時は優先度の高いものを1つ):
-      "mismatch"   … PDF記載の勝点と、アプリ計算の勝点(3勝+分)が食い違う
-                      → PDFの読み取りか、PDF側の数値に要確認
-      "estimated"  … 順位がサイト側の暫定算出(PDFに順位列が無い・得失点差未反映)
-      "tiebreak"   … PDF順位に準拠しているが、同勝点で前後している箇所
+      "mismatch"  … PDF記載の勝点と、アプリ計算の勝点(3勝+分)が食い違う
+      "rankdiff"  … PDF記載の順位と、表示している順位が食い違う
+      "tiebreak"  … 勝点が同じチームがおり、その間の上下はPDF順位で決めている
+
+    互換のため、最も重要な1つを note にも入れる。
     """
-    # 同勝点グループを把握(tiebreak判定用)。points はアプリ計算値。
     from collections import Counter
     pts_count = Counter(s["points"] for s in standings if s["points"] is not None)
 
     for s in standings:
-        note = None
+        notes = []
         pdf_pts = s.get("pdf_points")
-        # 1) PDF記載の勝点とアプリ計算値が食い違う(最優先。要確認)
         if pdf_pts is not None and s["points"] is not None and pdf_pts != s["points"]:
-            note = "mismatch"
-        # 2) PDF順位に従っているが、同勝点のチームが他にもいる(勝点同数)
-        #    ※ 順位がアプリ側の暫定算出(rank_estimated)でも「暫定」表記は出さない方針。
-        elif s["points"] is not None and pts_count[s["points"]] >= 2:
-            note = "tiebreak"
-        s["note"] = note
+            notes.append("mismatch")
+        pdf_rank = s.get("pdf_rank")
+        if pdf_rank is not None and s["rank"] is not None and pdf_rank != s["rank"]:
+            notes.append("rankdiff")
+        if s["points"] is not None and pts_count[s["points"]] >= 2:
+            notes.append("tiebreak")
+        s["notes"] = notes
+        s["note"] = notes[0] if notes else None
 
 
 def parse_pdf(path, entry_teams=None):
