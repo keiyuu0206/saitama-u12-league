@@ -65,9 +65,9 @@
   "last_changed": "2026-10-21"
  },
  "2432": {
-  "sha256": "9011504b6bec1b2d3cffda56da7c3bad82985da165b2308cee14867431cfc2ae",
+  "sha256": "a9e86d92da85628c7266018a2e6429e42856ff70a892c76de201847f3375713e",
   "pdf_url": "https://www.saitama-u12.com/files/topics/2432_ext_16_0.pdf",
-  "last_changed": "2026-10-21"
+  "last_changed": "2026-11-10"
  },
  "1246": {
   "sha256": "8f83fc0733fcdea52492cf716d118887ab605bfbf700c7268dc5b67020265d61",
@@ -110,9 +110,9 @@
   "last_changed": "2026-10-21"
  },
  "1242": {
-  "sha256": "f3b89f0953bd6003b62f29a631825533990367a3d26e4bee66e3bfe33165f7f4",
+  "sha256": "78aa9ac4549804051147f53bda08c3f74d401baa3d31cb5fda3bafb475193a5a",
   "pdf_url": "https://www.saitama-u12.com/files/topics/1242_ext_16_0.pdf",
-  "last_changed": "2026-10-21"
+  "last_changed": "2026-11-10"
  },
  "1243": {
   "sha256": "2d557470d1302549a97598f19441f5122ee7218b96bafb8595a1d5844d360ea8",
@@ -140,14 +140,14 @@
   "last_changed": "2026-11-07"
  },
  "1389": {
-  "sha256": "e3076b969a3a302281f8864783d7827057cdf7727a22b99674136bdd53ea51d0",
+  "sha256": "ec08a52862347ffa8dbe22fa555dff0205ea358caa656c2a3a6f56af9d37af4a",
   "pdf_url": "https://www.saitama-u12.com/files/topics/1389_ext_16_0.pdf",
-  "last_changed": "2026-10-21"
+  "last_changed": "2026-11-10"
  },
  "91": {
-  "sha256": "ece9b7d583ef36cf3ac14e71f13caced5a4a05c8718e074dd4bc9653db508001",
+  "sha256": "b376b93ad8ac6abd10efde25066f64f57cb27b5759a371d535a4ce8dde19378e",
   "pdf_url": "https://www.saitama-u12.com/files/topics/91_ext_16_0.pdf",
-  "last_changed": "2026-10-21"
+  "last_changed": "2026-11-10"
  },
  "1255": {
   "sha256": "43990b82937e6cf0682ea10f06565ab2551669405368b0fe48534011fc180043",
@@ -160,9 +160,9 @@
   "last_changed": "2026-10-21"
  },
  "1257": {
-  "sha256": "61619bec5bf6c9e01d6a00b00cafa7074726bbc8fdbf069d8e7cd369d9631f18",
+  "sha256": "dbc20208ad7b3fe8e5926ca367cf8683568b1aa5ec43763b72195ed5ca426126",
   "pdf_url": "https://www.saitama-u12.com/files/topics/1257_ext_16_0.pdf",
-  "last_changed": "2026-11-07"
+  "last_changed": "2026-11-10"
  },
  "1258": {
   "sha256": "933f9e4879f28afcafd7cd87c05b7a56ab3676cf12807e2c838b527e0c2fe8c7",
@@ -175,19 +175,19 @@
   "last_changed": "2026-10-21"
  },
  "1260": {
-  "sha256": "ea76b1a9ba814a400171f020ec086d643b4ba27987ce8c43cabbc8578d2eaef6",
+  "sha256": "d568198a5431374c702df88c2e1c5f9400bf8e6b98c29a6c9141f68fa87742cb",
   "pdf_url": "https://www.saitama-u12.com/files/topics/1260_ext_16_0.pdf",
-  "last_changed": "2026-10-27"
+  "last_changed": "2026-11-10"
  },
  "1261": {
-  "sha256": "c08129b15d9e49464da0a745631456c3a37e8126fccd137ce0624226a9309367",
+  "sha256": "bfecc6737de05ca3f69d8285a5328c12d7a83fc96b1d2ea2f6ec1ed7a0a6460b",
   "pdf_url": "https://www.saitama-u12.com/files/topics/1261_ext_16_0.pdf",
-  "last_changed": "2026-10-27"
+  "last_changed": "2026-11-10"
  },
  "1262": {
-  "sha256": "67f2e63beb6e70eb26eb3cfaea853987a791c157a073e18bc8639724e6b6053d",
+  "sha256": "8e2e88b868daf55b40720ca0c0d9f64b4b0d90cd3f8f9432f97d676a37a6bf1c",
   "pdf_url": "https://www.saitama-u12.com/files/topics/1262_ext_16_0.pdf",
-  "last_changed": "2026-11-07"
+  "last_changed": "2026-11-10"
  },
  "1263": {
   "sha256": "6e3fe4a61b3019dfe5341089ccea15236b6d28dc12b0b84bba36720e4d36ea0c",
@@ -230,9 +230,9 @@
   "last_changed": "2026-11-07"
  },
  "1271": {
-  "sha256": "e4320194efa336553c3027ecd6f3e680f3058e85b2baf2680d01487061d2d647",
+  "sha256": "a9bb6b4587ea2f787d3e5c9d44473ee0ce7fcb6f4c5e348c14e1c7ed597ec77d",
   "pdf_url": "https://www.saitama-u12.com/files/topics/1271_ext_16_0.pdf",
-  "last_changed": "2026-10-21"
+  "last_changed": "2026-11-10"
  },
  "1272": {
   "sha256": "34fa8311e262796956c8251ded58e3ac3121d52424816ef1ae1ca7b46919671d",
