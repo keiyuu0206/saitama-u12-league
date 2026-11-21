@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T10:58:40.159067+09:00",
+ "generated_at": "2026-11-21T10:55:32.591037+09:00",
  "source": "https://www.saitama-u12.com/league/",
  "leagues": [
   {
@@ -1555,8 +1555,8 @@
      "team": "三郷フットボールクラブＪｒ．",
      "win": 4,
      "draw": 1,
-     "loss": 7,
-     "played": 12,
+     "loss": 8,
+     "played": 13,
      "points": 13,
      "pdf_points": 13,
      "rank": 5,
@@ -1586,6 +1586,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -1768,7 +1769,7 @@
     }
    ],
    "pdf_date": "2026-11-07",
-   "last_changed": "2026-11-12"
+   "last_changed": "2026-11-21"
   },
   {
    "id": "89",
@@ -2217,6 +2218,57 @@
    "status": "ok",
    "standings": [
     {
+     "team": "武里サッカークラブ",
+     "win": 9,
+     "draw": 1,
+     "loss": 1,
+     "played": 11,
+     "points": 28,
+     "pdf_points": 28,
+     "rank": 1,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "draw",
+       "win"
+      ],
+      [
+       "win"
+      ],
+      null
+     ],
+     "opp_labels": [
+      "上沖サッカークラブ アルファ",
+      "大増サンライズフットボールクラブ",
+      "栄町キッカーズ",
+      "百間サッカースポーツ少年団",
+      "牛島フットボールクラブ",
+      "埼玉オーステンＳＣジュニ ア",
+      "ｓｕｒｐｒｉｚ ｊｒ",
+      "武里サッカークラブ"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
      "team": "大増サンライズフットボールクラブ",
      "win": 7,
      "draw": 2,
@@ -2224,7 +2276,7 @@
      "played": 11,
      "points": 23,
      "pdf_points": 23,
-     "rank": 1,
+     "rank": 2,
      "h2h": [
       [
        "win"
@@ -2277,7 +2329,7 @@
      "played": 11,
      "points": 23,
      "pdf_points": 23,
-     "rank": 1,
+     "rank": 2,
      "h2h": [
       [
        "win"
@@ -2321,55 +2373,6 @@
       "tiebreak"
      ],
      "note": "tiebreak"
-    },
-    {
-     "team": "武里サッカークラブ",
-     "win": 7,
-     "draw": 1,
-     "loss": 1,
-     "played": 9,
-     "points": 22,
-     "pdf_points": 22,
-     "rank": 3,
-     "h2h": [
-      [
-       "win",
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "draw",
-       "win"
-      ],
-      [
-       "win"
-      ],
-      null
-     ],
-     "opp_labels": [
-      "上沖サッカークラブ アルファ",
-      "大増サンライズフットボールクラブ",
-      "栄町キッカーズ",
-      "百間サッカースポーツ少年団",
-      "牛島フットボールクラブ",
-      "埼玉オーステンＳＣジュニ ア",
-      "ｓｕｒｐｒｉｚ ｊｒ",
-      "武里サッカークラブ"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
     },
     {
      "team": "埼玉オーステンＳＣジュニ ア",
@@ -2425,11 +2428,11 @@
     {
      "team": "牛島フットボールクラブ",
      "win": 4,
-     "draw": 0,
-     "loss": 6,
-     "played": 10,
-     "points": 12,
-     "pdf_points": 12,
+     "draw": 1,
+     "loss": 7,
+     "played": 12,
+     "points": 13,
+     "pdf_points": 13,
      "rank": 5,
      "h2h": [
       [
@@ -2441,7 +2444,8 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       [
        "win",
@@ -2455,6 +2459,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -2475,11 +2480,11 @@
     {
      "team": "栄町キッカーズ",
      "win": 3,
-     "draw": 2,
-     "loss": 6,
-     "played": 11,
-     "points": 11,
-     "pdf_points": 11,
+     "draw": 3,
+     "loss": 7,
+     "played": 13,
+     "points": 12,
+     "pdf_points": 12,
      "rank": 6,
      "h2h": [
       [
@@ -2495,7 +2500,8 @@
        "draw"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "loss",
@@ -2506,6 +2512,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -2625,8 +2632,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-06"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1224",
@@ -3072,12 +3079,12 @@
    "standings": [
     {
      "team": "Azulente KAZO U-12",
-     "win": 10,
+     "win": 12,
      "draw": 1,
      "loss": 1,
-     "played": 12,
-     "points": 31,
-     "pdf_points": 31,
+     "played": 14,
+     "points": 37,
+     "pdf_points": 37,
      "rank": 1,
      "h2h": [
       [
@@ -3098,6 +3105,7 @@
       ],
       null,
       [
+       "win",
        "win"
       ],
       [
@@ -3105,6 +3113,7 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ]
      ],
@@ -3175,11 +3184,67 @@
      "note": null
     },
     {
+     "team": "ファルカオ FC  久喜",
+     "win": 8,
+     "draw": 0,
+     "loss": 6,
+     "played": 14,
+     "points": 24,
+     "pdf_points": 24,
+     "rank": 3,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      null,
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ]
+     ],
+     "opp_labels": [
+      "加須ユナイテッドＦＣ",
+      "ForWarD FC",
+      "ファルカオ FC  久喜",
+      "上高野FC　ファミレド",
+      "Azulente KAZO U-12",
+      "行田ＳＣ",
+      "ＳＵＧＩＴＯ UNITEDO FOOTBALL CLUB Uー12",
+      "栗橋ジュニアサッカークラブ"
+     ],
+     "pdf_rank": null,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
+    },
+    {
      "team": "栗橋ジュニアサッカークラブ",
      "win": 8,
      "draw": 0,
-     "loss": 4,
-     "played": 12,
+     "loss": 5,
+     "played": 13,
      "points": 24,
      "pdf_points": 24,
      "rank": 3,
@@ -3201,6 +3266,7 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -3223,45 +3289,49 @@
       "栗橋ジュニアサッカークラブ"
      ],
      "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
-     "team": "ファルカオ FC  久喜",
-     "win": 7,
-     "draw": 0,
-     "loss": 5,
-     "played": 12,
-     "points": 21,
-     "pdf_points": 21,
-     "rank": 4,
+     "team": "上高野FC　ファミレド",
+     "win": 6,
+     "draw": 2,
+     "loss": 6,
+     "played": 14,
+     "points": 20,
+     "pdf_points": 20,
+     "rank": 5,
      "h2h": [
       [
        "win",
        "win"
       ],
       [
+       "win",
+       "win"
+      ],
+      [
+       "win",
        "win"
       ],
       null,
       [
+       "loss",
+       "loss"
+      ],
+      [
+       "draw",
+       "loss"
+      ],
+      [
+       "draw",
        "loss"
       ],
       [
        "loss",
        "loss"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "win",
-       "win"
       ]
      ],
      "opp_labels": [
@@ -3282,11 +3352,11 @@
      "team": "行田ＳＣ",
      "win": 5,
      "draw": 2,
-     "loss": 5,
-     "played": 12,
+     "loss": 6,
+     "played": 13,
      "points": 17,
      "pdf_points": 17,
-     "rank": 5,
+     "rank": 6,
      "h2h": [
       [
        "win",
@@ -3305,6 +3375,7 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       null,
@@ -3331,23 +3402,17 @@
      "note": null
     },
     {
-     "team": "上高野FC　ファミレド",
-     "win": 4,
-     "draw": 2,
-     "loss": 6,
-     "played": 12,
-     "points": 14,
-     "pdf_points": 14,
-     "rank": 6,
+     "team": "ForWarD FC",
+     "win": 1,
+     "draw": 1,
+     "loss": 12,
+     "played": 14,
+     "points": 4,
+     "pdf_points": 4,
+     "rank": 7,
      "h2h": [
       [
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
+       "loss",
        "win"
       ],
       null,
@@ -3356,11 +3421,19 @@
        "loss"
       ],
       [
-       "draw",
+       "loss",
        "loss"
       ],
       [
-       "draw",
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "loss",
        "loss"
       ],
       [
@@ -3386,69 +3459,15 @@
      "team": "加須ユナイテッドＦＣ",
      "win": 1,
      "draw": 0,
-     "loss": 11,
-     "played": 12,
+     "loss": 13,
+     "played": 14,
      "points": 3,
      "pdf_points": 3,
-     "rank": 7,
-     "h2h": [
-      null,
-      [
-       "win"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "加須ユナイテッドＦＣ",
-      "ForWarD FC",
-      "ファルカオ FC  久喜",
-      "上高野FC　ファミレド",
-      "Azulente KAZO U-12",
-      "行田ＳＣ",
-      "ＳＵＧＩＴＯ UNITEDO FOOTBALL CLUB Uー12",
-      "栗橋ジュニアサッカークラブ"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "ForWarD FC",
-     "win": 0,
-     "draw": 1,
-     "loss": 11,
-     "played": 12,
-     "points": 1,
-     "pdf_points": 1,
      "rank": 8,
      "h2h": [
-      [
-       "loss"
-      ],
       null,
       [
+       "win",
        "loss"
       ],
       [
@@ -3461,7 +3480,11 @@
       ],
       [
        "loss",
-       "draw"
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
       ],
       [
        "loss",
@@ -3487,8 +3510,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-06"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1226",
@@ -3510,12 +3533,12 @@
    "standings": [
     {
      "team": "東鷲宮FC",
-     "win": 9,
+     "win": 11,
      "draw": 3,
      "loss": 0,
-     "played": 12,
-     "points": 30,
-     "pdf_points": 30,
+     "played": 14,
+     "points": 36,
+     "pdf_points": 36,
      "rank": 1,
      "h2h": [
       [
@@ -3527,9 +3550,11 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -3556,18 +3581,18 @@
       "Azulente KAZO U-12 Orange",
       "東鷲宮FC"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 1,
      "notes": [],
      "note": null
     },
     {
      "team": "行田サウスフェニックスサッカースポーツ少年団",
-     "win": 9,
-     "draw": 1,
+     "win": 10,
+     "draw": 2,
      "loss": 2,
-     "played": 12,
-     "points": 28,
-     "pdf_points": 28,
+     "played": 14,
+     "points": 32,
+     "pdf_points": 32,
      "rank": 2,
      "h2h": [
       [
@@ -3579,10 +3604,12 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "loss",
@@ -3608,19 +3635,73 @@
       "Azulente KAZO U-12 Orange",
       "東鷲宮FC"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 2,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "Ｓａｉｔａｍａ ｅａｓｔ SV",
+     "win": 9,
+     "draw": 2,
+     "loss": 3,
+     "played": 14,
+     "points": 29,
+     "pdf_points": 29,
+     "rank": 3,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      null,
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "draw",
+       "win"
+      ],
+      [
+       "draw",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "砂原サッカースポーツ少年団",
+      "REDONDO FC",
+      "幸手ユナイテッドFC",
+      "久喜キッカーズ",
+      "Ｓａｉｔａｍａ ｅａｓｔ SV",
+      "行田サウスフェニックスサッカースポーツ少年団",
+      "Azulente KAZO U-12 Orange",
+      "東鷲宮FC"
+     ],
+     "pdf_rank": 3,
      "notes": [],
      "note": null
     },
     {
      "team": "REDONDO FC",
-     "win": 7,
+     "win": 8,
      "draw": 2,
-     "loss": 3,
-     "played": 12,
-     "points": 23,
-     "pdf_points": 23,
-     "rank": 3,
+     "loss": 4,
+     "played": 14,
+     "points": 26,
+     "pdf_points": 26,
+     "rank": 4,
      "h2h": [
       [
        "win",
@@ -3636,66 +3717,14 @@
        "win"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "loss",
        "loss"
       ],
       [
-       "draw"
-      ],
-      [
-       "draw",
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "砂原サッカースポーツ少年団",
-      "REDONDO FC",
-      "幸手ユナイテッドFC",
-      "久喜キッカーズ",
-      "Ｓａｉｔａｍａ ｅａｓｔ SV",
-      "行田サウスフェニックスサッカースポーツ少年団",
-      "Azulente KAZO U-12 Orange",
-      "東鷲宮FC"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
-     "team": "Ｓａｉｔａｍａ ｅａｓｔ SV",
-     "win": 7,
-     "draw": 2,
-     "loss": 3,
-     "played": 12,
-     "points": 23,
-     "pdf_points": 23,
-     "rank": 3,
-     "h2h": [
-      [
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      null,
-      [
-       "win",
-       "loss"
-      ],
-      [
        "draw",
        "win"
       ],
@@ -3714,27 +3743,27 @@
       "Azulente KAZO U-12 Orange",
       "東鷲宮FC"
      ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
+     "pdf_rank": 4,
+     "notes": [],
+     "note": null
     },
     {
      "team": "Azulente KAZO U-12 Orange",
-     "win": 4,
+     "win": 5,
      "draw": 3,
-     "loss": 5,
-     "played": 12,
-     "points": 15,
-     "pdf_points": 15,
+     "loss": 6,
+     "played": 14,
+     "points": 18,
+     "pdf_points": 18,
      "rank": 5,
      "h2h": [
       [
-       "draw"
+       "draw",
+       "win"
       ],
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       [
        "win",
@@ -3768,18 +3797,18 @@
       "Azulente KAZO U-12 Orange",
       "東鷲宮FC"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 5,
      "notes": [],
      "note": null
     },
     {
      "team": "久喜キッカーズ",
      "win": 4,
-     "draw": 0,
-     "loss": 8,
-     "played": 12,
-     "points": 12,
-     "pdf_points": 12,
+     "draw": 1,
+     "loss": 9,
+     "played": 14,
+     "points": 13,
+     "pdf_points": 13,
      "rank": 6,
      "h2h": [
       [
@@ -3800,13 +3829,15 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       [
        "loss",
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -3820,7 +3851,7 @@
       "Azulente KAZO U-12 Orange",
       "東鷲宮FC"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
@@ -3828,8 +3859,8 @@
      "team": "砂原サッカースポーツ少年団",
      "win": 1,
      "draw": 1,
-     "loss": 10,
-     "played": 12,
+     "loss": 12,
+     "played": 14,
      "points": 4,
      "pdf_points": 4,
      "rank": 7,
@@ -3848,6 +3879,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -3855,7 +3887,8 @@
        "loss"
       ],
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       [
        "loss",
@@ -3872,7 +3905,7 @@
       "Azulente KAZO U-12 Orange",
       "東鷲宮FC"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     },
@@ -3880,8 +3913,8 @@
      "team": "幸手ユナイテッドFC",
      "win": 1,
      "draw": 0,
-     "loss": 11,
-     "played": 12,
+     "loss": 13,
+     "played": 14,
      "points": 3,
      "pdf_points": 3,
      "rank": 8,
@@ -3904,6 +3937,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -3911,6 +3945,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -3924,13 +3959,13 @@
       "Azulente KAZO U-12 Orange",
       "東鷲宮FC"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 8,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-11-03",
-   "last_changed": "2026-11-06"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "2431",
@@ -3950,20 +3985,22 @@
    "standings": [
     {
      "team": "上高野ＦＣ",
-     "win": 10,
+     "win": 11,
      "draw": 0,
-     "loss": 0,
-     "played": 10,
-     "points": 30,
-     "pdf_points": 30,
+     "loss": 1,
+     "played": 12,
+     "points": 33,
+     "pdf_points": 33,
      "rank": 1,
      "h2h": [
       [
+       "win",
        "win"
       ],
       null,
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "win",
@@ -3991,18 +4028,18 @@
       "中央キャッスルキッズフットボールクラブ",
       "C．F LATTE"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 1,
      "notes": [],
      "note": null
     },
     {
      "team": "IFC/LIVENT",
-     "win": 7,
+     "win": 9,
      "draw": 2,
      "loss": 1,
-     "played": 10,
-     "points": 23,
-     "pdf_points": 23,
+     "played": 12,
+     "points": 29,
+     "pdf_points": 29,
      "rank": 2,
      "h2h": [
       [
@@ -4010,7 +4047,8 @@
        "win"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       null,
       [
@@ -4022,6 +4060,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -4038,18 +4077,18 @@
       "中央キャッスルキッズフットボールクラブ",
       "C．F LATTE"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 2,
      "notes": [],
      "note": null
     },
     {
      "team": "C．F LATTE",
-     "win": 5,
-     "draw": 1,
+     "win": 6,
+     "draw": 2,
      "loss": 4,
-     "played": 10,
-     "points": 16,
-     "pdf_points": 16,
+     "played": 12,
+     "points": 20,
+     "pdf_points": 20,
      "rank": 3,
      "h2h": [
       [
@@ -4065,14 +4104,16 @@
        "draw"
       ],
       [
-       "win"
-      ],
-      [
+       "win",
        "win"
       ],
       [
        "win",
        "loss"
+      ],
+      [
+       "win",
+       "draw"
       ],
       null
      ],
@@ -4085,119 +4126,22 @@
       "中央キャッスルキッズフットボールクラブ",
       "C．F LATTE"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 3,
      "notes": [],
      "note": null
     },
     {
-     "team": "久喜キッカーズ ホワイト",
-     "win": 4,
-     "draw": 0,
-     "loss": 6,
-     "played": 10,
-     "points": 12,
-     "pdf_points": 12,
-     "rank": 4,
-     "h2h": [
-      [
-       "win",
-       "win"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      null,
-      [
-       "win"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      [
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "杉戸倉松サッカースポーツ少年団",
-      "上高野ＦＣ",
-      "IFC/LIVENT",
-      "久喜キッカーズ ホワイト",
-      "東鷲宮FC イーグルス",
-      "中央キャッスルキッズフットボールクラブ",
-      "C．F LATTE"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
-     "team": "中央キャッスルキッズフットボールクラブ",
-     "win": 4,
-     "draw": 0,
-     "loss": 6,
-     "played": 10,
-     "points": 12,
-     "pdf_points": 12,
-     "rank": 4,
-     "h2h": [
-      [
-       "win",
-       "win"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      null,
-      [
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "杉戸倉松サッカースポーツ少年団",
-      "上高野ＦＣ",
-      "IFC/LIVENT",
-      "久喜キッカーズ ホワイト",
-      "東鷲宮FC イーグルス",
-      "中央キャッスルキッズフットボールクラブ",
-      "C．F LATTE"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
      "team": "東鷲宮FC イーグルス",
-     "win": 3,
+     "win": 5,
      "draw": 1,
      "loss": 6,
-     "played": 10,
-     "points": 10,
-     "pdf_points": 10,
-     "rank": 6,
+     "played": 12,
+     "points": 16,
+     "pdf_points": 16,
+     "rank": 4,
      "h2h": [
       [
+       "win",
        "win"
       ],
       [
@@ -4209,7 +4153,8 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       null,
       [
@@ -4230,7 +4175,105 @@
       "中央キャッスルキッズフットボールクラブ",
       "C．F LATTE"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 4,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "中央キャッスルキッズフットボールクラブ",
+     "win": 4,
+     "draw": 1,
+     "loss": 7,
+     "played": 12,
+     "points": 13,
+     "pdf_points": 13,
+     "rank": 5,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      null,
+      [
+       "loss",
+       "draw"
+      ]
+     ],
+     "opp_labels": [
+      "杉戸倉松サッカースポーツ少年団",
+      "上高野ＦＣ",
+      "IFC/LIVENT",
+      "久喜キッカーズ ホワイト",
+      "東鷲宮FC イーグルス",
+      "中央キャッスルキッズフットボールクラブ",
+      "C．F LATTE"
+     ],
+     "pdf_rank": 5,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "久喜キッカーズ ホワイト",
+     "win": 4,
+     "draw": 0,
+     "loss": 8,
+     "played": 12,
+     "points": 12,
+     "pdf_points": 12,
+     "rank": 6,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      null,
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "杉戸倉松サッカースポーツ少年団",
+      "上高野ＦＣ",
+      "IFC/LIVENT",
+      "久喜キッカーズ ホワイト",
+      "東鷲宮FC イーグルス",
+      "中央キャッスルキッズフットボールクラブ",
+      "C．F LATTE"
+     ],
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
@@ -4238,17 +4281,14 @@
      "team": "杉戸倉松サッカースポーツ少年団",
      "win": 0,
      "draw": 0,
-     "loss": 10,
-     "played": 10,
+     "loss": 12,
+     "played": 12,
      "points": 0,
      "pdf_points": 0,
      "rank": 7,
      "h2h": [
       null,
       [
-       "loss"
-      ],
-      [
        "loss",
        "loss"
       ],
@@ -4257,6 +4297,11 @@
        "loss"
       ],
       [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
        "loss"
       ],
       [
@@ -4277,13 +4322,13 @@
       "中央キャッスルキッズフットボールクラブ",
       "C．F LATTE"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-11-03",
-   "last_changed": "2026-11-06"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1229",
@@ -5794,35 +5839,42 @@
    "status": "ok",
    "standings": [
     {
-     "team": "越谷サンシンサッカースポーツ少年団",
-     "win": 6,
+     "team": "南郷FCスポーツ少年団",
+     "win": 12,
      "draw": 1,
-     "loss": 0,
-     "played": 7,
-     "points": 19,
-     "pdf_points": 19,
+     "loss": 1,
+     "played": 14,
+     "points": 37,
+     "pdf_points": 37,
      "rank": 1,
      "h2h": [
       [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
        "win"
       ],
       null,
       [
+       "win",
        "win"
       ],
       [
+       "loss",
        "win"
       ],
       [
+       "win",
        "draw"
       ],
       [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
+       "win",
        "win"
       ]
      ],
@@ -5841,227 +5893,42 @@
      "note": null
     },
     {
-     "team": "ＣＦソルダード",
-     "win": 6,
-     "draw": 0,
-     "loss": 1,
-     "played": 7,
-     "points": 18,
-     "pdf_points": 18,
+     "team": "FC三輪野江ヴィクトリーズスポーツ少年団",
+     "win": 10,
+     "draw": 2,
+     "loss": 2,
+     "played": 14,
+     "points": 32,
+     "pdf_points": 32,
      "rank": 2,
      "h2h": [
       [
+       "win",
        "win"
       ],
       [
-       "loss"
-      ],
-      null,
-      [
+       "draw",
        "win"
       ],
       [
+       "draw",
        "win"
       ],
       [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "越谷フットボールクラブ",
-      "越谷サンシンサッカースポーツ少年団",
-      "ＣＦソルダード",
-      "南郷FCスポーツ少年団",
-      "FC八潮メッツジュニア",
-      "FC三輪野江ヴィクトリーズスポーツ少年団",
-      "草加住吉サッカークラブ",
-      "ＦＣアスリート三郷Ｕ－１２"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "FC八潮メッツジュニア",
-     "win": 4,
-     "draw": 1,
-     "loss": 2,
-     "played": 7,
-     "points": 13,
-     "pdf_points": 13,
-     "rank": 3,
-     "h2h": [
-      [
-       "win"
-      ],
-      [
-       "draw"
-      ],
-      [
+       "win",
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       null,
       [
+       "win",
        "win"
       ],
       [
-       "loss"
-      ],
-      [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "越谷フットボールクラブ",
-      "越谷サンシンサッカースポーツ少年団",
-      "ＣＦソルダード",
-      "南郷FCスポーツ少年団",
-      "FC八潮メッツジュニア",
-      "FC三輪野江ヴィクトリーズスポーツ少年団",
-      "草加住吉サッカークラブ",
-      "ＦＣアスリート三郷Ｕ－１２"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
-     "team": "草加住吉サッカークラブ",
-     "win": 4,
-     "draw": 1,
-     "loss": 2,
-     "played": 7,
-     "points": 13,
-     "pdf_points": 13,
-     "rank": 3,
-     "h2h": [
-      [
-       "draw"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      null,
-      [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "越谷フットボールクラブ",
-      "越谷サンシンサッカースポーツ少年団",
-      "ＣＦソルダード",
-      "南郷FCスポーツ少年団",
-      "FC八潮メッツジュニア",
-      "FC三輪野江ヴィクトリーズスポーツ少年団",
-      "草加住吉サッカークラブ",
-      "ＦＣアスリート三郷Ｕ－１２"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
-     "team": "南郷FCスポーツ少年団",
-     "win": 3,
-     "draw": 0,
-     "loss": 4,
-     "played": 7,
-     "points": 9,
-     "pdf_points": 9,
-     "rank": 5,
-     "h2h": [
-      [
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      null,
-      [
-       "loss"
-      ],
-      [
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "越谷フットボールクラブ",
-      "越谷サンシンサッカースポーツ少年団",
-      "ＣＦソルダード",
-      "南郷FCスポーツ少年団",
-      "FC八潮メッツジュニア",
-      "FC三輪野江ヴィクトリーズスポーツ少年団",
-      "草加住吉サッカークラブ",
-      "ＦＣアスリート三郷Ｕ－１２"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "越谷フットボールクラブ",
-     "win": 2,
-     "draw": 1,
-     "loss": 4,
-     "played": 7,
-     "points": 7,
-     "pdf_points": 7,
-     "rank": 6,
-     "h2h": [
-      null,
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "win"
-      ],
-      [
-       "draw"
-      ],
-      [
+       "loss",
        "win"
       ]
      ],
@@ -6081,34 +5948,41 @@
     },
     {
      "team": "ＦＣアスリート三郷Ｕ－１２",
-     "win": 1,
-     "draw": 0,
-     "loss": 6,
-     "played": 7,
-     "points": 3,
-     "pdf_points": 3,
-     "rank": 7,
+     "win": 9,
+     "draw": 2,
+     "loss": 3,
+     "played": 14,
+     "points": 29,
+     "pdf_points": 29,
+     "rank": 3,
      "h2h": [
       [
-       "loss"
+       "win",
+       "draw"
       ],
       [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
+       "win",
        "win"
       ],
       [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
        "loss"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "draw",
+       "win"
       ],
       null
      ],
@@ -6127,36 +6001,261 @@
      "note": null
     },
     {
-     "team": "FC三輪野江ヴィクトリーズスポーツ少年団",
-     "win": 0,
-     "draw": 0,
-     "loss": 7,
-     "played": 7,
-     "points": 0,
-     "pdf_points": 0,
-     "rank": 8,
+     "team": "草加住吉サッカークラブ",
+     "win": 6,
+     "draw": 4,
+     "loss": 4,
+     "played": 14,
+     "points": 22,
+     "pdf_points": 22,
+     "rank": 4,
      "h2h": [
       [
-       "loss"
+       "win",
+       "win"
       ],
       [
-       "loss"
+       "win",
+       "win"
       ],
       [
-       "loss"
+       "win",
+       "draw"
       ],
       [
+       "loss",
+       "draw"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "loss",
        "loss"
+      ],
+      null,
+      [
+       "draw",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "越谷フットボールクラブ",
+      "越谷サンシンサッカースポーツ少年団",
+      "ＣＦソルダード",
+      "南郷FCスポーツ少年団",
+      "FC八潮メッツジュニア",
+      "FC三輪野江ヴィクトリーズスポーツ少年団",
+      "草加住吉サッカークラブ",
+      "ＦＣアスリート三郷Ｕ－１２"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "ＣＦソルダード",
+     "win": 3,
+     "draw": 3,
+     "loss": 7,
+     "played": 13,
+     "points": 12,
+     "pdf_points": 12,
+     "rank": 5,
+     "h2h": [
+      [
+       "win",
+       "win"
       ],
       [
        "loss"
       ],
       null,
       [
+       "loss",
        "loss"
       ],
       [
+       "win",
+       "draw"
+      ],
+      [
+       "draw",
        "loss"
+      ],
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "越谷フットボールクラブ",
+      "越谷サンシンサッカースポーツ少年団",
+      "ＣＦソルダード",
+      "南郷FCスポーツ少年団",
+      "FC八潮メッツジュニア",
+      "FC三輪野江ヴィクトリーズスポーツ少年団",
+      "草加住吉サッカークラブ",
+      "ＦＣアスリート三郷Ｕ－１２"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "越谷サンシンサッカースポーツ少年団",
+     "win": 3,
+     "draw": 1,
+     "loss": 9,
+     "played": 13,
+     "points": 10,
+     "pdf_points": 10,
+     "rank": 6,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      null,
+      [
+       "win"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "draw",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "越谷フットボールクラブ",
+      "越谷サンシンサッカースポーツ少年団",
+      "ＣＦソルダード",
+      "南郷FCスポーツ少年団",
+      "FC八潮メッツジュニア",
+      "FC三輪野江ヴィクトリーズスポーツ少年団",
+      "草加住吉サッカークラブ",
+      "ＦＣアスリート三郷Ｕ－１２"
+     ],
+     "pdf_rank": null,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
+    },
+    {
+     "team": "FC八潮メッツジュニア",
+     "win": 2,
+     "draw": 4,
+     "loss": 8,
+     "played": 14,
+     "points": 10,
+     "pdf_points": 10,
+     "rank": 6,
+     "h2h": [
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      null,
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "越谷フットボールクラブ",
+      "越谷サンシンサッカースポーツ少年団",
+      "ＣＦソルダード",
+      "南郷FCスポーツ少年団",
+      "FC八潮メッツジュニア",
+      "FC三輪野江ヴィクトリーズスポーツ少年団",
+      "草加住吉サッカークラブ",
+      "ＦＣアスリート三郷Ｕ－１２"
+     ],
+     "pdf_rank": null,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
+    },
+    {
+     "team": "越谷フットボールクラブ",
+     "win": 0,
+     "draw": 3,
+     "loss": 11,
+     "played": 14,
+     "points": 3,
+     "pdf_points": 3,
+     "rank": 8,
+     "h2h": [
+      null,
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "draw"
       ]
      ],
      "opp_labels": [
@@ -6174,8 +6273,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-06-14",
-   "last_changed": "2026-10-21"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "2432",
@@ -7485,35 +7584,36 @@
    "status": "ok",
    "standings": [
     {
-     "team": "北秋津すばるＦＣスポーツ少年団",
+     "team": "柳瀬レッドローズジュニア",
      "win": 9,
-     "draw": 2,
-     "loss": 2,
-     "played": 13,
-     "points": 29,
-     "pdf_points": 29,
+     "draw": 4,
+     "loss": 1,
+     "played": 14,
+     "points": 31,
+     "pdf_points": 31,
      "rank": 1,
      "h2h": [
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "win",
+       "win"
+      ],
       null,
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "win"
-      ],
       [
        "win",
        "win"
@@ -7533,40 +7633,41 @@
       "若松・安松合同",
       "高階イレブンス"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 1,
      "notes": [],
      "note": null
     },
     {
-     "team": "柳瀬レッドローズジュニア",
-     "win": 8,
-     "draw": 4,
-     "loss": 1,
-     "played": 13,
-     "points": 28,
-     "pdf_points": 28,
+     "team": "北秋津すばるＦＣスポーツ少年団",
+     "win": 9,
+     "draw": 2,
+     "loss": 3,
+     "played": 14,
+     "points": 29,
+     "pdf_points": 29,
      "rank": 2,
      "h2h": [
+      null,
       [
+       "win",
+       "draw"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "win",
        "loss"
       ],
-      [
-       "draw",
-       "draw"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "draw",
-       "draw"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      null,
       [
        "win",
        "win"
@@ -7586,18 +7687,18 @@
       "若松・安松合同",
       "高階イレブンス"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 2,
      "notes": [],
      "note": null
     },
     {
      "team": "埼玉南ＦＣ",
-     "win": 7,
+     "win": 8,
      "draw": 4,
      "loss": 2,
-     "played": 13,
-     "points": 25,
-     "pdf_points": 25,
+     "played": 14,
+     "points": 28,
+     "pdf_points": 28,
      "rank": 3,
      "h2h": [
       [
@@ -7622,6 +7723,7 @@
        "draw"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -7639,18 +7741,18 @@
       "若松・安松合同",
       "高階イレブンス"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 3,
      "notes": [],
      "note": null
     },
     {
      "team": "長鶴サッカー少年団",
-     "win": 6,
+     "win": 7,
      "draw": 4,
      "loss": 3,
-     "played": 13,
-     "points": 22,
-     "pdf_points": 22,
+     "played": 14,
+     "points": 25,
+     "pdf_points": 25,
      "rank": 4,
      "h2h": [
       [
@@ -7667,6 +7769,7 @@
        "draw"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -7692,7 +7795,61 @@
       "若松・安松合同",
       "高階イレブンス"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 4,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "藤沢ＦＣ",
+     "win": 6,
+     "draw": 2,
+     "loss": 6,
+     "played": 14,
+     "points": 20,
+     "pdf_points": 20,
+     "rank": 5,
+     "h2h": [
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      null,
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ]
+     ],
+     "opp_labels": [
+      "北秋津すばるＦＣスポーツ少年団",
+      "長鶴サッカー少年団",
+      "藤沢ＦＣ",
+      "埼玉南ＦＣ",
+      "ＦＣ古谷サッカー少年団",
+      "柳瀬レッドローズジュニア",
+      "若松・安松合同",
+      "高階イレブンス"
+     ],
+     "pdf_rank": 5,
      "notes": [],
      "note": null
     },
@@ -7700,17 +7857,18 @@
      "team": "ＦＣ古谷サッカー少年団",
      "win": 6,
      "draw": 1,
-     "loss": 6,
-     "played": 13,
+     "loss": 7,
+     "played": 14,
      "points": 19,
      "pdf_points": 19,
-     "rank": 5,
+     "rank": 6,
      "h2h": [
       [
        "win",
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -7745,60 +7903,7 @@
       "若松・安松合同",
       "高階イレブンス"
      ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "藤沢ＦＣ",
-     "win": 5,
-     "draw": 2,
-     "loss": 6,
-     "played": 13,
-     "points": 17,
-     "pdf_points": 17,
-     "rank": 6,
-     "h2h": [
-      [
-       "loss",
-       "draw"
-      ],
-      [
-       "loss",
-       "win"
-      ],
-      null,
-      [
-       "loss",
-       "draw"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "北秋津すばるＦＣスポーツ少年団",
-      "長鶴サッカー少年団",
-      "藤沢ＦＣ",
-      "埼玉南ＦＣ",
-      "ＦＣ古谷サッカー少年団",
-      "柳瀬レッドローズジュニア",
-      "若松・安松合同",
-      "高階イレブンス"
-     ],
-     "pdf_rank": null,
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
@@ -7806,8 +7911,8 @@
      "team": "若松・安松合同",
      "win": 1,
      "draw": 2,
-     "loss": 10,
-     "played": 13,
+     "loss": 11,
+     "played": 14,
      "points": 5,
      "pdf_points": 5,
      "rank": 7,
@@ -7825,6 +7930,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -7851,7 +7957,7 @@
       "若松・安松合同",
       "高階イレブンス"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     },
@@ -7859,8 +7965,8 @@
      "team": "高階イレブンス",
      "win": 0,
      "draw": 1,
-     "loss": 12,
-     "played": 13,
+     "loss": 13,
+     "played": 14,
      "points": 1,
      "pdf_points": 1,
      "rank": 8,
@@ -7874,6 +7980,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -7904,13 +8011,13 @@
       "若松・安松合同",
       "高階イレブンス"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 8,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-06"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1237",
@@ -7932,12 +8039,12 @@
    "standings": [
     {
      "team": "東松山ぺレーニアフットボールクラブジュニアverde",
-     "win": 11,
+     "win": 12,
      "draw": 1,
      "loss": 0,
-     "played": 12,
-     "points": 34,
-     "pdf_points": 34,
+     "played": 13,
+     "points": 37,
+     "pdf_points": 37,
      "rank": 1,
      "h2h": [
       [
@@ -7957,6 +8064,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -7984,12 +8092,12 @@
     },
     {
      "team": "大井少年サッカークラブ",
-     "win": 8,
+     "win": 9,
      "draw": 2,
      "loss": 3,
-     "played": 13,
-     "points": 26,
-     "pdf_points": 26,
+     "played": 14,
+     "points": 29,
+     "pdf_points": 29,
      "rank": 2,
      "h2h": [
       null,
@@ -8002,7 +8110,8 @@
        "win"
       ],
       [
-       "draw"
+       "draw",
+       "win"
       ],
       [
        "win",
@@ -8015,6 +8124,60 @@
       [
        "win",
        "win"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "大井少年サッカークラブ",
+      "美原サッカークラブ",
+      "イーグルファイターサッカー少年団",
+      "ＮＵ広谷サッカークラブ",
+      "狭山台キッカーズ",
+      "山口サントスサッカークラブ",
+      "坂戸ＦＣ",
+      "東松山ぺレーニアフットボールクラブジュニアverde"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "美原サッカークラブ",
+     "win": 6,
+     "draw": 4,
+     "loss": 4,
+     "played": 14,
+     "points": 22,
+     "pdf_points": 22,
+     "rank": 3,
+     "h2h": [
+      [
+       "draw",
+       "loss"
+      ],
+      null,
+      [
+       "draw",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "draw",
+       "loss"
       ],
       [
        "loss",
@@ -8043,7 +8206,7 @@
      "played": 11,
      "points": 21,
      "pdf_points": 21,
-     "rank": 3,
+     "rank": 4,
      "h2h": [
       [
        "loss",
@@ -8087,61 +8250,6 @@
      "note": null
     },
     {
-     "team": "美原サッカークラブ",
-     "win": 5,
-     "draw": 4,
-     "loss": 4,
-     "played": 13,
-     "points": 19,
-     "pdf_points": 19,
-     "rank": 4,
-     "h2h": [
-      [
-       "draw",
-       "loss"
-      ],
-      null,
-      [
-       "draw"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "draw",
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "大井少年サッカークラブ",
-      "美原サッカークラブ",
-      "イーグルファイターサッカー少年団",
-      "ＮＵ広谷サッカークラブ",
-      "狭山台キッカーズ",
-      "山口サントスサッカークラブ",
-      "坂戸ＦＣ",
-      "東松山ぺレーニアフットボールクラブジュニアverde"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
      "team": "山口サントスサッカークラブ",
      "win": 6,
      "draw": 1,
@@ -8149,7 +8257,7 @@
      "played": 13,
      "points": 19,
      "pdf_points": 19,
-     "rank": 4,
+     "rank": 5,
      "h2h": [
       [
        "win",
@@ -8191,23 +8299,22 @@
       "東松山ぺレーニアフットボールクラブジュニアverde"
      ],
      "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
+     "notes": [],
+     "note": null
     },
     {
      "team": "ＮＵ広谷サッカークラブ",
      "win": 2,
      "draw": 3,
-     "loss": 8,
-     "played": 13,
+     "loss": 9,
+     "played": 14,
      "points": 9,
      "pdf_points": 9,
      "rank": 6,
      "h2h": [
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       [
        "loss",
@@ -8253,8 +8360,8 @@
      "team": "狭山台キッカーズ",
      "win": 2,
      "draw": 2,
-     "loss": 9,
-     "played": 13,
+     "loss": 10,
+     "played": 14,
      "points": 8,
      "pdf_points": 8,
      "rank": 7,
@@ -8285,6 +8392,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -8306,8 +8414,8 @@
      "team": "イーグルファイターサッカー少年団",
      "win": 0,
      "draw": 4,
-     "loss": 8,
-     "played": 12,
+     "loss": 9,
+     "played": 13,
      "points": 4,
      "pdf_points": 4,
      "rank": 8,
@@ -8317,7 +8425,8 @@
        "loss"
       ],
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       null,
       [
@@ -8355,8 +8464,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-06"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1238",
@@ -8828,12 +8937,12 @@
    "standings": [
     {
      "team": "川越ひまわりサッカークラブ",
-     "win": 10,
+     "win": 11,
      "draw": 3,
      "loss": 0,
-     "played": 13,
-     "points": 33,
-     "pdf_points": 33,
+     "played": 14,
+     "points": 36,
+     "pdf_points": 36,
      "rank": 1,
      "h2h": [
       null,
@@ -8850,6 +8959,7 @@
        "draw"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -8875,18 +8985,18 @@
       "川越ファーストサッカークラブ少年団",
       "美杉台トゥギャザー（B）"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 1,
      "notes": [],
      "note": null
     },
     {
      "team": "ＪＦＣ三芳",
-     "win": 10,
+     "win": 11,
      "draw": 1,
      "loss": 2,
-     "played": 13,
-     "points": 31,
-     "pdf_points": 31,
+     "played": 14,
+     "points": 34,
+     "pdf_points": 34,
      "rank": 2,
      "h2h": [
       [
@@ -8915,58 +9025,6 @@
        "win"
       ],
       [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "川越ひまわりサッカークラブ",
-      "金子ＦＣジュニア",
-      "プレジールスポーツクラブジュニア　Ｗｈｉｔｅ",
-      "ＪＦＣ三芳",
-      "旭サッカースポーツ少年団",
-      "所沢ファルゴランテｊｒ",
-      "川越ファーストサッカークラブ少年団",
-      "美杉台トゥギャザー（B）"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "所沢ファルゴランテｊｒ",
-     "win": 8,
-     "draw": 1,
-     "loss": 4,
-     "played": 13,
-     "points": 25,
-     "pdf_points": 25,
-     "rank": 3,
-     "h2h": [
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "draw"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      null,
-      [
-       "win",
-       "win"
-      ],
-      [
        "win",
        "win"
       ]
@@ -8981,19 +9039,19 @@
       "川越ファーストサッカークラブ少年団",
       "美杉台トゥギャザー（B）"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 2,
      "notes": [],
      "note": null
     },
     {
      "team": "金子ＦＣジュニア",
-     "win": 7,
+     "win": 8,
      "draw": 2,
      "loss": 4,
-     "played": 13,
-     "points": 23,
-     "pdf_points": 23,
-     "rank": 4,
+     "played": 14,
+     "points": 26,
+     "pdf_points": 26,
+     "rank": 3,
      "h2h": [
       [
        "draw",
@@ -9013,7 +9071,8 @@
        "win"
       ],
       [
-       "draw"
+       "draw",
+       "win"
       ],
       [
        "win",
@@ -9034,18 +9093,72 @@
       "川越ファーストサッカークラブ少年団",
       "美杉台トゥギャザー（B）"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 3,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "所沢ファルゴランテｊｒ",
+     "win": 8,
+     "draw": 1,
+     "loss": 5,
+     "played": 14,
+     "points": 25,
+     "pdf_points": 25,
+     "rank": 4,
+     "h2h": [
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "draw",
+       "loss"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      null,
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ]
+     ],
+     "opp_labels": [
+      "川越ひまわりサッカークラブ",
+      "金子ＦＣジュニア",
+      "プレジールスポーツクラブジュニア　Ｗｈｉｔｅ",
+      "ＪＦＣ三芳",
+      "旭サッカースポーツ少年団",
+      "所沢ファルゴランテｊｒ",
+      "川越ファーストサッカークラブ少年団",
+      "美杉台トゥギャザー（B）"
+     ],
+     "pdf_rank": 4,
      "notes": [],
      "note": null
     },
     {
      "team": "プレジールスポーツクラブジュニア　Ｗｈｉｔｅ",
-     "win": 5,
+     "win": 6,
      "draw": 1,
      "loss": 7,
-     "played": 13,
-     "points": 16,
-     "pdf_points": 16,
+     "played": 14,
+     "points": 19,
+     "pdf_points": 19,
      "rank": 5,
      "h2h": [
       [
@@ -9070,6 +9183,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -9087,7 +9201,7 @@
       "川越ファーストサッカークラブ少年団",
       "美杉台トゥギャザー（B）"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 5,
      "notes": [],
      "note": null
     },
@@ -9095,13 +9209,14 @@
      "team": "旭サッカースポーツ少年団",
      "win": 5,
      "draw": 0,
-     "loss": 8,
-     "played": 13,
+     "loss": 9,
+     "played": 14,
      "points": 15,
      "pdf_points": 15,
      "rank": 6,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
@@ -9140,7 +9255,7 @@
       "川越ファーストサッカークラブ少年団",
       "美杉台トゥギャザー（B）"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
@@ -9148,8 +9263,8 @@
      "team": "美杉台トゥギャザー（B）",
      "win": 2,
      "draw": 1,
-     "loss": 10,
-     "played": 13,
+     "loss": 11,
+     "played": 14,
      "points": 7,
      "pdf_points": 7,
      "rank": 7,
@@ -9167,6 +9282,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -9193,7 +9309,7 @@
       "川越ファーストサッカークラブ少年団",
       "美杉台トゥギャザー（B）"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     },
@@ -9201,8 +9317,8 @@
      "team": "川越ファーストサッカークラブ少年団",
      "win": 0,
      "draw": 1,
-     "loss": 12,
-     "played": 13,
+     "loss": 13,
+     "played": 14,
      "points": 1,
      "pdf_points": 1,
      "rank": 8,
@@ -9216,6 +9332,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -9246,13 +9363,13 @@
       "川越ファーストサッカークラブ少年団",
       "美杉台トゥギャザー（B）"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 8,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-06"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1240",
@@ -9273,68 +9390,13 @@
    "status": "ok",
    "standings": [
     {
-     "team": "狭山台イレブンサッカークラブ",
-     "win": 10,
-     "draw": 1,
-     "loss": 2,
-     "played": 13,
-     "points": 31,
-     "pdf_points": 31,
-     "rank": 1,
-     "h2h": [
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      null,
-      [
-       "win",
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "富岡サッカークラブスポ＾つ少年団",
-      "東松山南サッカースポーツ少年団",
-      "ふじみ野チャンプスポーツ少年団",
-      "鶴ヶ島サザンキッカーズ",
-      "FCFusabio",
-      "浅羽野サッカースポーツ少年団",
-      "狭山台イレブンサッカークラブ",
-      "ＡＭＡ"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
      "team": "ＡＭＡ",
-     "win": 10,
+     "win": 11,
      "draw": 1,
      "loss": 2,
-     "played": 13,
-     "points": 31,
-     "pdf_points": 31,
+     "played": 14,
+     "points": 34,
+     "pdf_points": 34,
      "rank": 1,
      "h2h": [
       [
@@ -9342,6 +9404,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -9377,20 +9440,18 @@
       "ＡＭＡ"
      ],
      "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
+     "notes": [],
+     "note": null
     },
     {
      "team": "ふじみ野チャンプスポーツ少年団",
      "win": 9,
-     "draw": 3,
+     "draw": 4,
      "loss": 1,
-     "played": 13,
-     "points": 30,
-     "pdf_points": 30,
-     "rank": 3,
+     "played": 14,
+     "points": 31,
+     "pdf_points": 31,
+     "rank": 2,
      "h2h": [
       [
        "win",
@@ -9406,7 +9467,8 @@
        "win"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "win",
@@ -9432,17 +9494,75 @@
       "ＡＭＡ"
      ],
      "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
+    },
+    {
+     "team": "狭山台イレブンサッカークラブ",
+     "win": 10,
+     "draw": 1,
+     "loss": 3,
+     "played": 14,
+     "points": 31,
+     "pdf_points": 31,
+     "rank": 2,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      null,
+      [
+       "win",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "富岡サッカークラブスポ＾つ少年団",
+      "東松山南サッカースポーツ少年団",
+      "ふじみ野チャンプスポーツ少年団",
+      "鶴ヶ島サザンキッカーズ",
+      "FCFusabio",
+      "浅羽野サッカースポーツ少年団",
+      "狭山台イレブンサッカークラブ",
+      "ＡＭＡ"
+     ],
+     "pdf_rank": null,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
      "team": "東松山南サッカースポーツ少年団",
-     "win": 5,
+     "win": 6,
      "draw": 2,
-     "loss": 2,
-     "played": 9,
-     "points": 17,
-     "pdf_points": 17,
+     "loss": 3,
+     "played": 11,
+     "points": 20,
+     "pdf_points": 20,
      "rank": 4,
      "h2h": [
       [
@@ -9464,9 +9584,11 @@
        "win"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -9487,11 +9609,11 @@
     {
      "team": "FCFusabio",
      "win": 4,
-     "draw": 2,
+     "draw": 3,
      "loss": 5,
-     "played": 11,
-     "points": 14,
-     "pdf_points": 14,
+     "played": 12,
+     "points": 15,
+     "pdf_points": 15,
      "rank": 5,
      "h2h": [
       [
@@ -9502,7 +9624,8 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       [
        "win",
@@ -9588,12 +9711,12 @@
     },
     {
      "team": "富岡サッカークラブスポ＾つ少年団",
-     "win": 0,
+     "win": 1,
      "draw": 2,
      "loss": 9,
-     "played": 11,
-     "points": 2,
-     "pdf_points": 2,
+     "played": 12,
+     "points": 5,
+     "pdf_points": 5,
      "rank": 7,
      "h2h": [
       null,
@@ -9605,7 +9728,8 @@
        "loss"
       ],
       [
-       "draw"
+       "draw",
+       "win"
       ],
       [
        "draw",
@@ -9641,14 +9765,15 @@
      "team": "鶴ヶ島サザンキッカーズ",
      "win": 0,
      "draw": 1,
-     "loss": 12,
-     "played": 13,
+     "loss": 13,
+     "played": 14,
      "points": 1,
      "pdf_points": 1,
      "rank": 8,
      "h2h": [
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       [
        "loss",
@@ -9691,8 +9816,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-06"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1241",
@@ -9714,12 +9839,12 @@
    "standings": [
     {
      "team": "扇フットボールクラブスポーツ少年団",
-     "win": 7,
+     "win": 11,
      "draw": 1,
      "loss": 1,
-     "played": 9,
-     "points": 22,
-     "pdf_points": 22,
+     "played": 13,
+     "points": 34,
+     "pdf_points": 34,
      "rank": 1,
      "h2h": [
       null,
@@ -9728,18 +9853,22 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -9763,25 +9892,28 @@
     },
     {
      "team": "ＦＣリアル　グレー",
-     "win": 6,
-     "draw": 1,
-     "loss": 2,
-     "played": 9,
-     "points": 19,
-     "pdf_points": 19,
+     "win": 7,
+     "draw": 3,
+     "loss": 3,
+     "played": 13,
+     "points": 24,
+     "pdf_points": 24,
      "rank": 2,
      "h2h": [
       [
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "loss",
@@ -9793,7 +9925,8 @@
        "draw"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ]
      ],
      "opp_labels": [
@@ -9812,12 +9945,12 @@
     },
     {
      "team": "川越ライオンズサッカー少年団",
-     "win": 5,
+     "win": 7,
      "draw": 1,
-     "loss": 3,
-     "played": 9,
-     "points": 16,
-     "pdf_points": 16,
+     "loss": 5,
+     "played": 13,
+     "points": 22,
+     "pdf_points": 22,
      "rank": 3,
      "h2h": [
       [
@@ -9830,19 +9963,23 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ]
      ],
      "opp_labels": [
@@ -9861,22 +9998,24 @@
     },
     {
      "team": "宮前サッカークラブ",
-     "win": 4,
+     "win": 6,
      "draw": 1,
-     "loss": 4,
-     "played": 9,
-     "points": 13,
-     "pdf_points": 13,
+     "loss": 6,
+     "played": 13,
+     "points": 19,
+     "pdf_points": 19,
      "rank": 4,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
        "loss"
       ],
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       [
        "win",
@@ -9888,7 +10027,62 @@
        "loss"
       ],
       [
+       "win",
        "win"
+      ],
+      [
+       "loss",
+       "win"
+      ]
+     ],
+     "opp_labels": [
+      "扇フットボールクラブスポーツ少年団",
+      "川越ライオンズサッカー少年団",
+      "カムイジュニア千代田（B）",
+      "武蔵野ＦＣ",
+      "宮前サッカークラブ",
+      "ＦＣリアル　グレー",
+      "ＤＩＰＬＯＭＡＴＳ　Ｂｌｕｅ",
+      "ＮＫＦＣ"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "カムイジュニア千代田（B）",
+     "win": 5,
+     "draw": 1,
+     "loss": 7,
+     "played": 13,
+     "points": 16,
+     "pdf_points": 16,
+     "rank": 5,
+     "h2h": [
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      null,
+      [
+       "win",
+       "win"
+      ],
+      [
+       "draw",
+       "win"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "loss",
+       "loss"
       ],
       [
        "loss"
@@ -9912,27 +10106,31 @@
     },
     {
      "team": "ＤＩＰＬＯＭＡＴＳ　Ｂｌｕｅ",
-     "win": 4,
+     "win": 5,
      "draw": 1,
-     "loss": 4,
-     "played": 9,
-     "points": 13,
-     "pdf_points": 13,
-     "rank": 4,
+     "loss": 7,
+     "played": 13,
+     "points": 16,
+     "pdf_points": 16,
+     "rank": 5,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -9963,32 +10161,36 @@
     },
     {
      "team": "ＮＫＦＣ",
-     "win": 4,
-     "draw": 0,
-     "loss": 5,
-     "played": 9,
-     "points": 12,
-     "pdf_points": 12,
-     "rank": 6,
+     "win": 5,
+     "draw": 1,
+     "loss": 7,
+     "played": 13,
+     "points": 16,
+     "pdf_points": 16,
+     "rank": 5,
      "h2h": [
       [
        "loss",
        "loss"
       ],
       [
+       "loss",
+       "win"
+      ],
+      [
+       "win"
+      ],
+      [
+       "win",
        "loss"
       ],
       [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
+       "win",
        "loss"
+      ],
+      [
+       "loss",
+       "draw"
       ],
       [
        "loss",
@@ -10007,91 +10209,48 @@
       "ＮＫＦＣ"
      ],
      "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
-     "team": "カムイジュニア千代田（B）",
-     "win": 3,
+     "team": "武蔵野ＦＣ",
+     "win": 1,
      "draw": 1,
-     "loss": 5,
-     "played": 9,
-     "points": 10,
-     "pdf_points": 10,
-     "rank": 7,
+     "loss": 11,
+     "played": 13,
+     "points": 4,
+     "pdf_points": 4,
+     "rank": 8,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
        "loss",
-       "win"
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
       ],
       null,
       [
-       "win",
-       "win"
+       "loss",
+       "loss"
       ],
       [
+       "loss",
        "draw"
       ],
       [
        "loss"
       ],
       [
-       "loss"
-      ],
-      [
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "扇フットボールクラブスポーツ少年団",
-      "川越ライオンズサッカー少年団",
-      "カムイジュニア千代田（B）",
-      "武蔵野ＦＣ",
-      "宮前サッカークラブ",
-      "ＦＣリアル　グレー",
-      "ＤＩＰＬＯＭＡＴＳ　Ｂｌｕｅ",
-      "ＮＫＦＣ"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "武蔵野ＦＣ",
-     "win": 0,
-     "draw": 0,
-     "loss": 9,
-     "played": 9,
-     "points": 0,
-     "pdf_points": 0,
-     "rank": 8,
-     "h2h": [
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
        "loss",
-       "loss"
-      ],
-      null,
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
+       "win"
       ]
      ],
      "opp_labels": [
@@ -10109,8 +10268,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-10-04",
-   "last_changed": "2026-10-21"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1242",
@@ -10566,18 +10725,20 @@
    "standings": [
     {
      "team": "FCアルベスタ小川スポーツ少年団",
-     "win": 11,
+     "win": 13,
      "draw": 0,
      "loss": 0,
-     "played": 11,
-     "points": 33,
-     "pdf_points": 33,
+     "played": 13,
+     "points": 39,
+     "pdf_points": 39,
      "rank": 1,
      "h2h": [
       [
+       "win",
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -10598,6 +10759,59 @@
       ],
       [
        "win",
+       "win"
+      ]
+     ],
+     "opp_labels": [
+      "若狭サッカースポーツ少年団",
+      "みずほ台ジュニアサッカークラブ",
+      "入間少年少女サッカークラブ",
+      "FCアルベスタ小川スポーツ少年団",
+      "加治フォルテス",
+      "川越笠幡ＦＣ少年団",
+      "川越バッファローサッカー少年団",
+      "川越岡田サッカースポーツ少年団"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "加治フォルテス",
+     "win": 9,
+     "draw": 1,
+     "loss": 3,
+     "played": 13,
+     "points": 28,
+     "pdf_points": 28,
+     "rank": 2,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss"
+      ],
+      null,
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
        "win"
       ]
      ],
@@ -10618,64 +10832,11 @@
     {
      "team": "川越笠幡ＦＣ少年団",
      "win": 8,
-     "draw": 2,
+     "draw": 3,
      "loss": 3,
-     "played": 13,
-     "points": 26,
-     "pdf_points": 26,
-     "rank": 2,
-     "h2h": [
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "win"
-      ],
-      null,
-      [
-       "loss",
-       "draw"
-      ],
-      [
-       "draw",
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "若狭サッカースポーツ少年団",
-      "みずほ台ジュニアサッカークラブ",
-      "入間少年少女サッカークラブ",
-      "FCアルベスタ小川スポーツ少年団",
-      "加治フォルテス",
-      "川越笠幡ＦＣ少年団",
-      "川越バッファローサッカー少年団",
-      "川越岡田サッカースポーツ少年団"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "加治フォルテス",
-     "win": 8,
-     "draw": 0,
-     "loss": 3,
-     "played": 11,
-     "points": 24,
-     "pdf_points": 24,
+     "played": 14,
+     "points": 27,
+     "pdf_points": 27,
      "rank": 3,
      "h2h": [
       [
@@ -10687,21 +10848,24 @@
        "win"
       ],
       [
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      null,
-      [
-       "loss"
-      ],
-      [
        "win",
        "win"
       ],
       [
        "loss",
+       "loss"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      null,
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "draw",
        "win"
       ]
      ],
@@ -10721,12 +10885,12 @@
     },
     {
      "team": "川越バッファローサッカー少年団",
-     "win": 7,
+     "win": 8,
      "draw": 1,
      "loss": 5,
-     "played": 13,
-     "points": 22,
-     "pdf_points": 22,
+     "played": 14,
+     "points": 25,
+     "pdf_points": 25,
      "rank": 4,
      "h2h": [
       [
@@ -10755,6 +10919,7 @@
       ],
       null,
       [
+       "win",
        "win"
       ]
      ],
@@ -10769,20 +10934,18 @@
       "川越岡田サッカースポーツ少年団"
      ],
      "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
+     "notes": [],
+     "note": null
     },
     {
      "team": "川越岡田サッカースポーツ少年団",
      "win": 7,
      "draw": 1,
-     "loss": 5,
-     "played": 13,
+     "loss": 6,
+     "played": 14,
      "points": 22,
      "pdf_points": 22,
-     "rank": 4,
+     "rank": 5,
      "h2h": [
       [
        "win",
@@ -10809,6 +10972,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       null
@@ -10824,17 +10988,15 @@
       "川越岡田サッカースポーツ少年団"
      ],
      "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
+     "notes": [],
+     "note": null
     },
     {
      "team": "みずほ台ジュニアサッカークラブ",
      "win": 5,
      "draw": 0,
-     "loss": 8,
-     "played": 13,
+     "loss": 9,
+     "played": 14,
      "points": 15,
      "pdf_points": 15,
      "rank": 6,
@@ -10849,6 +11011,7 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -10886,8 +11049,8 @@
      "team": "若狭サッカースポーツ少年団",
      "win": 1,
      "draw": 1,
-     "loss": 11,
-     "played": 13,
+     "loss": 12,
+     "played": 14,
      "points": 4,
      "pdf_points": 4,
      "rank": 7,
@@ -10902,6 +11065,7 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -10939,8 +11103,8 @@
      "team": "入間少年少女サッカークラブ",
      "win": 0,
      "draw": 1,
-     "loss": 12,
-     "played": 13,
+     "loss": 13,
+     "played": 14,
      "points": 1,
      "pdf_points": 1,
      "rank": 8,
@@ -10959,6 +11123,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -10989,8 +11154,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-06"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1244",
@@ -11013,16 +11178,17 @@
    "standings": [
     {
      "team": "川越ヤンガースサッカー少年団",
-     "win": 11,
+     "win": 12,
      "draw": 1,
      "loss": 2,
-     "played": 14,
-     "points": 34,
-     "pdf_points": 34,
+     "played": 15,
+     "points": 37,
+     "pdf_points": 37,
      "rank": 1,
      "h2h": [
       null,
       [
+       "win",
        "win"
       ],
       [
@@ -11072,15 +11238,16 @@
     },
     {
      "team": "上新井サッカー少年団",
-     "win": 11,
+     "win": 12,
      "draw": 1,
-     "loss": 2,
-     "played": 14,
-     "points": 34,
-     "pdf_points": 34,
+     "loss": 3,
+     "played": 16,
+     "points": 37,
+     "pdf_points": 37,
      "rank": 1,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       null,
@@ -11089,6 +11256,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -11110,120 +11278,6 @@
       [
        "win",
        "win"
-      ]
-     ],
-     "opp_labels": [
-      "川越ヤンガースサッカー少年団",
-      "上新井サッカー少年団",
-      "ＩＲＵＭＡ　ＣＩＴＹ　Ｆｏｏｔｂａｌｌ　Ｃｌｕｂ",
-      "ＪＦＳＡ　Ｕ１２",
-      "東松山東フットボールクラブ",
-      "フットボールクラブ　コリオーラ",
-      "にっさいＦＣ",
-      "ＦＣ鶴ヶ島",
-      "Ｆｕｔｅｂｏｌ　Ｃｌｕｂｅ　ｄｏ　ＰＡＲＣＥＩＲＯ　Ｊr"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
-     "team": "ＩＲＵＭＡ　ＣＩＴＹ　Ｆｏｏｔｂａｌｌ　Ｃｌｕｂ",
-     "win": 6,
-     "draw": 2,
-     "loss": 4,
-     "played": 12,
-     "points": 20,
-     "pdf_points": 20,
-     "rank": 3,
-     "h2h": [
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "draw",
-       "loss"
-      ],
-      null,
-      [
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "川越ヤンガースサッカー少年団",
-      "上新井サッカー少年団",
-      "ＩＲＵＭＡ　ＣＩＴＹ　Ｆｏｏｔｂａｌｌ　Ｃｌｕｂ",
-      "ＪＦＳＡ　Ｕ１２",
-      "東松山東フットボールクラブ",
-      "フットボールクラブ　コリオーラ",
-      "にっさいＦＣ",
-      "ＦＣ鶴ヶ島",
-      "Ｆｕｔｅｂｏｌ　Ｃｌｕｂｅ　ｄｏ　ＰＡＲＣＥＩＲＯ　Ｊr"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "フットボールクラブ　コリオーラ",
-     "win": 5,
-     "draw": 4,
-     "loss": 5,
-     "played": 14,
-     "points": 19,
-     "pdf_points": 19,
-     "rank": 4,
-     "h2h": [
-      [
-       "draw",
-       "loss"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      [
-       "draw",
-       "loss"
-      ],
-      null,
-      [
-       "draw",
-       "win"
-      ],
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "loss"
       ]
      ],
      "opp_labels": [
@@ -11245,13 +11299,13 @@
     },
     {
      "team": "Ｆｕｔｅｂｏｌ　Ｃｌｕｂｅ　ｄｏ　ＰＡＲＣＥＩＲＯ　Ｊr",
-     "win": 6,
+     "win": 8,
      "draw": 1,
      "loss": 7,
-     "played": 14,
-     "points": 19,
-     "pdf_points": 19,
-     "rank": 4,
+     "played": 16,
+     "points": 25,
+     "pdf_points": 25,
+     "rank": 3,
      "h2h": [
       [
        "loss",
@@ -11262,7 +11316,8 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "win",
@@ -11273,6 +11328,7 @@
        "draw"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -11297,20 +11353,18 @@
       "Ｆｕｔｅｂｏｌ　Ｃｌｕｂｅ　ｄｏ　ＰＡＲＣＥＩＲＯ　Ｊr"
      ],
      "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
+     "notes": [],
+     "note": null
     },
     {
      "team": "東松山東フットボールクラブ",
-     "win": 5,
+     "win": 7,
      "draw": 3,
      "loss": 4,
-     "played": 12,
-     "points": 18,
-     "pdf_points": 18,
-     "rank": 6,
+     "played": 14,
+     "points": 24,
+     "pdf_points": 24,
+     "rank": 4,
      "h2h": [
       [
        "loss",
@@ -11324,7 +11378,8 @@
        "win"
       ],
       [
-       "draw"
+       "draw",
+       "win"
       ],
       null,
       [
@@ -11335,6 +11390,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -11358,11 +11414,127 @@
      "note": null
     },
     {
+     "team": "ＩＲＵＭＡ　ＣＩＴＹ　Ｆｏｏｔｂａｌｌ　Ｃｌｕｂ",
+     "win": 6,
+     "draw": 3,
+     "loss": 5,
+     "played": 14,
+     "points": 21,
+     "pdf_points": 21,
+     "rank": 5,
+     "h2h": [
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "draw",
+       "loss"
+      ],
+      null,
+      [
+       "win"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "川越ヤンガースサッカー少年団",
+      "上新井サッカー少年団",
+      "ＩＲＵＭＡ　ＣＩＴＹ　Ｆｏｏｔｂａｌｌ　Ｃｌｕｂ",
+      "ＪＦＳＡ　Ｕ１２",
+      "東松山東フットボールクラブ",
+      "フットボールクラブ　コリオーラ",
+      "にっさいＦＣ",
+      "ＦＣ鶴ヶ島",
+      "Ｆｕｔｅｂｏｌ　Ｃｌｕｂｅ　ｄｏ　ＰＡＲＣＥＩＲＯ　Ｊr"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "フットボールクラブ　コリオーラ",
+     "win": 5,
+     "draw": 5,
+     "loss": 6,
+     "played": 16,
+     "points": 20,
+     "pdf_points": 20,
+     "rank": 6,
+     "h2h": [
+      [
+       "draw",
+       "loss"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "draw",
+       "loss"
+      ],
+      null,
+      [
+       "draw",
+       "win"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "川越ヤンガースサッカー少年団",
+      "上新井サッカー少年団",
+      "ＩＲＵＭＡ　ＣＩＴＹ　Ｆｏｏｔｂａｌｌ　Ｃｌｕｂ",
+      "ＪＦＳＡ　Ｕ１２",
+      "東松山東フットボールクラブ",
+      "フットボールクラブ　コリオーラ",
+      "にっさいＦＣ",
+      "ＦＣ鶴ヶ島",
+      "Ｆｕｔｅｂｏｌ　Ｃｌｕｂｅ　ｄｏ　ＰＡＲＣＥＩＲＯ　Ｊr"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
      "team": "ＪＦＳＡ　Ｕ１２",
      "win": 5,
      "draw": 2,
-     "loss": 5,
-     "played": 12,
+     "loss": 7,
+     "played": 14,
      "points": 17,
      "pdf_points": 17,
      "rank": 7,
@@ -11371,6 +11543,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -11378,7 +11551,8 @@
       ],
       null,
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       [
        "loss",
@@ -11473,8 +11647,8 @@
      "team": "ＦＣ鶴ヶ島",
      "win": 0,
      "draw": 1,
-     "loss": 13,
-     "played": 14,
+     "loss": 14,
+     "played": 15,
      "points": 1,
      "pdf_points": 1,
      "rank": 9,
@@ -11496,6 +11670,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -11527,8 +11702,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-06"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1245",
@@ -11550,77 +11725,22 @@
    "status": "ok",
    "standings": [
     {
-     "team": "所沢サッカークラブジュニア",
-     "win": 10,
+     "team": "美杉台トゥギャザー",
+     "win": 11,
      "draw": 3,
-     "loss": 1,
-     "played": 14,
-     "points": 33,
-     "pdf_points": 33,
+     "loss": 2,
+     "played": 16,
+     "points": 36,
+     "pdf_points": 36,
      "rank": 1,
      "h2h": [
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "win"
-      ],
       null,
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "win",
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "美杉台トゥギャザー",
-      "富士見ＦＣ",
-      "狭山台グリーンサッカークラブ",
-      "鶴ヶ島栄ＦＣ少年団",
-      "三ケ島フットボールクラブ",
-      "ＦＣ　ＭＥＩＧＡＫＵ",
-      "所沢サッカークラブジュニア",
-      "藤久保イエローイーグルス",
-      "川島サッカースポーツ少年団"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "美杉台トゥギャザー",
-     "win": 10,
-     "draw": 2,
-     "loss": 2,
-     "played": 14,
-     "points": 32,
-     "pdf_points": 32,
-     "rank": 2,
-     "h2h": [
-      null,
-      [
-       "win"
-      ],
-      [
        "win"
       ],
       [
@@ -11659,18 +11779,81 @@
       "藤久保イエローイーグルス",
       "川島サッカースポーツ少年団"
      ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "pdf_rank": 1,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
+    },
+    {
+     "team": "所沢サッカークラブジュニア",
+     "win": 11,
+     "draw": 3,
+     "loss": 2,
+     "played": 16,
+     "points": 36,
+     "pdf_points": 36,
+     "rank": 2,
+     "h2h": [
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      null,
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ]
+     ],
+     "opp_labels": [
+      "美杉台トゥギャザー",
+      "富士見ＦＣ",
+      "狭山台グリーンサッカークラブ",
+      "鶴ヶ島栄ＦＣ少年団",
+      "三ケ島フットボールクラブ",
+      "ＦＣ　ＭＥＩＧＡＫＵ",
+      "所沢サッカークラブジュニア",
+      "藤久保イエローイーグルス",
+      "川島サッカースポーツ少年団"
+     ],
+     "pdf_rank": 2,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
      "team": "ＦＣ　ＭＥＩＧＡＫＵ",
-     "win": 9,
+     "win": 11,
      "draw": 1,
      "loss": 4,
-     "played": 14,
-     "points": 28,
-     "pdf_points": 28,
+     "played": 16,
+     "points": 34,
+     "pdf_points": 34,
      "rank": 3,
      "h2h": [
       [
@@ -11695,13 +11878,15 @@
       ],
       null,
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "win",
        "win"
       ],
       [
+       "win",
        "win"
       ]
      ],
@@ -11716,21 +11901,22 @@
       "藤久保イエローイーグルス",
       "川島サッカースポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 3,
      "notes": [],
      "note": null
     },
     {
      "team": "狭山台グリーンサッカークラブ",
      "win": 6,
-     "draw": 5,
-     "loss": 3,
-     "played": 14,
-     "points": 23,
-     "pdf_points": 23,
+     "draw": 6,
+     "loss": 4,
+     "played": 16,
+     "points": 24,
+     "pdf_points": 24,
      "rank": 4,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
@@ -11743,7 +11929,8 @@
        "win"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "draw",
@@ -11773,18 +11960,20 @@
       "藤久保イエローイーグルス",
       "川島サッカースポーツ少年団"
      ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "pdf_rank": 4,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
      "team": "三ケ島フットボールクラブ",
-     "win": 6,
-     "draw": 2,
+     "win": 7,
+     "draw": 3,
      "loss": 6,
-     "played": 14,
-     "points": 20,
-     "pdf_points": 20,
+     "played": 16,
+     "points": 24,
+     "pdf_points": 24,
      "rank": 5,
      "h2h": [
       [
@@ -11796,7 +11985,8 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       [
        "win",
@@ -11812,7 +12002,8 @@
        "draw"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "win",
@@ -11830,16 +12021,18 @@
       "藤久保イエローイーグルス",
       "川島サッカースポーツ少年団"
      ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "pdf_rank": 5,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
      "team": "藤久保イエローイーグルス",
      "win": 5,
      "draw": 3,
-     "loss": 6,
-     "played": 14,
+     "loss": 8,
+     "played": 16,
      "points": 18,
      "pdf_points": 18,
      "rank": 6,
@@ -11861,13 +12054,15 @@
        "win"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "loss",
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       null,
@@ -11887,22 +12082,23 @@
       "藤久保イエローイーグルス",
       "川島サッカースポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
     {
      "team": "富士見ＦＣ",
-     "win": 3,
-     "draw": 3,
+     "win": 4,
+     "draw": 4,
      "loss": 8,
-     "played": 14,
-     "points": 12,
-     "pdf_points": 12,
+     "played": 16,
+     "points": 16,
+     "pdf_points": 16,
      "rank": 7,
      "h2h": [
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       null,
       [
@@ -11910,7 +12106,8 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "win",
@@ -11944,18 +12141,18 @@
       "藤久保イエローイーグルス",
       "川島サッカースポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     },
     {
      "team": "鶴ヶ島栄ＦＣ少年団",
-     "win": 2,
+     "win": 3,
      "draw": 2,
-     "loss": 10,
-     "played": 14,
-     "points": 8,
-     "pdf_points": 8,
+     "loss": 11,
+     "played": 16,
+     "points": 11,
+     "pdf_points": 11,
      "rank": 8,
      "h2h": [
       [
@@ -11963,7 +12160,8 @@
        "draw"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "draw",
@@ -11987,6 +12185,7 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ]
      ],
@@ -12001,7 +12200,7 @@
       "藤久保イエローイーグルス",
       "川島サッカースポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 8,
      "notes": [],
      "note": null
     },
@@ -12009,8 +12208,8 @@
      "team": "川島サッカースポーツ少年団",
      "win": 1,
      "draw": 1,
-     "loss": 12,
-     "played": 14,
+     "loss": 14,
+     "played": 16,
      "points": 4,
      "pdf_points": 4,
      "rank": 9,
@@ -12028,6 +12227,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -12035,6 +12235,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -12058,13 +12259,13 @@
       "藤久保イエローイーグルス",
       "川島サッカースポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 9,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-06"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1264",
@@ -12522,18 +12723,20 @@
     {
      "team": "上尾NEOフットボールクラブ",
      "win": 3,
-     "draw": 4,
-     "loss": 1,
-     "played": 8,
-     "points": 13,
-     "pdf_points": 13,
+     "draw": 5,
+     "loss": 2,
+     "played": 10,
+     "points": 14,
+     "pdf_points": 14,
      "rank": 3,
      "h2h": [
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "draw",
@@ -12612,6 +12815,104 @@
      "note": null
     },
     {
+     "team": "AitokuRěēMFootballClub",
+     "win": 1,
+     "draw": 4,
+     "loss": 7,
+     "played": 12,
+     "points": 7,
+     "pdf_points": 7,
+     "rank": 5,
+     "h2h": [
+      null,
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "draw"
+      ]
+     ],
+     "opp_labels": [
+      "AitokuRěēMFootballClub",
+      "浦和上木崎サッカースポーツ少年団",
+      "ＦＫ JADRAN",
+      "川口本町 SA",
+      "上尾NEOフットボールクラブ",
+      "大宮西カリオカフットボールクラブ",
+      "上尾富士見サッカースポーツ少年団"
+     ],
+     "pdf_rank": null,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
+    },
+    {
+     "team": "浦和上木崎サッカースポーツ少年団",
+     "win": 2,
+     "draw": 1,
+     "loss": 5,
+     "played": 8,
+     "points": 7,
+     "pdf_points": 7,
+     "rank": 5,
+     "h2h": [
+      [
+       "win",
+       "draw"
+      ],
+      null,
+      [
+       "loss"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "AitokuRěēMFootballClub",
+      "浦和上木崎サッカースポーツ少年団",
+      "ＦＫ JADRAN",
+      "川口本町 SA",
+      "上尾NEOフットボールクラブ",
+      "大宮西カリオカフットボールクラブ",
+      "上尾富士見サッカースポーツ少年団"
+     ],
+     "pdf_rank": null,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
+    },
+    {
      "team": "上尾富士見サッカースポーツ少年団",
      "win": 2,
      "draw": 1,
@@ -12653,102 +12954,14 @@
       "上尾富士見サッカースポーツ少年団"
      ],
      "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "AitokuRěēMFootballClub",
-     "win": 1,
-     "draw": 2,
-     "loss": 7,
-     "played": 10,
-     "points": 5,
-     "pdf_points": 5,
-     "rank": 6,
-     "h2h": [
-      null,
-      [
-       "loss"
-      ],
-      [
-       "win",
-       "draw"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss",
-       "draw"
-      ]
+     "notes": [
+      "tiebreak"
      ],
-     "opp_labels": [
-      "AitokuRěēMFootballClub",
-      "浦和上木崎サッカースポーツ少年団",
-      "ＦＫ JADRAN",
-      "川口本町 SA",
-      "上尾NEOフットボールクラブ",
-      "大宮西カリオカフットボールクラブ",
-      "上尾富士見サッカースポーツ少年団"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "浦和上木崎サッカースポーツ少年団",
-     "win": 1,
-     "draw": 0,
-     "loss": 5,
-     "played": 6,
-     "points": 3,
-     "pdf_points": 3,
-     "rank": 7,
-     "h2h": [
-      [
-       "win"
-      ],
-      null,
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "AitokuRěēMFootballClub",
-      "浦和上木崎サッカースポーツ少年団",
-      "ＦＫ JADRAN",
-      "川口本町 SA",
-      "上尾NEOフットボールクラブ",
-      "大宮西カリオカフットボールクラブ",
-      "上尾富士見サッカースポーツ少年団"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "note": "tiebreak"
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-07"
+   "pdf_date": "2026-11-14",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1389",
@@ -13123,6 +13336,58 @@
    "status": "ok",
    "standings": [
     {
+     "team": "上尾大谷サッカースポーツ少年団",
+     "win": 9,
+     "draw": 1,
+     "loss": 2,
+     "played": 12,
+     "points": 28,
+     "pdf_points": 28,
+     "rank": 1,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "draw"
+      ],
+      [
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      null
+     ],
+     "opp_labels": [
+      "伊奈サッカースポーツ少年団",
+      "桶川レッドサッカースポーツ少年団",
+      "ユニオンJFC　スポーツ少年団",
+      "鴻巣MJキッカーズFC",
+      "If Levante Futebol Clube Mes",
+      "上尾朝日サッカースポーツ少年団Ｕ－12",
+      "桶川サッカースポーツ少年団",
+      "上尾大谷サッカースポーツ少年団"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
      "team": "上尾朝日サッカースポーツ少年団Ｕ－12",
      "win": 8,
      "draw": 0,
@@ -13130,7 +13395,7 @@
      "played": 8,
      "points": 24,
      "pdf_points": 24,
-     "rank": 1,
+     "rank": 2,
      "h2h": [
       [
        "win"
@@ -13171,31 +13436,16 @@
      "note": null
     },
     {
-     "team": "上尾大谷サッカースポーツ少年団",
-     "win": 7,
-     "draw": 1,
-     "loss": 2,
-     "played": 10,
-     "points": 22,
-     "pdf_points": 22,
-     "rank": 2,
+     "team": "伊奈サッカースポーツ少年団",
+     "win": 4,
+     "draw": 4,
+     "loss": 5,
+     "played": 13,
+     "points": 16,
+     "pdf_points": 16,
+     "rank": 3,
      "h2h": [
-      [
-       "win"
-      ],
-      [
-       "draw"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
+      null,
       [
        "loss",
        "loss"
@@ -13204,7 +13454,25 @@
        "win",
        "win"
       ],
-      null
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
      ],
      "opp_labels": [
       "伊奈サッカースポーツ少年団",
@@ -13217,8 +13485,10 @@
       "上尾大谷サッカースポーツ少年団"
      ],
      "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
      "team": "桶川レッドサッカースポーツ少年団",
@@ -13266,82 +13536,34 @@
       "上尾大谷サッカースポーツ少年団"
      ],
      "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
      "team": "鴻巣MJキッカーズFC",
      "win": 4,
      "draw": 2,
-     "loss": 5,
-     "played": 11,
+     "loss": 7,
+     "played": 13,
      "points": 14,
      "pdf_points": 14,
-     "rank": 4,
-     "h2h": [
-      [
-       "draw",
-       "draw"
-      ],
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      null,
-      [
-       "win",
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      [
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "伊奈サッカースポーツ少年団",
-      "桶川レッドサッカースポーツ少年団",
-      "ユニオンJFC　スポーツ少年団",
-      "鴻巣MJキッカーズFC",
-      "If Levante Futebol Clube Mes",
-      "上尾朝日サッカースポーツ少年団Ｕ－12",
-      "桶川サッカースポーツ少年団",
-      "上尾大谷サッカースポーツ少年団"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "伊奈サッカースポーツ少年団",
-     "win": 3,
-     "draw": 4,
-     "loss": 4,
-     "played": 11,
-     "points": 13,
-     "pdf_points": 13,
      "rank": 5,
      "h2h": [
-      null,
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "win"
-      ],
       [
        "draw",
        "draw"
       ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      null,
       [
        "win",
        "win"
@@ -13350,10 +13572,11 @@
        "loss"
       ],
       [
-       "draw",
-       "draw"
+       "win",
+       "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -13373,15 +13596,16 @@
     },
     {
      "team": "ユニオンJFC　スポーツ少年団",
-     "win": 2,
+     "win": 3,
      "draw": 1,
-     "loss": 4,
-     "played": 7,
-     "points": 7,
-     "pdf_points": 7,
+     "loss": 5,
+     "played": 9,
+     "points": 10,
+     "pdf_points": 10,
      "rank": 6,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
@@ -13389,6 +13613,7 @@
       ],
       null,
       [
+       "win",
        "win"
       ],
       [
@@ -13415,10 +13640,8 @@
       "上尾大谷サッカースポーツ少年団"
      ],
      "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
+     "notes": [],
+     "note": null
     },
     {
      "team": "If Levante Futebol Clube Mes",
@@ -13428,7 +13651,7 @@
      "played": 11,
      "points": 7,
      "pdf_points": 7,
-     "rank": 6,
+     "rank": 7,
      "h2h": [
       [
        "loss",
@@ -13481,7 +13704,7 @@
      "played": 11,
      "points": 7,
      "pdf_points": 7,
-     "rank": 6,
+     "rank": 7,
      "h2h": [
       [
        "draw",
@@ -13527,8 +13750,8 @@
      "note": "tiebreak"
     }
    ],
-   "pdf_date": "2026-11-08",
-   "last_changed": "2026-11-10"
+   "pdf_date": "2026-11-14",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1255",
@@ -13541,15 +13764,16 @@
    "standings": [
     {
      "team": "なかよしくらぶ上尾",
-     "win": 11,
+     "win": 12,
      "draw": 0,
-     "loss": 1,
-     "played": 12,
-     "points": 33,
-     "pdf_points": 33,
+     "loss": 2,
+     "played": 14,
+     "points": 36,
+     "pdf_points": 36,
      "rank": 1,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
@@ -13570,6 +13794,7 @@
       ],
       null,
       [
+       "win",
        "win"
       ],
       [
@@ -13593,12 +13818,12 @@
     },
     {
      "team": "川里サッカークラブ",
-     "win": 10,
+     "win": 11,
      "draw": 0,
-     "loss": 1,
-     "played": 11,
-     "points": 30,
-     "pdf_points": 30,
+     "loss": 2,
+     "played": 13,
+     "points": 33,
+     "pdf_points": 33,
      "rank": 2,
      "h2h": [
       null,
@@ -13618,6 +13843,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -13625,6 +13851,7 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -13644,15 +13871,16 @@
     },
     {
      "team": "上尾尾山台サッカースポーツ少年団",
-     "win": 7,
+     "win": 9,
      "draw": 2,
      "loss": 3,
-     "played": 12,
-     "points": 23,
-     "pdf_points": 23,
+     "played": 14,
+     "points": 29,
+     "pdf_points": 29,
      "rank": 3,
      "h2h": [
       [
+       "win",
        "win"
       ],
       [
@@ -13676,6 +13904,7 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       null
@@ -13696,12 +13925,12 @@
     },
     {
      "team": "上尾大石サッカースポーツ少年団",
-     "win": 7,
+     "win": 8,
      "draw": 1,
      "loss": 3,
-     "played": 11,
-     "points": 22,
-     "pdf_points": 22,
+     "played": 12,
+     "points": 25,
+     "pdf_points": 25,
      "rank": 4,
      "h2h": [
       [
@@ -13715,6 +13944,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       null,
@@ -13856,8 +14086,8 @@
      "team": "上尾上平サッカースポーツ少年団",
      "win": 2,
      "draw": 0,
-     "loss": 10,
-     "played": 12,
+     "loss": 11,
+     "played": 13,
      "points": 6,
      "pdf_points": 6,
      "rank": 7,
@@ -13876,6 +14106,7 @@
       ],
       null,
       [
+       "loss",
        "loss"
       ],
       [
@@ -13908,8 +14139,8 @@
      "team": "鴻巣ジュニアサッカークラブスポーツ少年団",
      "win": 1,
      "draw": 0,
-     "loss": 10,
-     "played": 11,
+     "loss": 12,
+     "played": 13,
      "points": 3,
      "pdf_points": 3,
      "rank": 8,
@@ -13934,10 +14165,12 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       null,
       [
+       "loss",
        "loss"
       ]
      ],
@@ -13956,8 +14189,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-07"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1256",
@@ -13978,16 +14211,17 @@
    "standings": [
     {
      "team": "ローズフットボールクラブ",
-     "win": 6,
+     "win": 8,
      "draw": 1,
      "loss": 1,
-     "played": 8,
-     "points": 19,
-     "pdf_points": 19,
+     "played": 10,
+     "points": 25,
+     "pdf_points": 25,
      "rank": 1,
      "h2h": [
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "win"
@@ -14000,6 +14234,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       null,
@@ -14022,14 +14257,61 @@
      "note": null
     },
     {
-     "team": "鴻巣田間宮サッカースポーツ少年団",
-     "win": 5,
-     "draw": 1,
-     "loss": 2,
-     "played": 8,
-     "points": 16,
-     "pdf_points": 16,
+     "team": "ANGEL Football Club",
+     "win": 6,
+     "draw": 3,
+     "loss": 1,
+     "played": 10,
+     "points": 21,
+     "pdf_points": 21,
      "rank": 2,
+     "h2h": [
+      [
+       "draw",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      null,
+      [
+       "win",
+       "win"
+      ],
+      [
+       "draw"
+      ],
+      [
+       "draw",
+       "loss"
+      ],
+      [
+       "win"
+      ]
+     ],
+     "opp_labels": [
+      "鴻巣田間宮サッカースポーツ少年団",
+      "鴻巣ドルフィンズフットボールクラブ",
+      "ANGEL Football Club",
+      "伊奈小針サッカースポーツ少年団",
+      "tonan sc 北本石戸",
+      "ローズフットボールクラブ",
+      "北本少年サッカークラブスポーツ少年団"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "鴻巣田間宮サッカースポーツ少年団",
+     "win": 6,
+     "draw": 1,
+     "loss": 3,
+     "played": 10,
+     "points": 19,
+     "pdf_points": 19,
+     "rank": 3,
      "h2h": [
       null,
       [
@@ -14041,13 +14323,15 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
        "loss"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "win"
@@ -14070,13 +14354,13 @@
     },
     {
      "team": "tonan sc 北本石戸",
-     "win": 5,
+     "win": 6,
      "draw": 1,
-     "loss": 2,
-     "played": 8,
-     "points": 16,
-     "pdf_points": 16,
-     "rank": 2,
+     "loss": 3,
+     "played": 10,
+     "points": 19,
+     "pdf_points": 19,
+     "rank": 3,
      "h2h": [
       [
        "win"
@@ -14094,9 +14378,11 @@
       ],
       null,
       [
+       "loss",
        "loss"
       ],
       [
+       "win",
        "win"
       ]
      ],
@@ -14116,58 +14402,13 @@
      "note": "tiebreak"
     },
     {
-     "team": "ANGEL Football Club",
-     "win": 4,
-     "draw": 3,
-     "loss": 1,
-     "played": 8,
-     "points": 15,
-     "pdf_points": 15,
-     "rank": 4,
-     "h2h": [
-      [
-       "draw",
-       "win"
-      ],
-      [
-       "win"
-      ],
-      null,
-      [
-       "win"
-      ],
-      [
-       "draw"
-      ],
-      [
-       "draw",
-       "loss"
-      ],
-      [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "鴻巣田間宮サッカースポーツ少年団",
-      "鴻巣ドルフィンズフットボールクラブ",
-      "ANGEL Football Club",
-      "伊奈小針サッカースポーツ少年団",
-      "tonan sc 北本石戸",
-      "ローズフットボールクラブ",
-      "北本少年サッカークラブスポーツ少年団"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
      "team": "鴻巣ドルフィンズフットボールクラブ",
-     "win": 3,
+     "win": 4,
      "draw": 0,
-     "loss": 5,
-     "played": 8,
-     "points": 9,
-     "pdf_points": 9,
+     "loss": 6,
+     "played": 10,
+     "points": 12,
+     "pdf_points": 12,
      "rank": 5,
      "h2h": [
       [
@@ -14176,6 +14417,7 @@
       ],
       null,
       [
+       "loss",
        "loss"
       ],
       [
@@ -14189,6 +14431,7 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ]
      ],
@@ -14209,8 +14452,8 @@
      "team": "北本少年サッカークラブスポーツ少年団",
      "win": 2,
      "draw": 0,
-     "loss": 6,
-     "played": 8,
+     "loss": 8,
+     "played": 10,
      "points": 6,
      "pdf_points": 6,
      "rank": 6,
@@ -14219,6 +14462,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -14229,6 +14473,7 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -14254,19 +14499,21 @@
      "team": "伊奈小針サッカースポーツ少年団",
      "win": 0,
      "draw": 0,
-     "loss": 8,
-     "played": 8,
+     "loss": 10,
+     "played": 10,
      "points": 0,
      "pdf_points": 0,
      "rank": 7,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       null,
@@ -14296,8 +14543,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-12"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1257",
@@ -14739,15 +14986,16 @@
    "standings": [
     {
      "team": "南浦和サッカー少年団",
-     "win": 6,
-     "draw": 0,
+     "win": 8,
+     "draw": 2,
      "loss": 3,
-     "played": 9,
-     "points": 18,
-     "pdf_points": 18,
+     "played": 13,
+     "points": 26,
+     "pdf_points": 26,
      "rank": 1,
      "h2h": [
       [
+       "win",
        "win"
       ],
       [
@@ -14760,16 +15008,19 @@
       ],
       null,
       [
+       "loss",
+       "draw"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
        "loss"
       ],
       [
+       "loss",
        "win"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
       ]
      ],
      "opp_labels": [
@@ -14788,12 +15039,12 @@
     },
     {
      "team": "FCラソクラーロ",
-     "win": 5,
+     "win": 6,
      "draw": 2,
-     "loss": 0,
-     "played": 7,
-     "points": 17,
-     "pdf_points": 17,
+     "loss": 1,
+     "played": 9,
+     "points": 20,
+     "pdf_points": 20,
      "rank": 2,
      "h2h": [
       [
@@ -14806,18 +15057,70 @@
        "win"
       ],
       [
+       "win",
+       "loss"
+      ],
+      [
+       "draw"
+      ],
+      [
+       "draw",
        "win"
-      ],
-      [
-       "draw"
-      ],
-      [
-       "draw"
       ],
       [
        "win"
       ],
       null
+     ],
+     "opp_labels": [
+      "見沼フットボールクラブ",
+      "浦和尾間木サッカースポーツ少年団",
+      "中島・栄和合同",
+      "南浦和サッカー少年団",
+      "GRANDE FOOTBALL CLUB U-12",
+      "大宮南ウイングスフットボールクラブスポーツ少年団",
+      "大宮北SC",
+      "FCラソクラーロ"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "GRANDE FOOTBALL CLUB U-12",
+     "win": 5,
+     "draw": 3,
+     "loss": 2,
+     "played": 10,
+     "points": 18,
+     "pdf_points": 18,
+     "rank": 3,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "win"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      null,
+      [
+       "win"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "draw"
+      ]
      ],
      "opp_labels": [
       "見沼フットボールクラブ",
@@ -14841,7 +15144,7 @@
      "played": 9,
      "points": 16,
      "pdf_points": 16,
-     "rank": 3,
+     "rank": 4,
      "h2h": [
       [
        "win"
@@ -14890,7 +15193,7 @@
      "played": 9,
      "points": 14,
      "pdf_points": 14,
-     "rank": 4,
+     "rank": 5,
      "h2h": [
       [
        "win"
@@ -14915,56 +15218,6 @@
       ],
       [
        "loss"
-      ]
-     ],
-     "opp_labels": [
-      "見沼フットボールクラブ",
-      "浦和尾間木サッカースポーツ少年団",
-      "中島・栄和合同",
-      "南浦和サッカー少年団",
-      "GRANDE FOOTBALL CLUB U-12",
-      "大宮南ウイングスフットボールクラブスポーツ少年団",
-      "大宮北SC",
-      "FCラソクラーロ"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
-     "team": "GRANDE FOOTBALL CLUB U-12",
-     "win": 4,
-     "draw": 2,
-     "loss": 2,
-     "played": 8,
-     "points": 14,
-     "pdf_points": 14,
-     "rank": 4,
-     "h2h": [
-      [
-       "win"
-      ],
-      [
-       "loss",
-       "draw"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      null,
-      [
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "draw"
       ]
      ],
      "opp_labels": [
@@ -14986,12 +15239,12 @@
     {
      "team": "大宮南ウイングスフットボールクラブスポーツ少年団",
      "win": 4,
-     "draw": 1,
-     "loss": 5,
-     "played": 10,
-     "points": 13,
-     "pdf_points": 13,
-     "rank": 6,
+     "draw": 2,
+     "loss": 6,
+     "played": 12,
+     "points": 14,
+     "pdf_points": 14,
+     "rank": 5,
      "h2h": [
       [
        "win",
@@ -15005,7 +15258,8 @@
        "win"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       [
        "loss"
@@ -15016,7 +15270,8 @@
        "loss"
       ],
       [
-       "draw"
+       "draw",
+       "loss"
       ]
      ],
      "opp_labels": [
@@ -15030,8 +15285,10 @@
       "FCラソクラーロ"
      ],
      "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
      "team": "中島・栄和合同",
@@ -15086,8 +15343,8 @@
      "team": "見沼フットボールクラブ",
      "win": 1,
      "draw": 0,
-     "loss": 7,
-     "played": 8,
+     "loss": 9,
+     "played": 10,
      "points": 3,
      "pdf_points": 3,
      "rank": 8,
@@ -15100,9 +15357,11 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -15131,8 +15390,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-07"
+   "pdf_date": "2026-11-08",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1259",
@@ -16426,8 +16685,8 @@
      "team": "大宮早起きサッカースポーツ少年団",
      "win": 9,
      "draw": 2,
-     "loss": 0,
-     "played": 11,
+     "loss": 1,
+     "played": 12,
      "points": 29,
      "pdf_points": 29,
      "rank": 1,
@@ -16445,7 +16704,8 @@
        "win"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "draw",
@@ -16614,16 +16874,17 @@
     },
     {
      "team": "烏天狗JrFC",
-     "win": 2,
+     "win": 4,
      "draw": 2,
      "loss": 6,
-     "played": 10,
-     "points": 8,
-     "pdf_points": 8,
+     "played": 12,
+     "points": 14,
+     "pdf_points": 14,
      "rank": 5,
      "h2h": [
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "win",
@@ -16643,7 +16904,8 @@
        "draw"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ]
      ],
      "opp_labels": [
@@ -16710,8 +16972,8 @@
      "team": "浦和辻サッカー少年団",
      "win": 1,
      "draw": 2,
-     "loss": 7,
-     "played": 10,
+     "loss": 8,
+     "played": 11,
      "points": 5,
      "pdf_points": 5,
      "rank": 7,
@@ -16725,7 +16987,8 @@
        "loss"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "loss",
@@ -16754,8 +17017,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-11-08",
-   "last_changed": "2026-11-10"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1263",
@@ -16776,16 +17039,17 @@
    "standings": [
     {
      "team": "浦和道祖土スポーツサッカー少年団",
-     "win": 6,
-     "draw": 0,
+     "win": 7,
+     "draw": 1,
      "loss": 1,
-     "played": 7,
-     "points": 18,
-     "pdf_points": 18,
+     "played": 9,
+     "points": 22,
+     "pdf_points": 22,
      "rank": 1,
      "h2h": [
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       [
        "win"
@@ -16802,6 +17066,54 @@
        "win"
       ],
       [
+       "win",
+       "win"
+      ],
+      []
+     ],
+     "opp_labels": [
+      "浦和別所サッカースポーツ少年団",
+      "北浦和サッカースポーツ少年団",
+      "針ヶ谷サッカー少年団",
+      "浦和高砂スポーツ少年団サッカー部",
+      "浦和道祖土スポーツサッカー少年団",
+      "TRICOLOREFC",
+      "さいたまURAWA T.T.サッカークラブ",
+      "TT"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "浦和別所サッカースポーツ少年団",
+     "win": 6,
+     "draw": 1,
+     "loss": 1,
+     "played": 8,
+     "points": 19,
+     "pdf_points": 19,
+     "rank": 2,
+     "h2h": [
+      null,
+      [
+       "loss"
+      ],
+      [
+       "win"
+      ],
+      [
+       "win"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      [
+       "win"
+      ],
+      [
+       "win",
        "win"
       ],
       []
@@ -16828,7 +17140,7 @@
      "played": 9,
      "points": 17,
      "pdf_points": 17,
-     "rank": 2,
+     "rank": 3,
      "h2h": [
       [
        "win"
@@ -16850,51 +17162,6 @@
       ],
       [
        "draw",
-       "win"
-      ],
-      []
-     ],
-     "opp_labels": [
-      "浦和別所サッカースポーツ少年団",
-      "北浦和サッカースポーツ少年団",
-      "針ヶ谷サッカー少年団",
-      "浦和高砂スポーツ少年団サッカー部",
-      "浦和道祖土スポーツサッカー少年団",
-      "TRICOLOREFC",
-      "さいたまURAWA T.T.サッカークラブ",
-      "TT"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "浦和別所サッカースポーツ少年団",
-     "win": 5,
-     "draw": 0,
-     "loss": 1,
-     "played": 6,
-     "points": 15,
-     "pdf_points": 15,
-     "rank": 3,
-     "h2h": [
-      null,
-      [
-       "loss"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
        "win"
       ],
       []
@@ -16966,13 +17233,14 @@
      "team": "さいたまURAWA T.T.サッカークラブ",
      "win": 4,
      "draw": 2,
-     "loss": 3,
-     "played": 9,
+     "loss": 5,
+     "played": 11,
      "points": 14,
      "pdf_points": 14,
      "rank": 4,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
@@ -16988,6 +17256,7 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -17114,8 +17383,8 @@
      "note": "tiebreak"
     }
    ],
-   "pdf_date": "2026-11-03",
-   "last_changed": "2026-11-07"
+   "pdf_date": "2026-11-14",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "2433",
@@ -18562,15 +18831,16 @@
    "standings": [
     {
      "team": "蕨北町サッカー",
-     "win": 11,
+     "win": 12,
      "draw": 1,
      "loss": 1,
-     "played": 13,
-     "points": 34,
-     "pdf_points": 34,
+     "played": 14,
+     "points": 37,
+     "pdf_points": 37,
      "rank": 1,
      "h2h": [
       [
+       "win",
        "win"
       ],
       [
@@ -18609,7 +18879,7 @@
       "蕨北町サッカー",
       "KAWAGUCHI　FC慈林"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 1,
      "notes": [],
      "note": null
     },
@@ -18617,8 +18887,8 @@
      "team": "ＦＣ和光イレブンスポーツ少年団",
      "win": 10,
      "draw": 1,
-     "loss": 2,
-     "played": 13,
+     "loss": 3,
+     "played": 14,
      "points": 31,
      "pdf_points": 31,
      "rank": 2,
@@ -18645,6 +18915,7 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -18662,18 +18933,20 @@
       "蕨北町サッカー",
       "KAWAGUCHI　FC慈林"
      ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "pdf_rank": 2,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
      "team": "FC東85",
-     "win": 9,
+     "win": 10,
      "draw": 1,
      "loss": 3,
-     "played": 13,
-     "points": 28,
-     "pdf_points": 28,
+     "played": 14,
+     "points": 31,
+     "pdf_points": 31,
      "rank": 3,
      "h2h": [
       [
@@ -18686,6 +18959,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -18715,18 +18989,20 @@
       "蕨北町サッカー",
       "KAWAGUCHI　FC慈林"
      ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
+     "pdf_rank": 3,
+     "notes": [
+      "tiebreak"
+     ],
+     "note": "tiebreak"
     },
     {
      "team": "戸田ＦＣ",
-     "win": 8,
+     "win": 9,
      "draw": 1,
      "loss": 4,
-     "played": 13,
-     "points": 25,
-     "pdf_points": 25,
+     "played": 14,
+     "points": 28,
+     "pdf_points": 28,
      "rank": 4,
      "h2h": [
       [
@@ -18738,6 +19014,7 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -18768,18 +19045,18 @@
       "蕨北町サッカー",
       "KAWAGUCHI　FC慈林"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 4,
      "notes": [],
      "note": null
     },
     {
      "team": "KAWAGUCHI　FC慈林",
-     "win": 5,
+     "win": 6,
      "draw": 2,
      "loss": 6,
-     "played": 13,
-     "points": 17,
-     "pdf_points": 17,
+     "played": 14,
+     "points": 20,
+     "pdf_points": 20,
      "rank": 5,
      "h2h": [
       [
@@ -18799,6 +19076,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -18821,7 +19099,7 @@
       "蕨北町サッカー",
       "KAWAGUCHI　FC慈林"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 5,
      "notes": [],
      "note": null
     },
@@ -18829,8 +19107,8 @@
      "team": "鳩南サッカースポーツ少年団",
      "win": 3,
      "draw": 1,
-     "loss": 9,
-     "played": 13,
+     "loss": 10,
+     "played": 14,
      "points": 10,
      "pdf_points": 10,
      "rank": 6,
@@ -18861,6 +19139,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -18874,7 +19153,7 @@
       "蕨北町サッカー",
       "KAWAGUCHI　FC慈林"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
@@ -18882,8 +19161,8 @@
      "team": "A.C ammaliatore",
      "win": 1,
      "draw": 1,
-     "loss": 11,
-     "played": 13,
+     "loss": 12,
+     "played": 14,
      "points": 4,
      "pdf_points": 4,
      "rank": 7,
@@ -18893,6 +19172,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -18927,7 +19207,7 @@
       "蕨北町サッカー",
       "KAWAGUCHI　FC慈林"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     },
@@ -18935,8 +19215,8 @@
      "team": "柳崎サッカークラブジュニア",
      "win": 1,
      "draw": 0,
-     "loss": 12,
-     "played": 13,
+     "loss": 13,
+     "played": 14,
      "points": 3,
      "pdf_points": 3,
      "rank": 8,
@@ -18959,6 +19239,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -18980,13 +19261,13 @@
       "蕨北町サッカー",
       "KAWAGUCHI　FC慈林"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 8,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-12"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1268",
@@ -19008,18 +19289,15 @@
    "standings": [
     {
      "team": "STREGARE",
-     "win": 11,
-     "draw": 0,
+     "win": 13,
+     "draw": 1,
      "loss": 0,
-     "played": 11,
-     "points": 33,
-     "pdf_points": 33,
+     "played": 14,
+     "points": 40,
+     "pdf_points": 40,
      "rank": 1,
      "h2h": [
       [
-       "win"
-      ],
-      [
        "win",
        "win"
       ],
@@ -19032,6 +19310,11 @@
        "win"
       ],
       [
+       "win",
+       "win"
+      ],
+      [
+       "win",
        "win"
       ],
       [
@@ -19040,7 +19323,8 @@
       ],
       null,
       [
-       "win"
+       "win",
+       "draw"
       ]
      ],
      "opp_labels": [
@@ -19053,18 +19337,18 @@
       "STREGARE",
       "FCアビリスタＵ－１２"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 1,
      "notes": [],
      "note": null
     },
     {
      "team": "FCアビリスタＵ－１２",
-     "win": 9,
-     "draw": 1,
+     "win": 11,
+     "draw": 2,
      "loss": 1,
-     "played": 11,
-     "points": 28,
-     "pdf_points": 28,
+     "played": 14,
+     "points": 35,
+     "pdf_points": 35,
      "rank": 2,
      "h2h": [
       [
@@ -19076,9 +19360,11 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -19090,7 +19376,8 @@
        "win"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       null
      ],
@@ -19104,29 +19391,31 @@
       "STREGARE",
       "FCアビリスタＵ－１２"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 2,
      "notes": [],
      "note": null
     },
     {
      "team": "FC新倉エイトワンスポーツ少年団",
-     "win": 6,
-     "draw": 3,
-     "loss": 2,
-     "played": 11,
-     "points": 21,
-     "pdf_points": 21,
+     "win": 7,
+     "draw": 4,
+     "loss": 3,
+     "played": 14,
+     "points": 25,
+     "pdf_points": 25,
      "rank": 3,
      "h2h": [
       null,
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "win",
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -19138,6 +19427,7 @@
        "win"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -19155,91 +19445,97 @@
       "STREGARE",
       "FCアビリスタＵ－１２"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 3,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "コラルティードFC",
+     "win": 4,
+     "draw": 5,
+     "loss": 5,
+     "played": 14,
+     "points": 17,
+     "pdf_points": 17,
+     "rank": 4,
+     "h2h": [
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "win",
+       "draw"
+      ],
+      null,
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "FC新倉エイトワンスポーツ少年団",
+      "アズマフットボールクラブ",
+      "セレザＦＣ",
+      "美女木FC",
+      "コラルティードFC",
+      "柏葉サッカースポーツ少年団",
+      "STREGARE",
+      "FCアビリスタＵ－１２"
+     ],
+     "pdf_rank": 4,
      "notes": [],
      "note": null
     },
     {
      "team": "アズマフットボールクラブ",
      "win": 5,
-     "draw": 0,
-     "loss": 6,
-     "played": 11,
-     "points": 15,
-     "pdf_points": 15,
-     "rank": 4,
-     "h2h": [
-      [
-       "loss"
-      ],
-      null,
-      [
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "loss"
-      ],
-      [
-       "win"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "FC新倉エイトワンスポーツ少年団",
-      "アズマフットボールクラブ",
-      "セレザＦＣ",
-      "美女木FC",
-      "コラルティードFC",
-      "柏葉サッカースポーツ少年団",
-      "STREGARE",
-      "FCアビリスタＵ－１２"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "コラルティードFC",
-     "win": 3,
-     "draw": 4,
-     "loss": 4,
-     "played": 11,
-     "points": 13,
-     "pdf_points": 13,
+     "draw": 1,
+     "loss": 8,
+     "played": 14,
+     "points": 16,
+     "pdf_points": 16,
      "rank": 5,
      "h2h": [
       [
-       "draw",
-       "draw"
-      ],
-      [
        "loss",
-       "win"
-      ],
-      [
-       "draw"
-      ],
-      [
-       "win",
        "draw"
       ],
       null,
       [
+       "win",
+       "loss"
+      ],
+      [
+       "win",
        "win"
       ],
       [
+       "win",
+       "loss"
+      ],
+      [
+       "win",
+       "loss"
+      ],
+      [
+       "loss",
        "loss"
       ],
       [
@@ -19257,18 +19553,18 @@
       "STREGARE",
       "FCアビリスタＵ－１２"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 5,
      "notes": [],
      "note": null
     },
     {
      "team": "セレザＦＣ",
-     "win": 2,
-     "draw": 2,
-     "loss": 7,
-     "played": 11,
-     "points": 8,
-     "pdf_points": 8,
+     "win": 3,
+     "draw": 3,
+     "loss": 8,
+     "played": 14,
+     "points": 12,
+     "pdf_points": 12,
      "rank": 6,
      "h2h": [
       [
@@ -19276,7 +19572,8 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       null,
       [
@@ -19284,6 +19581,7 @@
        "draw"
       ],
       [
+       "draw",
        "draw"
       ],
       [
@@ -19295,6 +19593,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -19308,18 +19607,18 @@
       "STREGARE",
       "FCアビリスタＵ－１２"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
     {
      "team": "柏葉サッカースポーツ少年団",
-     "win": 2,
-     "draw": 0,
-     "loss": 9,
-     "played": 11,
-     "points": 6,
-     "pdf_points": 6,
+     "win": 3,
+     "draw": 1,
+     "loss": 10,
+     "played": 14,
+     "points": 10,
+     "pdf_points": 10,
      "rank": 7,
      "h2h": [
       [
@@ -19327,16 +19626,19 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "win",
        "loss"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
+       "loss",
        "loss"
       ],
       null,
@@ -19359,21 +19661,22 @@
       "STREGARE",
       "FCアビリスタＵ－１２"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     },
     {
      "team": "美女木FC",
      "win": 0,
-     "draw": 2,
-     "loss": 9,
-     "played": 11,
-     "points": 2,
-     "pdf_points": 2,
+     "draw": 3,
+     "loss": 11,
+     "played": 14,
+     "points": 3,
+     "pdf_points": 3,
      "rank": 8,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
@@ -19390,13 +19693,15 @@
        "draw"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       [
        "loss",
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -19410,13 +19715,13 @@
       "STREGARE",
       "FCアビリスタＵ－１２"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 8,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-10-18",
-   "last_changed": "2026-10-27"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1269",
@@ -19438,12 +19743,12 @@
    "standings": [
     {
      "team": "コンフィアンサSC",
-     "win": 11,
-     "draw": 0,
+     "win": 12,
+     "draw": 1,
      "loss": 1,
-     "played": 12,
-     "points": 33,
-     "pdf_points": 33,
+     "played": 14,
+     "points": 37,
+     "pdf_points": 37,
      "rank": 1,
      "h2h": [
       [
@@ -19451,10 +19756,12 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "win",
@@ -19484,18 +19791,18 @@
       "鳩ヶ谷キッカーズ",
       "戸田シティフットボールクラブ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 1,
      "notes": [],
      "note": null
     },
     {
      "team": "F.C.NIIZO",
-     "win": 7,
+     "win": 9,
      "draw": 2,
      "loss": 3,
-     "played": 12,
-     "points": 23,
-     "pdf_points": 23,
+     "played": 14,
+     "points": 29,
+     "pdf_points": 29,
      "rank": 2,
      "h2h": [
       null,
@@ -19520,9 +19827,11 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
+       "win",
        "win"
       ]
      ],
@@ -19536,18 +19845,18 @@
       "鳩ヶ谷キッカーズ",
       "戸田シティフットボールクラブ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 2,
      "notes": [],
      "note": null
     },
     {
      "team": "美谷本ＦＣ",
-     "win": 7,
+     "win": 9,
      "draw": 1,
      "loss": 4,
-     "played": 12,
-     "points": 22,
-     "pdf_points": 22,
+     "played": 14,
+     "points": 28,
+     "pdf_points": 28,
      "rank": 3,
      "h2h": [
       [
@@ -19572,9 +19881,11 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
+       "win",
        "win"
       ]
      ],
@@ -19588,18 +19899,18 @@
       "鳩ヶ谷キッカーズ",
       "戸田シティフットボールクラブ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 3,
      "notes": [],
      "note": null
     },
     {
      "team": "戸田一サッカースポーツ少年団",
-     "win": 6,
+     "win": 8,
      "draw": 1,
      "loss": 5,
-     "played": 12,
-     "points": 19,
-     "pdf_points": 19,
+     "played": 14,
+     "points": 25,
+     "pdf_points": 25,
      "rank": 4,
      "h2h": [
       [
@@ -19607,10 +19918,12 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       null,
       [
@@ -19640,7 +19953,7 @@
       "鳩ヶ谷キッカーズ",
       "戸田シティフットボールクラブ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 4,
      "notes": [],
      "note": null
     },
@@ -19648,8 +19961,8 @@
      "team": "FOOTBALLCLUB Reydis",
      "win": 5,
      "draw": 3,
-     "loss": 4,
-     "played": 12,
+     "loss": 6,
+     "played": 14,
      "points": 18,
      "pdf_points": 18,
      "rank": 5,
@@ -19664,6 +19977,7 @@
        "draw"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -19671,6 +19985,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -19692,18 +20007,18 @@
       "鳩ヶ谷キッカーズ",
       "戸田シティフットボールクラブ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 5,
      "notes": [],
      "note": null
     },
     {
      "team": "朝志ヶ丘サッカースポーツ少年団",
      "win": 4,
-     "draw": 3,
-     "loss": 5,
-     "played": 12,
-     "points": 15,
-     "pdf_points": 15,
+     "draw": 4,
+     "loss": 6,
+     "played": 14,
+     "points": 16,
+     "pdf_points": 16,
      "rank": 6,
      "h2h": [
       [
@@ -19716,14 +20031,16 @@
       ],
       null,
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "loss",
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       [
        "win",
@@ -19744,7 +20061,7 @@
       "鳩ヶ谷キッカーズ",
       "戸田シティフットボールクラブ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
@@ -19752,13 +20069,14 @@
      "team": "戸田シティフットボールクラブ",
      "win": 2,
      "draw": 2,
-     "loss": 8,
-     "played": 12,
+     "loss": 10,
+     "played": 14,
      "points": 8,
      "pdf_points": 8,
      "rank": 7,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
@@ -19774,6 +20092,7 @@
        "draw"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -19796,7 +20115,7 @@
       "鳩ヶ谷キッカーズ",
       "戸田シティフットボールクラブ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     },
@@ -19804,16 +20123,13 @@
      "team": "鳩ヶ谷キッカーズ",
      "win": 0,
      "draw": 0,
-     "loss": 12,
-     "played": 12,
+     "loss": 14,
+     "played": 14,
      "points": 0,
      "pdf_points": 0,
      "rank": 8,
      "h2h": [
       [
-       "loss"
-      ],
-      [
        "loss",
        "loss"
       ],
@@ -19826,6 +20142,11 @@
        "loss"
       ],
       [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
        "loss"
       ],
       [
@@ -19848,13 +20169,13 @@
       "鳩ヶ谷キッカーズ",
       "戸田シティフットボールクラブ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 8,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-07"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1270",
@@ -19878,14 +20199,15 @@
      "team": "M・S・Ｃサッカークラブ",
      "win": 10,
      "draw": 3,
-     "loss": 0,
-     "played": 13,
+     "loss": 1,
+     "played": 14,
      "points": 33,
      "pdf_points": 33,
      "rank": 1,
      "h2h": [
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       null,
       [
@@ -19928,23 +20250,24 @@
       "川口ミナミFC",
       "川口ミナミ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 1,
      "notes": [],
      "note": null
     },
     {
      "team": "ＫＯＢＡＴＯサッカースポーツ少年団",
-     "win": 9,
+     "win": 10,
      "draw": 2,
      "loss": 2,
-     "played": 13,
-     "points": 29,
-     "pdf_points": 29,
+     "played": 14,
+     "points": 32,
+     "pdf_points": 32,
      "rank": 2,
      "h2h": [
       null,
       [
-       "draw"
+       "draw",
+       "win"
       ],
       [
        "win",
@@ -19986,18 +20309,18 @@
       "川口ミナミFC",
       "川口ミナミ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 2,
      "notes": [],
      "note": null
     },
     {
      "team": "川口ミナミFC",
-     "win": 8,
+     "win": 9,
      "draw": 1,
      "loss": 4,
-     "played": 13,
-     "points": 25,
-     "pdf_points": 25,
+     "played": 14,
+     "points": 28,
+     "pdf_points": 28,
      "rank": 3,
      "h2h": [
       [
@@ -20042,7 +20365,66 @@
       "川口ミナミFC",
       "川口ミナミ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 3,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "わらび錦サッカースポーツ少年団",
+     "win": 5,
+     "draw": 4,
+     "loss": 5,
+     "played": 14,
+     "points": 19,
+     "pdf_points": 19,
+     "rank": 4,
+     "h2h": [
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "draw"
+      ],
+      null,
+      [
+       "draw",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
+       "draw"
+      ],
+      [
+       "draw",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "ＫＯＢＡＴＯサッカースポーツ少年団",
+      "M・S・Ｃサッカークラブ",
+      "わらび錦サッカースポーツ少年団",
+      "新座たけしのキッカーズ",
+      "FUT MESSE川口FC",
+      "FC和光キッカーズ",
+      "安行フットボールクラブ",
+      "川口ミナミFC",
+      "川口ミナミ"
+     ],
+     "pdf_rank": 4,
      "notes": [],
      "note": null
     },
@@ -20050,11 +20432,11 @@
      "team": "安行フットボールクラブ",
      "win": 5,
      "draw": 2,
-     "loss": 6,
-     "played": 13,
+     "loss": 7,
+     "played": 14,
      "points": 17,
      "pdf_points": 17,
-     "rank": 4,
+     "rank": 5,
      "h2h": [
       [
        "win",
@@ -20083,64 +20465,7 @@
       null,
       [],
       [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "ＫＯＢＡＴＯサッカースポーツ少年団",
-      "M・S・Ｃサッカークラブ",
-      "わらび錦サッカースポーツ少年団",
-      "新座たけしのキッカーズ",
-      "FUT MESSE川口FC",
-      "FC和光キッカーズ",
-      "安行フットボールクラブ",
-      "川口ミナミFC",
-      "川口ミナミ"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "わらび錦サッカースポーツ少年団",
-     "win": 4,
-     "draw": 4,
-     "loss": 5,
-     "played": 13,
-     "points": 16,
-     "pdf_points": 16,
-     "rank": 5,
-     "h2h": [
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss",
-       "draw"
-      ],
-      null,
-      [
-       "draw"
-      ],
-      [
        "win",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "loss",
-       "draw"
-      ],
-      [
-       "draw",
        "loss"
       ]
      ],
@@ -20155,18 +20480,18 @@
       "川口ミナミFC",
       "川口ミナミ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 5,
      "notes": [],
      "note": null
     },
     {
      "team": "FUT MESSE川口FC",
      "win": 4,
-     "draw": 1,
+     "draw": 2,
      "loss": 8,
-     "played": 13,
-     "points": 13,
-     "pdf_points": 13,
+     "played": 14,
+     "points": 14,
+     "pdf_points": 14,
      "rank": 6,
      "h2h": [
       [
@@ -20188,7 +20513,8 @@
       null,
       [],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "draw",
@@ -20210,7 +20536,7 @@
       "川口ミナミFC",
       "川口ミナミ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
@@ -20218,8 +20544,8 @@
      "team": "新座たけしのキッカーズ",
      "win": 3,
      "draw": 2,
-     "loss": 8,
-     "played": 13,
+     "loss": 9,
+     "played": 14,
      "points": 11,
      "pdf_points": 11,
      "rank": 7,
@@ -20233,7 +20559,8 @@
        "loss"
       ],
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       null,
       [
@@ -20268,18 +20595,18 @@
       "川口ミナミFC",
       "川口ミナミ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     },
     {
      "team": "FC和光キッカーズ",
      "win": 1,
-     "draw": 1,
+     "draw": 2,
      "loss": 11,
-     "played": 13,
-     "points": 4,
-     "pdf_points": 4,
+     "played": 14,
+     "points": 5,
+     "pdf_points": 5,
      "rank": 8,
      "h2h": [
       [
@@ -20299,7 +20626,8 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ],
       null,
       [],
@@ -20323,13 +20651,13 @@
       "川口ミナミFC",
       "川口ミナミ"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 8,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-07"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1271",
@@ -20779,7 +21107,7 @@
     }
    ],
    "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-10"
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1272",
@@ -21340,14 +21668,72 @@
    "status": "ok",
    "standings": [
     {
+     "team": "ＦＣチベッタ深谷",
+     "win": 13,
+     "draw": 1,
+     "loss": 1,
+     "played": 15,
+     "points": 40,
+     "pdf_points": 40,
+     "rank": 1,
+     "h2h": [
+      [
+       "draw",
+       "win"
+      ],
+      null,
+      [
+       "loss"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ]
+     ],
+     "opp_labels": [
+      "ＥＳＰＩＲＩＴＯ深谷ジュニア",
+      "ＦＣチベッタ深谷",
+      "ＦＣチベッタ",
+      "フリーダムＦＣ",
+      "江南南サッカー少年団ブルーベリー",
+      "寄居フットボールクラブ",
+      "ＦＣチベッタ深谷　ホワイト",
+      "すみれＦＣ　Ｎｏｒｔｅ　Ｊｒ",
+      "熊谷ＦＣ・大里"
+     ],
+     "pdf_rank": 1,
+     "notes": [],
+     "note": null
+    },
+    {
      "team": "ＦＣチベッタ",
-     "win": 12,
+     "win": 13,
      "draw": 0,
      "loss": 1,
-     "played": 13,
-     "points": 36,
-     "pdf_points": 36,
-     "rank": 1,
+     "played": 14,
+     "points": 39,
+     "pdf_points": 39,
+     "rank": 2,
      "h2h": [
       [
        "win",
@@ -21365,6 +21751,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -21398,76 +21785,18 @@
      "note": "rankdiff"
     },
     {
-     "team": "ＦＣチベッタ深谷",
-     "win": 11,
-     "draw": 1,
-     "loss": 1,
-     "played": 13,
-     "points": 34,
-     "pdf_points": 34,
-     "rank": 2,
-     "h2h": [
-      [
-       "draw"
-      ],
-      null,
-      [
-       "loss"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "win"
-      ]
-     ],
-     "opp_labels": [
-      "ＥＳＰＩＲＩＴＯ深谷ジュニア",
-      "ＦＣチベッタ深谷",
-      "ＦＣチベッタ",
-      "フリーダムＦＣ",
-      "江南南サッカー少年団ブルーベリー",
-      "寄居フットボールクラブ",
-      "ＦＣチベッタ深谷　ホワイト",
-      "すみれＦＣ　Ｎｏｒｔｅ　Ｊｒ",
-      "熊谷ＦＣ・大里"
-     ],
-     "pdf_rank": 1,
-     "notes": [
-      "rankdiff"
-     ],
-     "note": "rankdiff"
-    },
-    {
      "team": "江南南サッカー少年団ブルーベリー",
-     "win": 8,
-     "draw": 3,
+     "win": 10,
+     "draw": 2,
      "loss": 3,
-     "played": 14,
-     "points": 27,
-     "pdf_points": 27,
+     "played": 15,
+     "points": 32,
+     "pdf_points": 32,
      "rank": 3,
      "h2h": [
       [
        "draw",
-       "draw"
+       "win"
       ],
       [
        "loss",
@@ -21486,6 +21815,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -21516,24 +21846,26 @@
     },
     {
      "team": "ＥＳＰＩＲＩＴＯ深谷ジュニア",
-     "win": 6,
+     "win": 7,
      "draw": 3,
-     "loss": 4,
-     "played": 13,
-     "points": 21,
-     "pdf_points": 21,
+     "loss": 5,
+     "played": 15,
+     "points": 24,
+     "pdf_points": 24,
      "rank": 4,
      "h2h": [
       null,
       [
-       "draw"
+       "draw",
+       "loss"
       ],
       [
        "loss",
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "draw",
@@ -21576,14 +21908,15 @@
      "team": "フリーダムＦＣ",
      "win": 6,
      "draw": 2,
-     "loss": 5,
-     "played": 13,
+     "loss": 7,
+     "played": 15,
      "points": 20,
      "pdf_points": 20,
      "rank": 5,
      "h2h": [
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "loss",
@@ -21606,7 +21939,8 @@
        "win"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       [
        "win",
@@ -21634,8 +21968,8 @@
      "team": "寄居フットボールクラブ",
      "win": 5,
      "draw": 0,
-     "loss": 8,
-     "played": 13,
+     "loss": 9,
+     "played": 14,
      "points": 15,
      "pdf_points": 15,
      "rank": 6,
@@ -21648,6 +21982,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -21690,12 +22025,12 @@
     },
     {
      "team": "すみれＦＣ　Ｎｏｒｔｅ　Ｊｒ",
-     "win": 2,
+     "win": 3,
      "draw": 1,
      "loss": 10,
-     "played": 13,
-     "points": 7,
-     "pdf_points": 7,
+     "played": 14,
+     "points": 10,
+     "pdf_points": 10,
      "rank": 7,
      "h2h": [
       [
@@ -21711,7 +22046,8 @@
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "loss",
@@ -21749,11 +22085,11 @@
     {
      "team": "ＦＣチベッタ深谷　ホワイト",
      "win": 1,
-     "draw": 2,
-     "loss": 10,
-     "played": 13,
-     "points": 5,
-     "pdf_points": 5,
+     "draw": 3,
+     "loss": 11,
+     "played": 15,
+     "points": 6,
+     "pdf_points": 6,
      "rank": 8,
      "h2h": [
       [
@@ -21773,6 +22109,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -21784,6 +22121,7 @@
        "loss"
       ],
       [
+       "draw",
        "draw"
       ]
      ],
@@ -21807,11 +22145,11 @@
     {
      "team": "熊谷ＦＣ・大里",
      "win": 1,
-     "draw": 1,
-     "loss": 11,
-     "played": 13,
-     "points": 4,
-     "pdf_points": 4,
+     "draw": 2,
+     "loss": 12,
+     "played": 15,
+     "points": 5,
+     "pdf_points": 5,
      "rank": 9,
      "h2h": [
       [
@@ -21819,9 +22157,6 @@
        "loss"
       ],
       [
-       "loss"
-      ],
-      [
        "loss",
        "loss"
       ],
@@ -21838,6 +22173,11 @@
        "loss"
       ],
       [
+       "loss",
+       "loss"
+      ],
+      [
+       "draw",
        "draw"
       ],
       [
@@ -21863,8 +22203,8 @@
      "note": "rankdiff"
     }
    ],
-   "pdf_date": "2026-11-04",
-   "last_changed": "2026-11-07"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1252",
@@ -21887,11 +22227,11 @@
     {
      "team": "大幡サッカースポーツ少年団",
      "win": 10,
-     "draw": 1,
+     "draw": 2,
      "loss": 0,
-     "played": 11,
-     "points": 31,
-     "pdf_points": 31,
+     "played": 12,
+     "points": 32,
+     "pdf_points": 32,
      "rank": 1,
      "h2h": [
       [
@@ -21915,9 +22255,63 @@
        "win"
       ],
       [
+       "draw",
        "draw"
       ],
       [
+       "win"
+      ]
+     ],
+     "opp_labels": [
+      "児玉ディパーチャＦＣ",
+      "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
+      "熊谷南フットボールクラブ",
+      "久那・影森・秩父南合同",
+      "大幡サッカースポーツ少年団",
+      "熊谷フォルゴーレサッカークラブ",
+      "ＧＥＴかみたのスポーツ少年団",
+      "ＯＮＥ．Ｓ．Ｇ"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "熊谷南フットボールクラブ",
+     "win": 9,
+     "draw": 0,
+     "loss": 4,
+     "played": 13,
+     "points": 27,
+     "pdf_points": 27,
+     "rank": 2,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      null,
+      [
+       "win",
+       "win"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "win",
        "win"
       ]
      ],
@@ -21938,60 +22332,11 @@
     {
      "team": "ＧＥＴかみたのスポーツ少年団",
      "win": 7,
-     "draw": 2,
+     "draw": 4,
      "loss": 0,
-     "played": 9,
-     "points": 23,
-     "pdf_points": 23,
-     "rank": 2,
-     "h2h": [
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win"
-      ],
-      [
-       "win",
-       "win"
-      ],
-      [
-       "draw"
-      ],
-      [
-       "win"
-      ],
-      null,
-      [
-       "win",
-       "draw"
-      ]
-     ],
-     "opp_labels": [
-      "児玉ディパーチャＦＣ",
-      "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
-      "熊谷南フットボールクラブ",
-      "久那・影森・秩父南合同",
-      "大幡サッカースポーツ少年団",
-      "熊谷フォルゴーレサッカークラブ",
-      "ＧＥＴかみたのスポーツ少年団",
-      "ＯＮＥ．Ｓ．Ｇ"
-     ],
-     "pdf_rank": null,
-     "notes": [],
-     "note": null
-    },
-    {
-     "team": "熊谷南フットボールクラブ",
-     "win": 7,
-     "draw": 0,
-     "loss": 4,
      "played": 11,
-     "points": 21,
-     "pdf_points": 21,
+     "points": 25,
+     "pdf_points": 25,
      "rank": 3,
      "h2h": [
       [
@@ -22000,25 +22345,25 @@
       [
        "win"
       ],
+      [
+       "win"
+      ],
+      [
+       "win",
+       "win"
+      ],
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "win",
+       "draw"
+      ],
       null,
       [
        "win",
-       "win"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "win",
-       "win"
+       "draw"
       ]
      ],
      "opp_labels": [
@@ -22037,12 +22382,12 @@
     },
     {
      "team": "久那・影森・秩父南合同",
-     "win": 5,
+     "win": 6,
      "draw": 0,
      "loss": 6,
-     "played": 11,
-     "points": 15,
-     "pdf_points": 15,
+     "played": 12,
+     "points": 18,
+     "pdf_points": 18,
      "rank": 4,
      "h2h": [
       [
@@ -22062,6 +22407,7 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -22088,18 +22434,20 @@
     },
     {
      "team": "ＯＮＥ．Ｓ．Ｇ",
-     "win": 3,
+     "win": 5,
      "draw": 1,
      "loss": 5,
-     "played": 9,
-     "points": 10,
-     "pdf_points": 10,
+     "played": 11,
+     "points": 16,
+     "pdf_points": 16,
      "rank": 5,
      "h2h": [
       [
+       "win",
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -22136,66 +22484,13 @@
      "note": null
     },
     {
-     "team": "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
-     "win": 2,
-     "draw": 2,
-     "loss": 7,
-     "played": 11,
-     "points": 8,
-     "pdf_points": 8,
-     "rank": 6,
-     "h2h": [
-      [
-       "win",
-       "win"
-      ],
-      null,
-      [
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "loss",
-       "loss"
-      ],
-      [
-       "draw",
-       "draw"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "児玉ディパーチャＦＣ",
-      "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
-      "熊谷南フットボールクラブ",
-      "久那・影森・秩父南合同",
-      "大幡サッカースポーツ少年団",
-      "熊谷フォルゴーレサッカークラブ",
-      "ＧＥＴかみたのスポーツ少年団",
-      "ＯＮＥ．Ｓ．Ｇ"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
      "team": "熊谷フォルゴーレサッカークラブ",
      "win": 2,
-     "draw": 2,
-     "loss": 7,
-     "played": 11,
-     "points": 8,
-     "pdf_points": 8,
+     "draw": 3,
+     "loss": 8,
+     "played": 13,
+     "points": 9,
+     "pdf_points": 9,
      "rank": 6,
      "h2h": [
       [
@@ -22211,6 +22506,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -22219,58 +22515,8 @@
       ],
       null,
       [
-       "loss"
-      ],
-      [
-       "loss"
-      ]
-     ],
-     "opp_labels": [
-      "児玉ディパーチャＦＣ",
-      "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
-      "熊谷南フットボールクラブ",
-      "久那・影森・秩父南合同",
-      "大幡サッカースポーツ少年団",
-      "熊谷フォルゴーレサッカークラブ",
-      "ＧＥＴかみたのスポーツ少年団",
-      "ＯＮＥ．Ｓ．Ｇ"
-     ],
-     "pdf_rank": null,
-     "notes": [
-      "tiebreak"
-     ],
-     "note": "tiebreak"
-    },
-    {
-     "team": "児玉ディパーチャＦＣ",
-     "win": 1,
-     "draw": 0,
-     "loss": 8,
-     "played": 9,
-     "points": 3,
-     "pdf_points": 3,
-     "rank": 8,
-     "h2h": [
-      null,
-      [
        "loss",
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss"
-      ],
-      [
-       "loss",
-       "win"
-      ],
-      [
-       "loss"
+       "draw"
       ],
       [
        "loss"
@@ -22289,10 +22535,114 @@
      "pdf_rank": null,
      "notes": [],
      "note": null
+    },
+    {
+     "team": "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
+     "win": 2,
+     "draw": 2,
+     "loss": 9,
+     "played": 13,
+     "points": 8,
+     "pdf_points": 8,
+     "rank": 7,
+     "h2h": [
+      [
+       "win",
+       "win"
+      ],
+      null,
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "draw",
+       "draw"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "児玉ディパーチャＦＣ",
+      "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
+      "熊谷南フットボールクラブ",
+      "久那・影森・秩父南合同",
+      "大幡サッカースポーツ少年団",
+      "熊谷フォルゴーレサッカークラブ",
+      "ＧＥＴかみたのスポーツ少年団",
+      "ＯＮＥ．Ｓ．Ｇ"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
+    },
+    {
+     "team": "児玉ディパーチャＦＣ",
+     "win": 1,
+     "draw": 0,
+     "loss": 10,
+     "played": 11,
+     "points": 3,
+     "pdf_points": 3,
+     "rank": 8,
+     "h2h": [
+      null,
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "loss",
+       "win"
+      ],
+      [
+       "loss"
+      ],
+      [
+       "loss",
+       "loss"
+      ]
+     ],
+     "opp_labels": [
+      "児玉ディパーチャＦＣ",
+      "秩父ジュニアＦＣ　ＭＵＳＡＳＨＩ",
+      "熊谷南フットボールクラブ",
+      "久那・影森・秩父南合同",
+      "大幡サッカースポーツ少年団",
+      "熊谷フォルゴーレサッカークラブ",
+      "ＧＥＴかみたのスポーツ少年団",
+      "ＯＮＥ．Ｓ．Ｇ"
+     ],
+     "pdf_rank": null,
+     "notes": [],
+     "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-07"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1253",
@@ -22314,12 +22664,12 @@
    "standings": [
     {
      "team": "セレブロＦＣジュニア",
-     "win": 11,
+     "win": 14,
      "draw": 0,
      "loss": 0,
-     "played": 11,
-     "points": 33,
-     "pdf_points": 33,
+     "played": 14,
+     "points": 42,
+     "pdf_points": 42,
      "rank": 1,
      "h2h": [
       null,
@@ -22336,6 +22686,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -22343,9 +22694,11 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
+       "win",
        "win"
       ]
      ],
@@ -22365,15 +22718,16 @@
     },
     {
      "team": "大幡サッカースポーツ少年団　ブルー",
-     "win": 9,
+     "win": 10,
      "draw": 1,
-     "loss": 1,
-     "played": 11,
-     "points": 28,
-     "pdf_points": 28,
+     "loss": 3,
+     "played": 14,
+     "points": 31,
+     "pdf_points": 31,
      "rank": 2,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
@@ -22381,10 +22735,12 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
-       "win"
+       "win",
+       "loss"
       ],
       null,
       [
@@ -22416,12 +22772,12 @@
     },
     {
      "team": "美里ＦＣスポーツ少年団",
-     "win": 7,
-     "draw": 0,
+     "win": 8,
+     "draw": 1,
      "loss": 4,
-     "played": 11,
-     "points": 21,
-     "pdf_points": 21,
+     "played": 13,
+     "points": 25,
+     "pdf_points": 25,
      "rank": 3,
      "h2h": [
       [
@@ -22438,10 +22794,12 @@
       ],
       null,
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "win"
@@ -22467,22 +22825,25 @@
     },
     {
      "team": "熊谷西スポーツ少年団",
-     "win": 6,
-     "draw": 1,
-     "loss": 4,
-     "played": 11,
-     "points": 19,
-     "pdf_points": 19,
+     "win": 7,
+     "draw": 2,
+     "loss": 5,
+     "played": 14,
+     "points": 23,
+     "pdf_points": 23,
      "rank": 4,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
-       "win"
+       "win",
+       "draw"
       ],
       [
        "win",
@@ -22518,12 +22879,12 @@
     },
     {
      "team": "ＦＣチベッタ・Ｒｉｓｖｅｇｌｉｏ",
-     "win": 4,
-     "draw": 1,
-     "loss": 6,
-     "played": 11,
-     "points": 13,
-     "pdf_points": 13,
+     "win": 5,
+     "draw": 2,
+     "loss": 7,
+     "played": 14,
+     "points": 17,
+     "pdf_points": 17,
      "rank": 5,
      "h2h": [
       [
@@ -22531,13 +22892,16 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
-       "win"
-      ],
-      [
+       "win",
        "loss"
+      ],
+      [
+       "loss",
+       "draw"
       ],
       [
        "loss",
@@ -22569,12 +22933,12 @@
     },
     {
      "team": "ＦＣ秩父東少年団",
-     "win": 3,
-     "draw": 1,
-     "loss": 7,
-     "played": 11,
-     "points": 10,
-     "pdf_points": 10,
+     "win": 4,
+     "draw": 2,
+     "loss": 8,
+     "played": 14,
+     "points": 14,
+     "pdf_points": 14,
      "rank": 6,
      "h2h": [
       [
@@ -22591,17 +22955,20 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
-       "loss"
+       "loss",
+       "win"
       ],
       [
        "win",
        "draw"
       ],
       [
-       "loss"
+       "loss",
+       "draw"
       ]
      ],
      "opp_labels": [
@@ -22620,18 +22987,20 @@
     },
     {
      "team": "本庄サッカー少年団ホッパーズ",
-     "win": 1,
+     "win": 2,
      "draw": 2,
-     "loss": 8,
-     "played": 11,
-     "points": 5,
-     "pdf_points": 5,
+     "loss": 9,
+     "played": 13,
+     "points": 8,
+     "pdf_points": 8,
      "rank": 7,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -22673,8 +23042,8 @@
      "team": "秩父つばさＦＣ",
      "win": 0,
      "draw": 0,
-     "loss": 11,
-     "played": 11,
+     "loss": 14,
+     "played": 14,
      "points": 0,
      "pdf_points": 0,
      "rank": 8,
@@ -22697,12 +23066,15 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
+       "loss",
        "loss"
       ]
      ],
@@ -22721,8 +23093,8 @@
      "note": null
     }
    ],
-   "pdf_date": "2026-10-18",
-   "last_changed": "2026-10-21"
+   "pdf_date": "2026-11-15",
+   "last_changed": "2026-11-21"
   },
   {
    "id": "1254",
@@ -23212,18 +23584,18 @@
       "上里ＦＣ・本庄中央　合同",
       "籠原スポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 1,
      "notes": [],
      "note": null
     },
     {
      "team": "本庄旭・北泉・本庄南　合同",
-     "win": 8,
+     "win": 9,
      "draw": 1,
      "loss": 2,
-     "played": 11,
-     "points": 25,
-     "pdf_points": 25,
+     "played": 12,
+     "points": 28,
+     "pdf_points": 28,
      "rank": 2,
      "h2h": [
       null,
@@ -23236,6 +23608,7 @@
        "win"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -23260,7 +23633,7 @@
       "上里ＦＣ・本庄中央　合同",
       "籠原スポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 2,
      "notes": [],
      "note": null
     },
@@ -23309,21 +23682,22 @@
       "上里ＦＣ・本庄中央　合同",
       "籠原スポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 3,
      "notes": [],
      "note": null
     },
     {
      "team": "ＨＦＣスポーツ少年団",
-     "win": 4,
+     "win": 5,
      "draw": 2,
-     "loss": 4,
-     "played": 10,
-     "points": 14,
-     "pdf_points": 14,
+     "loss": 5,
+     "played": 12,
+     "points": 17,
+     "pdf_points": 17,
      "rank": 4,
      "h2h": [
       [
+       "loss",
        "loss"
       ],
       [
@@ -23340,6 +23714,7 @@
        "loss"
       ],
       [
+       "win",
        "win"
       ],
       [
@@ -23356,7 +23731,7 @@
       "上里ＦＣ・本庄中央　合同",
       "籠原スポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 4,
      "notes": [],
      "note": null
     },
@@ -23405,7 +23780,7 @@
       "上里ＦＣ・本庄中央　合同",
       "籠原スポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 5,
      "notes": [],
      "note": null
     },
@@ -23454,7 +23829,7 @@
       "上里ＦＣ・本庄中央　合同",
       "籠原スポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 6,
      "notes": [],
      "note": null
     },
@@ -23462,8 +23837,8 @@
      "team": "上里ＦＣ・本庄中央　合同",
      "win": 0,
      "draw": 1,
-     "loss": 10,
-     "played": 11,
+     "loss": 11,
+     "played": 12,
      "points": 1,
      "pdf_points": 1,
      "rank": 7,
@@ -23481,6 +23856,7 @@
        "loss"
       ],
       [
+       "loss",
        "loss"
       ],
       [
@@ -23502,13 +23878,13 @@
       "上里ＦＣ・本庄中央　合同",
       "籠原スポーツ少年団"
      ],
-     "pdf_rank": null,
+     "pdf_rank": 7,
      "notes": [],
      "note": null
     }
    ],
-   "pdf_date": "2026-11-01",
-   "last_changed": "2026-11-07"
+   "pdf_date": null,
+   "last_changed": "2026-11-21"
   },
   {
    "id": "2189",
